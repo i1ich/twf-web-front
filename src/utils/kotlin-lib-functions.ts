@@ -2,6 +2,7 @@
 // import twf_js from '../../public/kotlin-lib/twf_js';
 import {RulePackConstructorReceivedForm} from "../constructors/rule-pack-constructor/rule-pack-constructor.types";
 import {TaskConstructorReceivedForm} from "../constructors/task-constructor/task-constructor.types";
+import {RuleConstructorReceivedForm} from "../constructors/rule-constructor/rule-constructor.types";
 
 const twf_js = (window as any)['twf_js'];
 
@@ -86,6 +87,29 @@ export const getErrorFromMathInput = (
   }
 };
 
+export const createRuleItr = (
+  rule: RuleConstructorReceivedForm,
+  subjectType: string
+) => twf_js.createRuleITR(
+  rule.code,
+  rule.nameEn,
+  rule.nameRu,
+  rule.descriptionShortEn,
+  rule.descriptionShortRu,
+  rule.descriptionEn,
+  rule.descriptionRu,
+  twf_js.createExpressionFrontInput(rule.leftStructureString, MathInputFormat.STRUCTURE_STRING),
+  twf_js.createExpressionFrontInput(rule.rightStructureString, MathInputFormat.STRUCTURE_STRING),
+  rule.priority,
+  rule.isExtending,
+  rule.matchJumbledAndNested,
+  rule.simpleAdditional,
+  rule.basedOnTaskContext,
+  rule.normalizationType,
+  rule.weight,
+  subjectType
+)
+
 export const checkTex = (
   fullExpression: string,
   task: TaskConstructorReceivedForm,
@@ -94,28 +118,12 @@ export const checkTex = (
   try {
 
     let rulesPacksCodes = rulesPacks.flatMap(rulePack => rulePack.rulePacks?.flatMap(rule => rule.rulePackCode));
+    let taskRulePacksCodes = task.rulePacks.flatMap(rulePack => rulePack.rulePackCode);
+    rulesPacksCodes = rulesPacksCodes.concat(taskRulePacksCodes).filter(value => value !== undefined);
 
-    let rulesItr = rulesPacks.flatMap(rulePack => rulePack.rules?.flatMap(rule =>
-      twf_js.createRuleITR(
-        rule.code,
-        rule.nameEn,
-        rule.nameRu,
-        rule.descriptionShortEn,
-        rule.descriptionShortRu,
-        rule.descriptionEn,
-        rule.descriptionRu,
-        twf_js.createExpressionFrontInput(rule.leftStructureString, MathInputFormat.STRUCTURE_STRING),
-        twf_js.createExpressionFrontInput(rule.rightStructureString, MathInputFormat.STRUCTURE_STRING),
-        rule.priority,
-        rule.isExtending,
-        rule.matchJumbledAndNested,
-        rule.simpleAdditional,
-        rule.basedOnTaskContext,
-        rule.normalizationType,
-        rule.weight,
-        task.subjectType
-      )
-    ));
+    let rulesItr = rulesPacks.flatMap(rulePack => rulePack.rules?.flatMap(rule => createRuleItr(rule, task.subjectType)));
+    let taskRulesItr = task.rules.map(rule => createRuleItr(rule, task.subjectType));
+    rulesItr = taskRulesItr.concat(rulesItr);
 
     let taskItr = twf_js.createTaskITR(
       task.taskCreationType,
@@ -129,9 +137,9 @@ export const checkTex = (
       task.descriptionRu,
       task.subjectType,
       task.tags,
-      twf_js.createExpressionFrontInput(task.originalExpression.expression, task.originalExpression.format),
+      twf_js.createExpressionFrontInput(task.originalExpressionStructureString, MathInputFormat.STRUCTURE_STRING),
       task.goalType,
-      task.goalExpression !== null ? twf_js.createExpressionFrontInput(task.goalExpression.expression, task.goalExpression.format) : null,
+      task.goalExpressionStructureString !== null ? twf_js.createExpressionFrontInput(task.goalExpressionStructureString, MathInputFormat.STRUCTURE_STRING) : undefined,
       task.goalPattern,
       undefined,
       task.otherGoalData == null ? undefined : JSON.stringify(task.otherGoalData),
