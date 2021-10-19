@@ -5,22 +5,23 @@ if (typeof kotlin === 'undefined') {
   var listOf = Kotlin.kotlin.collections.listOf_mh5how$;
   var split = Kotlin.kotlin.text.split_ip8yn$;
   var toSet = Kotlin.kotlin.collections.toSet_7wnvza$;
-  var toList = Kotlin.kotlin.collections.toList_us0mfu$;
   var hashCode = Kotlin.hashCode;
   var setOf = Kotlin.kotlin.collections.setOf_mh5how$;
   var setOf_0 = Kotlin.kotlin.collections.setOf_i5x0yv$;
+  var toList = Kotlin.kotlin.collections.toList_us0mfu$;
+  var toSet_0 = Kotlin.kotlin.collections.toSet_us0mfu$;
   var emptyMap = Kotlin.kotlin.collections.emptyMap_q3lmfv$;
   var copyToArray = Kotlin.kotlin.collections.copyToArray;
   var emptyList = Kotlin.kotlin.collections.emptyList_287e2$;
   var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_287e2$;
+  var collectionSizeOrDefault = Kotlin.kotlin.collections.collectionSizeOrDefault_ba2ldo$;
+  var ArrayList_init_0 = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
   var Pair = Kotlin.kotlin.Pair;
   var mapOf = Kotlin.kotlin.collections.mapOf_qfcya0$;
   var plus = Kotlin.kotlin.collections.plus_mydzjv$;
   var ensureNotNull = Kotlin.ensureNotNull;
   var isBlank = Kotlin.kotlin.text.isBlank_gw00vp$;
   var HashSet_init = Kotlin.kotlin.collections.HashSet_init_287e2$;
-  var collectionSizeOrDefault = Kotlin.kotlin.collections.collectionSizeOrDefault_ba2ldo$;
-  var ArrayList_init_0 = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
   var addAll = Kotlin.kotlin.collections.addAll_ipc267$;
   var endsWith = Kotlin.kotlin.text.endsWith_sgbm27$;
   var replace = Kotlin.kotlin.text.replace_680rmw$;
@@ -38,6 +39,7 @@ if (typeof kotlin === 'undefined') {
   var joinToString = Kotlin.kotlin.collections.joinToString_fmv235$;
   var Map = Kotlin.kotlin.collections.Map;
   var throwCCE = Kotlin.throwCCE;
+  var toMutableSet = Kotlin.kotlin.collections.toMutableSet_us0mfu$;
   var listOf_0 = Kotlin.kotlin.collections.listOf_i5x0yv$;
   var contains = Kotlin.kotlin.collections.contains_2ws7j4$;
   var List = Kotlin.kotlin.collections.List;
@@ -60,7 +62,7 @@ if (typeof kotlin === 'undefined') {
   var compareBy = Kotlin.kotlin.comparisons.compareBy_bvgy4j$;
   var sortedWith = Kotlin.kotlin.collections.sortedWith_eknfly$;
   var IllegalStateException_init = Kotlin.kotlin.IllegalStateException_init;
-  var toMutableSet = Kotlin.kotlin.collections.toMutableSet_bvy38s$;
+  var toMutableSet_0 = Kotlin.kotlin.collections.toMutableSet_bvy38s$;
   var plus_0 = Kotlin.kotlin.collections.plus_khz7k3$;
   var sorted = Kotlin.kotlin.collections.sorted_exjks8$;
   var asSequence = Kotlin.kotlin.collections.asSequence_7wnvza$;
@@ -84,7 +86,7 @@ if (typeof kotlin === 'undefined') {
   var wrapFunction = Kotlin.wrapFunction;
   var Comparator = Kotlin.kotlin.Comparator;
   var contains_0 = Kotlin.kotlin.text.contains_sgbm27$;
-  var toMutableSet_0 = Kotlin.kotlin.collections.toMutableSet_7wnvza$;
+  var toMutableSet_1 = Kotlin.kotlin.collections.toMutableSet_7wnvza$;
   var toMutableList = Kotlin.kotlin.collections.toMutableList_4c7yge$;
   var UnsupportedOperationException_init = Kotlin.kotlin.UnsupportedOperationException_init_pdl1vj$;
   var throwUPAE = Kotlin.throwUPAE;
@@ -353,44 +355,12 @@ if (typeof kotlin === 'undefined') {
   function applySubstitution(expression, substitution, substitutionPlaces) {
     return applySubstitution_0(expression, substitution, substitutionPlaces);
   }
-  function checkSolutionInTex_JS(originalTexSolution, startExpressionIdentifier, targetFactPattern, additionalFactsIdentifiers, endExpressionIdentifier, targetFactIdentifier, comparisonSign, wellKnownFunctions, wellKnownFunctionsString, unlimitedWellKnownFunctions, unlimitedWellKnownFunctionsString, expressionTransformationRules, expressionTransformationRulesString, taskContextExpressionTransformationRules, rulePacks, maxExpressionTransformationWeight, maxDistBetweenDiffSteps, scopeFilter, shortErrorDescription) {
-    if (startExpressionIdentifier === void 0)
-      startExpressionIdentifier = '';
-    if (targetFactPattern === void 0)
-      targetFactPattern = '';
-    if (additionalFactsIdentifiers === void 0)
-      additionalFactsIdentifiers = '';
-    if (endExpressionIdentifier === void 0)
-      endExpressionIdentifier = '';
-    if (targetFactIdentifier === void 0)
-      targetFactIdentifier = '';
-    if (comparisonSign === void 0)
-      comparisonSign = '';
-    if (wellKnownFunctions === void 0) {
-      wellKnownFunctions = emptyList();
-    }if (wellKnownFunctionsString === void 0)
-      wellKnownFunctionsString = ';;;0;;;;;;1;;;+;;;-1;;;-;;;-1;;;*;;;-1;;;/;;;-1;;;^;;;-1';
-    if (unlimitedWellKnownFunctions === void 0)
-      unlimitedWellKnownFunctions = wellKnownFunctions;
-    if (unlimitedWellKnownFunctionsString === void 0)
-      unlimitedWellKnownFunctionsString = wellKnownFunctionsString;
-    if (expressionTransformationRules === void 0)
-      expressionTransformationRules = [];
-    if (expressionTransformationRulesString === void 0)
-      expressionTransformationRulesString = 'S(i, a, a, f(i));;;f(a);;;S(i, a, b, f(i));;;S(i, a, b-1, f(i)) + f(b)';
-    if (taskContextExpressionTransformationRules === void 0)
-      taskContextExpressionTransformationRules = '';
-    if (rulePacks === void 0) {
-      rulePacks = copyToArray(emptyList());
-    }if (maxExpressionTransformationWeight === void 0)
-      maxExpressionTransformationWeight = '1.0';
-    if (maxDistBetweenDiffSteps === void 0)
-      maxDistBetweenDiffSteps = '';
-    if (scopeFilter === void 0)
-      scopeFilter = '';
+  function checkSolutionInTex_JS(originalTexSolution, taskITR, rulePacksITR, shortErrorDescription, skipTrivialCheck) {
     if (shortErrorDescription === void 0)
       shortErrorDescription = '0';
-    return checkSolutionInTex_0(originalTexSolution, startExpressionIdentifier, targetFactPattern, additionalFactsIdentifiers, endExpressionIdentifier, targetFactIdentifier, comparisonSign, wellKnownFunctions, wellKnownFunctionsString, unlimitedWellKnownFunctions, unlimitedWellKnownFunctionsString, toList(expressionTransformationRules), expressionTransformationRulesString, taskContextExpressionTransformationRules, rulePacks, maxExpressionTransformationWeight, maxDistBetweenDiffSteps, scopeFilter, shortErrorDescription);
+    if (skipTrivialCheck === void 0)
+      skipTrivialCheck = false;
+    return checkSolutionInTex(originalTexSolution, taskITR, rulePacksITR, shortErrorDescription, skipTrivialCheck);
   }
   function checkSolutionInTexWithCompiledConfiguration_JS(originalTexSolution, compiledConfiguration, startExpressionIdentifier, targetFactPattern, comparisonSign, additionalFactsIdentifiers, endExpressionIdentifier, targetFactIdentifier, shortErrorDescription) {
     if (startExpressionIdentifier === void 0)
@@ -485,6 +455,159 @@ if (typeof kotlin === 'undefined') {
     }if (compiledConfiguration === void 0)
       compiledConfiguration = new CompiledConfiguration(void 0, functionConfiguration);
     return compareWithoutSubstitutions_0(left, right, scope, notChangesOnVariablesFunction, maxExpressionBustCount, functionConfiguration, comparisonSettings, new DebugOutputMessages(), compiledConfiguration);
+  }
+  function createExpressionFrontInput_JS(expression, format) {
+    return createExpressionFrontInput(expression, format);
+  }
+  function createRuleITR_JS(code, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, left, right, priority, isExtending, matchJumbledAndNested, simpleAdditional, basedOnTaskContext, normalizationType, weight, subjectType) {
+    if (code === void 0)
+      code = null;
+    if (nameEn === void 0)
+      nameEn = null;
+    if (nameRu === void 0)
+      nameRu = null;
+    if (descriptionShortEn === void 0)
+      descriptionShortEn = null;
+    if (descriptionShortRu === void 0)
+      descriptionShortRu = null;
+    if (descriptionEn === void 0)
+      descriptionEn = null;
+    if (descriptionRu === void 0)
+      descriptionRu = null;
+    if (left === void 0)
+      left = null;
+    if (right === void 0)
+      right = null;
+    if (priority === void 0)
+      priority = null;
+    if (isExtending === void 0)
+      isExtending = null;
+    if (matchJumbledAndNested === void 0)
+      matchJumbledAndNested = null;
+    if (simpleAdditional === void 0)
+      simpleAdditional = null;
+    if (basedOnTaskContext === void 0)
+      basedOnTaskContext = null;
+    if (normalizationType === void 0)
+      normalizationType = null;
+    if (weight === void 0)
+      weight = null;
+    if (subjectType === void 0)
+      subjectType = null;
+    return createRuleITR(code, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, left, right, priority, isExtending, matchJumbledAndNested, simpleAdditional, basedOnTaskContext, normalizationType, weight, subjectType);
+  }
+  function createRulePackITR_JS(code, version, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, rulePacks, rules) {
+    if (code === void 0)
+      code = null;
+    if (version === void 0)
+      version = 0;
+    if (namespaceCode === void 0)
+      namespaceCode = null;
+    if (nameEn === void 0)
+      nameEn = null;
+    if (nameRu === void 0)
+      nameRu = null;
+    if (descriptionShortEn === void 0)
+      descriptionShortEn = null;
+    if (descriptionShortRu === void 0)
+      descriptionShortRu = null;
+    if (descriptionEn === void 0)
+      descriptionEn = null;
+    if (descriptionRu === void 0)
+      descriptionRu = null;
+    if (subjectType === void 0)
+      subjectType = 'standard_math';
+    if (rules === void 0)
+      rules = null;
+    var $receiver = toList(rulePacks);
+    var destination = ArrayList_init_0(collectionSizeOrDefault($receiver, 10));
+    var tmp$;
+    tmp$ = $receiver.iterator();
+    while (tmp$.hasNext()) {
+      var item = tmp$.next();
+      destination.add_11rb$(new RulePackLinkITR(namespaceCode, item));
+    }
+    return new RulePackITR(code, version, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, destination, rules);
+  }
+  function createTaskITR_JS(taskCreationType, code, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, tags, originalExpression, goalType, goalExpression, goalPattern, goalNumberProperty, otherGoalData, rulePacks, rules, stepsNumber, time, difficulty, solution, solutionsStepsTree, interestingFacts, nextRecommendedTasks, hints, otherCheckSolutionData, countOfAutoGeneratedTasks, otherAutoGenerationData, otherAwardData, otherData) {
+    if (taskCreationType === void 0)
+      taskCreationType = 'manual';
+    if (code === void 0)
+      code = null;
+    if (namespaceCode === void 0)
+      namespaceCode = null;
+    if (nameEn === void 0)
+      nameEn = null;
+    if (nameRu === void 0)
+      nameRu = null;
+    if (descriptionShortEn === void 0)
+      descriptionShortEn = null;
+    if (descriptionShortRu === void 0)
+      descriptionShortRu = null;
+    if (descriptionEn === void 0)
+      descriptionEn = null;
+    if (descriptionRu === void 0)
+      descriptionRu = null;
+    if (subjectType === void 0)
+      subjectType = null;
+    if (tags === void 0)
+      tags = null;
+    if (originalExpression === void 0)
+      originalExpression = null;
+    if (goalType === void 0)
+      goalType = null;
+    if (goalExpression === void 0)
+      goalExpression = null;
+    if (goalPattern === void 0)
+      goalPattern = null;
+    if (goalNumberProperty === void 0)
+      goalNumberProperty = null;
+    if (otherGoalData === void 0)
+      otherGoalData = null;
+    if (rulePacks === void 0)
+      rulePacks = null;
+    if (rules === void 0)
+      rules = [];
+    if (stepsNumber === void 0)
+      stepsNumber = null;
+    if (time === void 0)
+      time = null;
+    if (solution === void 0)
+      solution = null;
+    if (solutionsStepsTree === void 0)
+      solutionsStepsTree = null;
+    if (interestingFacts === void 0)
+      interestingFacts = null;
+    if (nextRecommendedTasks === void 0)
+      nextRecommendedTasks = null;
+    if (hints === void 0)
+      hints = null;
+    if (otherCheckSolutionData === void 0)
+      otherCheckSolutionData = null;
+    if (countOfAutoGeneratedTasks === void 0)
+      countOfAutoGeneratedTasks = 0;
+    if (otherAutoGenerationData === void 0)
+      otherAutoGenerationData = null;
+    if (otherAwardData === void 0)
+      otherAwardData = null;
+    if (otherData === void 0)
+      otherData = null;
+    return createTaskITR(taskCreationType, code, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, tags, originalExpression, goalType, goalExpression, goalPattern, goalNumberProperty, otherGoalData, rulePacks, rules, stepsNumber, time, difficulty, solution, solutionsStepsTree, interestingFacts, nextRecommendedTasks, hints, otherCheckSolutionData, countOfAutoGeneratedTasks, otherAutoGenerationData, otherAwardData, otherData);
+  }
+  function arrayToList_JS(data) {
+    return toList(data);
+  }
+  function arrayToSet_JS(data) {
+    return toSet_0(data);
+  }
+  function dinamicToMap_JS(data) {
+    return mapOf_1(data);
+  }
+  function jsonStringToMap_JS(json) {
+    return JsonParser$Companion_getInstance().parseMap_61zpoe$(json);
+  }
+  function jsonToMap_JS(json) {
+    return JsonParser$Companion_getInstance().parseMapRecursive_qk3xy8$(json);
   }
   function createConfigurationFromRulePacksAndParams(rulePacks, additionalParamsMap) {
     if (rulePacks === void 0) {
@@ -767,7 +890,7 @@ if (typeof kotlin === 'undefined') {
       debugOutputMessages = new DebugOutputMessages();
     if (compiledConfiguration === void 0)
       compiledConfiguration = new CompiledConfiguration(void 0, functionConfiguration, comparisonSettings, void 0, void 0, void 0, void 0, void 0, void 0, debugOutputMessages);
-    return compiledConfiguration.factComporator.expressionComporator.compareWithoutSubstitutions_fb5b0y$(left, right);
+    return compiledConfiguration.factComparator.expressionComparator.compareWithoutSubstitutions_fb5b0y$(left, right);
   }
   function compareByPattern(expression, pattern) {
     return checkExpressionStructure(expression, pattern);
@@ -1150,19 +1273,19 @@ if (typeof kotlin === 'undefined') {
     if (!substitution.isAppropriateToFunctions_ywdfdh$(expression.getContainedFunctions()) && intersect(substitution.left.getContainedVariables(), expression.getContainedVariables()).isEmpty()) {
       return ArrayList_init();
     }var expr = expression;
-    var result = substitution.findAllPossibleSubstitutionPlaces_puclxv$(expression, compiledConfiguration.factComporator.expressionComporator);
+    var result = substitution.findAllPossibleSubstitutionPlaces_i8kf4x$(expression, compiledConfiguration.factComparator.expressionComparator);
     if (result.isEmpty() && substitution.matchJumbledAndNested && expression.containsNestedSameFunctions()) {
       expr = expression.cloneWithExpandingNestedSameFunctions();
-      result = substitution.findAllPossibleSubstitutionPlaces_puclxv$(expr, compiledConfiguration.factComporator.expressionComporator);
+      result = substitution.findAllPossibleSubstitutionPlaces_i8kf4x$(expr, compiledConfiguration.factComparator.expressionComparator);
     }if (result.isEmpty()) {
       expr = expr.cloneAndSimplifyByComputeSimplePlaces_el1bjq$();
-      result = substitution.findAllPossibleSubstitutionPlaces_puclxv$(expr, compiledConfiguration.factComporator.expressionComporator);
+      result = substitution.findAllPossibleSubstitutionPlaces_i8kf4x$(expr, compiledConfiguration.factComparator.expressionComparator);
     }return result;
   }
   function applySubstitution_0(expression, substitution, substitutionPlaces, compiledConfiguration) {
     if (compiledConfiguration === void 0)
       compiledConfiguration = new CompiledConfiguration();
-    substitution.applySubstitution_b2jxnq$(substitutionPlaces, compiledConfiguration.factComporator.expressionComporator);
+    substitution.applySubstitution_3grqus$(substitutionPlaces, compiledConfiguration.factComparator.expressionComparator);
     expression.getTopNode().reduceExtraSigns_9jge9g$(setOf('+'), setOf('-'));
     expression.getTopNode().normalizeSubtructions_z11m8b$(new FunctionConfiguration());
     expression.getTopNode().computeNodeIdsAsNumbersInDirectTraversalAndDistancesToRoot_ydzd23$();
@@ -1436,6 +1559,130 @@ if (typeof kotlin === 'undefined') {
     }
     var result = tmp$_0;
     return escapeCharacters(expressionToString(result), characterEscapingDepth);
+  }
+  function createExpressionFrontInput(expression, format) {
+    return new ExpressionFrontInput(expression, format);
+  }
+  function createRuleITR(code, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, left, right, priority, isExtending, matchJumbledAndNested, simpleAdditional, basedOnTaskContext, normalizationType, weight, subjectType) {
+    if (code === void 0)
+      code = null;
+    if (nameEn === void 0)
+      nameEn = null;
+    if (nameRu === void 0)
+      nameRu = null;
+    if (descriptionShortEn === void 0)
+      descriptionShortEn = null;
+    if (descriptionShortRu === void 0)
+      descriptionShortRu = null;
+    if (descriptionEn === void 0)
+      descriptionEn = null;
+    if (descriptionRu === void 0)
+      descriptionRu = null;
+    if (left === void 0)
+      left = null;
+    if (right === void 0)
+      right = null;
+    if (priority === void 0)
+      priority = null;
+    if (isExtending === void 0)
+      isExtending = null;
+    if (matchJumbledAndNested === void 0)
+      matchJumbledAndNested = null;
+    if (simpleAdditional === void 0)
+      simpleAdditional = null;
+    if (basedOnTaskContext === void 0)
+      basedOnTaskContext = null;
+    if (normalizationType === void 0)
+      normalizationType = null;
+    if (weight === void 0)
+      weight = null;
+    if (subjectType === void 0)
+      subjectType = null;
+    var tmp$, tmp$_0;
+    return new RuleITR(code, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, (tmp$ = left != null ? toStructureStructureString(left, subjectType != null ? subjectType : '') : null) != null ? tmp$ : '', (tmp$_0 = right != null ? toStructureStructureString(right, subjectType != null ? subjectType : '') : null) != null ? tmp$_0 : '', priority, isExtending, matchJumbledAndNested, simpleAdditional, basedOnTaskContext, normalizationType, weight);
+  }
+  function createTaskITR(taskCreationType, code, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, tags, originalExpression, goalType, goalExpression, goalPattern, goalNumberProperty, otherGoalData, rulePacks, rules, stepsNumber, time, difficulty, solution, solutionsStepsTree, interestingFacts, nextRecommendedTasks, hints, otherCheckSolutionData, countOfAutoGeneratedTasks, otherAutoGenerationData, otherAwardData, otherData) {
+    if (taskCreationType === void 0)
+      taskCreationType = 'manual';
+    if (code === void 0)
+      code = null;
+    if (namespaceCode === void 0)
+      namespaceCode = null;
+    if (nameEn === void 0)
+      nameEn = null;
+    if (nameRu === void 0)
+      nameRu = null;
+    if (descriptionShortEn === void 0)
+      descriptionShortEn = null;
+    if (descriptionShortRu === void 0)
+      descriptionShortRu = null;
+    if (descriptionEn === void 0)
+      descriptionEn = null;
+    if (descriptionRu === void 0)
+      descriptionRu = null;
+    if (subjectType === void 0)
+      subjectType = null;
+    if (tags === void 0)
+      tags = null;
+    if (originalExpression === void 0)
+      originalExpression = null;
+    if (goalType === void 0)
+      goalType = null;
+    if (goalExpression === void 0)
+      goalExpression = null;
+    if (goalPattern === void 0)
+      goalPattern = null;
+    if (goalNumberProperty === void 0)
+      goalNumberProperty = null;
+    if (otherGoalData === void 0)
+      otherGoalData = null;
+    if (rulePacks === void 0)
+      rulePacks = null;
+    if (rules === void 0)
+      rules = [];
+    if (stepsNumber === void 0)
+      stepsNumber = null;
+    if (time === void 0)
+      time = null;
+    if (solution === void 0)
+      solution = null;
+    if (solutionsStepsTree === void 0)
+      solutionsStepsTree = null;
+    if (interestingFacts === void 0)
+      interestingFacts = null;
+    if (nextRecommendedTasks === void 0)
+      nextRecommendedTasks = null;
+    if (hints === void 0)
+      hints = null;
+    if (otherCheckSolutionData === void 0)
+      otherCheckSolutionData = null;
+    if (countOfAutoGeneratedTasks === void 0)
+      countOfAutoGeneratedTasks = 0;
+    if (otherAutoGenerationData === void 0)
+      otherAutoGenerationData = null;
+    if (otherAwardData === void 0)
+      otherAwardData = null;
+    if (otherData === void 0)
+      otherData = null;
+    var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6, tmp$_7, tmp$_8, tmp$_9, tmp$_10, tmp$_11, tmp$_12, tmp$_13, tmp$_14, tmp$_15, tmp$_16, tmp$_17;
+    tmp$ = taskCreationType != null ? taskCreationType : 'manual';
+    tmp$_1 = (tmp$_0 = tags != null ? toMutableSet(tags) : null) != null ? tmp$_0 : LinkedHashSet_init();
+    tmp$_3 = (tmp$_2 = originalExpression != null ? toStructureStructureString(originalExpression, subjectType != null ? subjectType : '') : null) != null ? tmp$_2 : '';
+    tmp$_5 = (tmp$_4 = goalExpression != null ? toStructureStructureString(goalExpression, subjectType != null ? subjectType : '') : null) != null ? tmp$_4 : '';
+    tmp$_7 = otherGoalData != null ? Kotlin.isType(tmp$_6 = JsonParser$Companion_getInstance().parseMap_61zpoe$(otherGoalData), Map) ? tmp$_6 : throwCCE() : null;
+    var tmp$_18;
+    if ((tmp$_8 = rulePacks != null ? toList(rulePacks) : null) != null) {
+      var destination = ArrayList_init_0(collectionSizeOrDefault(tmp$_8, 10));
+      var tmp$_19;
+      tmp$_19 = tmp$_8.iterator();
+      while (tmp$_19.hasNext()) {
+        var item = tmp$_19.next();
+        destination.add_11rb$(new RulePackLinkITR(namespaceCode, item));
+      }
+      tmp$_18 = destination;
+    } else
+      tmp$_18 = null;
+    return new TaskITR(tmp$, code, 1, namespaceCode, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, subjectType, tmp$_1, tmp$_3, void 0, void 0, goalType, tmp$_5, void 0, void 0, goalPattern, goalNumberProperty, tmp$_7, tmp$_18, rules != null ? toList(rules) : null, stepsNumber, time, difficulty, (tmp$_9 = solution != null ? toStructureStructureString(solution, subjectType != null ? subjectType : '') : null) != null ? tmp$_9 : '', solutionsStepsTree != null ? Kotlin.isType(tmp$_10 = JsonParser$Companion_getInstance().parseMap_61zpoe$(solutionsStepsTree), Map) ? tmp$_10 : throwCCE() : null, hints != null ? Kotlin.isType(tmp$_13 = JsonParser$Companion_getInstance().parseMap_61zpoe$(hints), Map) ? tmp$_13 : throwCCE() : null, otherCheckSolutionData != null ? Kotlin.isType(tmp$_14 = JsonParser$Companion_getInstance().parseMap_61zpoe$(otherCheckSolutionData), Map) ? tmp$_14 : throwCCE() : null, countOfAutoGeneratedTasks, otherAutoGenerationData != null ? Kotlin.isType(tmp$_15 = JsonParser$Companion_getInstance().parseMap_61zpoe$(otherAutoGenerationData), Map) ? tmp$_15 : throwCCE() : null, interestingFacts != null ? Kotlin.isType(tmp$_11 = JsonParser$Companion_getInstance().parseMap_61zpoe$(interestingFacts), Map) ? tmp$_11 : throwCCE() : null, otherAwardData != null ? Kotlin.isType(tmp$_16 = JsonParser$Companion_getInstance().parseMap_61zpoe$(otherAwardData), Map) ? tmp$_16 : throwCCE() : null, nextRecommendedTasks != null ? Kotlin.isType(tmp$_12 = JsonParser$Companion_getInstance().parseMap_61zpoe$(nextRecommendedTasks), Map) ? tmp$_12 : throwCCE() : null, otherData != null ? Kotlin.isType(tmp$_17 = JsonParser$Companion_getInstance().parseMap_61zpoe$(otherData), Map) ? tmp$_17 : throwCCE() : null);
   }
   function checkSolutionInTex(originalTexSolution, taskITR, rulePacksITR, shortErrorDescription, skipTrivialCheck) {
     if (shortErrorDescription === void 0)
@@ -3979,7 +4226,7 @@ if (typeof kotlin === 'undefined') {
     return new DefinitionDomain(tmp$_0, tmp$_2, toSet(destination_1));
   };
   DefinitionDomain.prototype.except_yqxtqz$ = function (newPoints) {
-    return new DefinitionDomain(this.points, plus_0(toMutableSet(newPoints), this.excludedPoints), this.segments);
+    return new DefinitionDomain(this.points, plus_0(toMutableSet_0(newPoints), this.excludedPoints), this.segments);
   };
   function DefinitionDomain$rightMostElement$lambda(a, b) {
     return Math_0.max(a, b);
@@ -4926,12 +5173,12 @@ if (typeof kotlin === 'undefined') {
     this.definedFunctionNameNumberOfArgsSet = LinkedHashSet_init();
     this.noTransformationDefinedFunctionNameNumberOfArgsSet = LinkedHashSet_init();
     this.configurationErrors = ArrayList_init();
-    this.factComporator = null;
+    this.factComparator = null;
     var tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6, tmp$_7, tmp$_8, tmp$_9, tmp$_10, tmp$_11, tmp$_12;
-    this.factComporator = new FactComporator();
-    this.factComporator.init_g18hfp$(this);
+    this.factComparator = new FactComparator();
+    this.factComparator.init_9elrwz$(this);
     if (this.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln) {
-      this.factComporator.expressionComporator.debugMode = true;
+      this.factComparator.expressionComparator.debugMode = true;
     }var tmp$_13;
     tmp$_13 = this.functionConfiguration.notChangesOnVariablesInComparisonFunction.iterator();
     while (tmp$_13.hasNext()) {
@@ -5005,9 +5252,9 @@ if (typeof kotlin === 'undefined') {
       if (leftTree_2 != null && rightTree_2 != null) {
         leftTree_2.variableReplacement_y0zsll$(this.compiledImmediateVariableReplacements);
         rightTree_2.variableReplacement_y0zsll$(this.compiledImmediateVariableReplacements);
-        this.compiledFactTreeTransformationRules.add_11rb$(new FactSubstitution(leftTree_2, rightTree_2, factTransformation.weight, void 0, factTransformation.direction, void 0, this.factComporator));
+        this.compiledFactTreeTransformationRules.add_11rb$(new FactSubstitution(leftTree_2, rightTree_2, factTransformation.weight, void 0, factTransformation.direction, void 0, this.factComparator));
         if (!factTransformation.isOneDirection) {
-          this.compiledFactTreeTransformationRules.add_11rb$(new FactSubstitution(rightTree_2, leftTree_2, factTransformation.weight, void 0, factTransformation.direction, void 0, this.factComporator));
+          this.compiledFactTreeTransformationRules.add_11rb$(new FactSubstitution(rightTree_2, leftTree_2, factTransformation.weight, void 0, factTransformation.direction, void 0, this.factComparator));
         }}}
     if (!this.additionalParamsMap.isEmpty()) {
       var simpleComputationRuleParamsMaxCalcComplexity = (tmp$_4 = this.additionalParamsMap.get_11rb$('simpleComputationRuleParamsMaxCalcComplexity')) != null ? toIntOrNull(tmp$_4) : null;
@@ -6254,7 +6501,11 @@ if (typeof kotlin === 'undefined') {
     this.domainConditionDescriptionRu = domainConditionDescriptionRu;
     var tmp$, tmp$_0;
     var expressionStructureConditionConstructor = new ExpressionStructureConditionConstructor(new CompiledConfiguration(void 0, new FunctionConfiguration()));
-    if (equals(this.goalType, 'computation')) {
+    var tmp$_1 = equals(this.goalType, 'computation');
+    if (tmp$_1) {
+      var $receiver = this.goalPattern;
+      tmp$_1 = $receiver == null || isBlank($receiver);
+    }if (tmp$_1) {
       this.goalPattern = '+:0-1(-:1):?:?R';
     }if (this.goalType == null) {
       if (this.goalExpressionStructureString != null) {
@@ -6434,19 +6685,19 @@ if (typeof kotlin === 'undefined') {
         }
         break;
     }
-    var $receiver = this.domainConditionDescription;
-    if (!($receiver == null || isBlank($receiver))) {
+    var $receiver_0 = this.domainConditionDescription;
+    if (!($receiver_0 == null || isBlank($receiver_0))) {
       this.descriptionShortEn = this.descriptionShortEn + (' if ' + toString(this.domainConditionDescription));
       this.descriptionEn = this.descriptionEn + (' if ' + toString(this.domainConditionDescription));
       this.descriptionShortRu = this.descriptionShortRu + (', \u0435\u0441\u043B\u0438 ' + toString(this.domainConditionDescriptionRu));
       this.descriptionRu = this.descriptionRu + (', \u0435\u0441\u043B\u0438 ' + toString(this.domainConditionDescriptionRu));
     } else {
-      var $receiver_0 = this.domainConditionDescriptionEn;
-      if (!($receiver_0 == null || isBlank($receiver_0))) {
+      var $receiver_1 = this.domainConditionDescriptionEn;
+      if (!($receiver_1 == null || isBlank($receiver_1))) {
         this.descriptionShortEn = this.descriptionShortEn + (' ' + toString(this.domainConditionDescriptionEn));
         this.descriptionEn = this.descriptionEn + (' ' + toString(this.domainConditionDescriptionEn));
-      }var $receiver_1 = this.domainConditionDescriptionRu;
-      if (!($receiver_1 == null || isBlank($receiver_1))) {
+      }var $receiver_2 = this.domainConditionDescriptionRu;
+      if (!($receiver_2 == null || isBlank($receiver_2))) {
         this.descriptionShortRu = this.descriptionShortRu + (' ' + toString(this.domainConditionDescriptionRu));
         this.descriptionRu = this.descriptionRu + (' ' + toString(this.domainConditionDescriptionRu));
       }}
@@ -6797,9 +7048,9 @@ if (typeof kotlin === 'undefined') {
         if ($receiver == null || isBlank($receiver)) {
           this.tasks.get_za3lpa$(i).code = this.code + taskSetCodeAndCodeDivider + ((i + 1 | 0).toString() + '_' + ((tmp$_1 = (tmp$_0 = this.tasks.get_za3lpa$(i).nameEn) != null ? toCustomCodeSuffixPart(tmp$_0) : null) != null ? tmp$_1 : 'x'));
         }if (((tmp$_2 = this.tasks.get_za3lpa$(i).nameRu) != null ? startsWith(tmp$_2, '\u0423\u0440\u043E\u0432\u0435\u043D\u044C') : null) === false) {
-          this.tasks.get_za3lpa$(i).nameRu = '\u0423\u0440\u043E\u0432\u0435\u043D\u044C ' + i + ' ' + toString(this.tasks.get_za3lpa$(i).nameRu);
+          this.tasks.get_za3lpa$(i).nameRu = '\u0423\u0440\u043E\u0432\u0435\u043D\u044C ' + (i + 1 | 0) + ' ' + toString(this.tasks.get_za3lpa$(i).nameRu);
         }if (((tmp$_3 = this.tasks.get_za3lpa$(i).nameEn) != null ? startsWith(tmp$_3, 'Level') : null) === false) {
-          this.tasks.get_za3lpa$(i).nameEn = 'Level ' + i + ' ' + toString(this.tasks.get_za3lpa$(i).nameEn);
+          this.tasks.get_za3lpa$(i).nameEn = 'Level ' + (i + 1 | 0) + ' ' + toString(this.tasks.get_za3lpa$(i).nameEn);
         }}
     }}
   TaskSetITR.prototype.cloneBesidesMaps_61zpoe$ = function (namespaceCode) {
@@ -7173,6 +7424,34 @@ if (typeof kotlin === 'undefined') {
   ExpressionFrontInput.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.expression, other.expression) && Kotlin.equals(this.format, other.format)))));
   };
+  function toStructureStructureString($receiver, subjectType) {
+    var tmp$, tmp$_0;
+    switch (subjectType) {
+      case 'logic':
+      case 'set':
+        tmp$ = 'setTheory';
+        break;
+      default:tmp$ = '';
+        break;
+    }
+    var scope = tmp$;
+    switch ($receiver.format) {
+      case 'STRUCTURE_STRING':
+        tmp$_0 = $receiver.expression;
+        break;
+      case 'TEX':
+        var expressionNode = stringToExpression($receiver.expression, scope);
+        tmp$_0 = expressionToStructureString(expressionNode);
+        break;
+      case 'PLAIN_TEXT':
+        var expressionNode_0 = stringToExpression($receiver.expression, scope, true);
+        tmp$_0 = expressionToStructureString(expressionNode_0);
+        break;
+      default:tmp$_0 = $receiver.expression;
+        break;
+    }
+    return tmp$_0;
+  }
   function RuleFrontInput(code, nameEn, nameRu, descriptionShortEn, descriptionShortRu, descriptionEn, descriptionRu, left, right, priority, isExtending, matchJumbledAndNested, simpleAdditional, basedOnTaskContext, normalizationType, weight) {
     if (code === void 0)
       code = null;
@@ -9048,7 +9327,7 @@ if (typeof kotlin === 'undefined') {
     var tmp$_5 = '[\u0422\u0440\u0438\u0433\u043E\u043D\u043E\u043C\u0435\u0442\u0440\u0438\u044F \u0448\u0430\u0433 \u0437\u0430 \u0448\u0430\u0433\u043E\u043C]' + checkYourselfRu + ' ' + moduleNumberString + ' ' + nameSuffixRu;
     var tmp$_6 = '[Trigonometry Step By Step]' + checkYourselfEn + ' ' + topIndex + '. ' + topDescriptionPartEn + ' ' + descriptionShortEnResult;
     var tmp$_7 = '[\u0422\u0440\u0438\u0433\u043E\u043D\u043E\u043C\u0435\u0442\u0440\u0438\u044F \u0448\u0430\u0433 \u0437\u0430 \u0448\u0430\u0433\u043E\u043C]' + checkYourselfRu + ' ' + topIndex + '. ' + topDescriptionPartRu + ' ' + descriptionShortRuResult;
-    var tmp$_8 = toMutableSet_0(plus_0(setOf_0([TaskSetTagCode$STEP_BY_STEP_getInstance().code, TaskSetTagCode$TRIGONOMETRY_getInstance().code]), isCheckYourself ? setOf(TaskSetTagCode$CHECK_YOURSELF_getInstance().code) : emptySet()));
+    var tmp$_8 = toMutableSet_1(plus_0(setOf_0([TaskSetTagCode$STEP_BY_STEP_getInstance().code, TaskSetTagCode$TRIGONOMETRY_getInstance().code]), isCheckYourself ? setOf(TaskSetTagCode$CHECK_YOURSELF_getInstance().code) : emptySet()));
     var tmp$_9 = void 0;
     var tmp$_10 = void 0;
     var destination = ArrayList_init_0(collectionSizeOrDefault(tasks, 10));
@@ -10320,7 +10599,7 @@ if (typeof kotlin === 'undefined') {
   GeneralError.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && Kotlin.equals(this.description, other.description))));
   };
-  function ExpressionComporator(baseOperationsDefinitions, baseOperationsComputationDouble, baseOperationsComputationComplex, debugMode) {
+  function ExpressionComparator(baseOperationsDefinitions, baseOperationsComputationDouble, baseOperationsComputationComplex, debugMode) {
     if (baseOperationsDefinitions === void 0)
       baseOperationsDefinitions = new BaseOperationsDefinitions();
     if (baseOperationsComputationDouble === void 0)
@@ -10333,36 +10612,36 @@ if (typeof kotlin === 'undefined') {
     this.baseOperationsComputationDouble = baseOperationsComputationDouble;
     this.baseOperationsComputationComplex = baseOperationsComputationComplex;
     this.debugMode = debugMode;
-    this.compiledConfiguration_e62raq$_0 = this.compiledConfiguration_e62raq$_0;
-    this.definedFunctionNameNumberOfArgsSet_okrxyw$_0 = this.definedFunctionNameNumberOfArgsSet_okrxyw$_0;
+    this.compiledConfiguration_wl0p1c$_0 = this.compiledConfiguration_wl0p1c$_0;
+    this.definedFunctionNameNumberOfArgsSet_hq5ml2$_0 = this.definedFunctionNameNumberOfArgsSet_hq5ml2$_0;
     this.algebraAutoCheckingFunctionsSet = setOf_0(['_0', '_1', '+_-1', '-_-1', '*_-1', '/_-1', '^_-1', 'sin_1', 'cos_1', 'sh_1', 'ch_1', 'th_1', 'tg_1', 'asin_1', 'acos_1', 'atg_1', 'exp_1', 'ln_1', 'abs_1']);
     this.setAutoCheckingFunctionsSet = setOf_0(['_0', '_1', 'and_-1', 'or_-1', 'xor_-1', 'alleq_-1', 'not_1']);
   }
-  Object.defineProperty(ExpressionComporator.prototype, 'compiledConfiguration', {
+  Object.defineProperty(ExpressionComparator.prototype, 'compiledConfiguration', {
     get: function () {
-      if (this.compiledConfiguration_e62raq$_0 == null)
+      if (this.compiledConfiguration_wl0p1c$_0 == null)
         return throwUPAE('compiledConfiguration');
-      return this.compiledConfiguration_e62raq$_0;
+      return this.compiledConfiguration_wl0p1c$_0;
     },
     set: function (compiledConfiguration) {
-      this.compiledConfiguration_e62raq$_0 = compiledConfiguration;
+      this.compiledConfiguration_wl0p1c$_0 = compiledConfiguration;
     }
   });
-  Object.defineProperty(ExpressionComporator.prototype, 'definedFunctionNameNumberOfArgsSet', {
+  Object.defineProperty(ExpressionComparator.prototype, 'definedFunctionNameNumberOfArgsSet', {
     get: function () {
-      if (this.definedFunctionNameNumberOfArgsSet_okrxyw$_0 == null)
+      if (this.definedFunctionNameNumberOfArgsSet_hq5ml2$_0 == null)
         return throwUPAE('definedFunctionNameNumberOfArgsSet');
-      return this.definedFunctionNameNumberOfArgsSet_okrxyw$_0;
+      return this.definedFunctionNameNumberOfArgsSet_hq5ml2$_0;
     },
     set: function (definedFunctionNameNumberOfArgsSet) {
-      this.definedFunctionNameNumberOfArgsSet_okrxyw$_0 = definedFunctionNameNumberOfArgsSet;
+      this.definedFunctionNameNumberOfArgsSet_hq5ml2$_0 = definedFunctionNameNumberOfArgsSet;
     }
   });
-  ExpressionComporator.prototype.init_3b06hw$ = function (compiledConfiguration) {
+  ExpressionComparator.prototype.init_3b06hw$ = function (compiledConfiguration) {
     this.compiledConfiguration = compiledConfiguration;
     this.definedFunctionNameNumberOfArgsSet = compiledConfiguration.definedFunctionNameNumberOfArgsSet;
   };
-  ExpressionComporator.prototype.compareAsIs_5gxvt3$ = function (left, right, nameArgsMap, withBracketUnification) {
+  ExpressionComparator.prototype.compareAsIs_5gxvt3$ = function (left, right, nameArgsMap, withBracketUnification) {
     if (nameArgsMap === void 0) {
       nameArgsMap = LinkedHashMap_init_0();
     }if (withBracketUnification === void 0)
@@ -10382,7 +10661,7 @@ if (typeof kotlin === 'undefined') {
     rUnified.normalizeSubTree_f8z7ch$(void 0, void 0, true);
     return lUnified.isNodeSubtreeEquals_cw9fud$(rUnified, nameArgsMap);
   };
-  ExpressionComporator.prototype.logicFullSearchComparison_v211zv$ = function (leftOrigin, rightOrigin, comparisonType, maxBustCount, resultIfVariablesCountMoreMaxBust) {
+  ExpressionComparator.prototype.logicFullSearchComparison_v211zv$ = function (leftOrigin, rightOrigin, comparisonType, maxBustCount, resultIfVariablesCountMoreMaxBust) {
     if (comparisonType === void 0)
       comparisonType = this.compiledConfiguration.comparisonSettings.defaultComparisonType;
     if (maxBustCount === void 0)
@@ -10414,11 +10693,11 @@ if (typeof kotlin === 'undefined') {
     var variableValues = toMutableMap(toMap(destination));
     return this.logicFullSearchComparisonRecursive_fwqq4d$(variables, variableValues, left, right, comparisonType, 0);
   };
-  ExpressionComporator.prototype.printDetailInfoIfDebug_sa0csu$ = function (variableValues, left, right, l, r) {
+  ExpressionComparator.prototype.printDetailInfoIfDebug_sa0csu$ = function (variableValues, left, right, l, r) {
     if (this.debugMode) {
       println("'" + left + "' = '" + l + "' != '" + r + "' = '" + right + "' if " + variableValues);
     }};
-  ExpressionComporator.prototype.logicFullSearchComparisonRecursive_fwqq4d$ = function (variables, variableValues, left, right, comparisonType, currentIndex) {
+  ExpressionComparator.prototype.logicFullSearchComparisonRecursive_fwqq4d$ = function (variables, variableValues, left, right, comparisonType, currentIndex) {
     var tmp$, tmp$_0;
     if (currentIndex === variables.size) {
       var l = typeof (tmp$ = this.baseOperationsComputationDouble.compute_em03xr$(left.cloneWithNormalization_1g1bdl$(variableValues, false))) === 'number' ? tmp$ : throwCCE();
@@ -10466,36 +10745,36 @@ if (typeof kotlin === 'undefined') {
       }}
     return true;
   };
-  function ExpressionComporator$probabilityTestComparison$lambda$lambda(it) {
+  function ExpressionComparator$probabilityTestComparison$lambda$lambda(it) {
     return it.first + '=' + it.second;
   }
-  function ExpressionComporator$probabilityTestComparison$lambda(closure$pointI, closure$lDouble, closure$rDouble) {
+  function ExpressionComparator$probabilityTestComparison$lambda(closure$pointI, closure$lDouble, closure$rDouble) {
     return function () {
-      return "'(lDouble.isNaN() != rDouble.isNaN()) && justInDomainsIntersection': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComporator$probabilityTestComparison$lambda$lambda) + "' lDouble='" + closure$lDouble + "' rDouble='" + closure$rDouble + "'");
+      return "'(lDouble.isNaN() != rDouble.isNaN()) && justInDomainsIntersection': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComparator$probabilityTestComparison$lambda$lambda) + "' lDouble='" + closure$lDouble + "' rDouble='" + closure$rDouble + "'");
     };
   }
-  function ExpressionComporator$probabilityTestComparison$lambda$lambda_0(it) {
+  function ExpressionComparator$probabilityTestComparison$lambda$lambda_0(it) {
     return it.first + '=' + it.second;
   }
-  function ExpressionComporator$probabilityTestComparison$lambda_0(closure$pointI, closure$lComplex, closure$rComplex) {
+  function ExpressionComparator$probabilityTestComparison$lambda_0(closure$pointI, closure$lComplex, closure$rComplex) {
     return function () {
-      return "'lComplex != rComplex': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComporator$probabilityTestComparison$lambda$lambda_0) + "' lComplex='" + closure$lComplex + "' rComplex='" + closure$rComplex + "'");
+      return "'lComplex != rComplex': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComparator$probabilityTestComparison$lambda$lambda_0) + "' lComplex='" + closure$lComplex + "' rComplex='" + closure$rComplex + "'");
     };
   }
-  function ExpressionComporator$probabilityTestComparison$lambda$lambda_1(it) {
+  function ExpressionComparator$probabilityTestComparison$lambda$lambda_1(it) {
     return it.first + '=' + it.second;
   }
-  function ExpressionComporator$probabilityTestComparison$lambda_1(closure$pointI, closure$lDouble, closure$rDouble) {
+  function ExpressionComparator$probabilityTestComparison$lambda_1(closure$pointI, closure$lDouble, closure$rDouble) {
     return function () {
-      return "'lDouble != rDouble': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComporator$probabilityTestComparison$lambda$lambda_1) + "' lDouble='" + closure$lDouble + "' rDouble='" + closure$rDouble + "'");
+      return "'lDouble != rDouble': " + ("pointI='" + joinToString(toList_1(closure$pointI), ',', void 0, void 0, void 0, void 0, ExpressionComparator$probabilityTestComparison$lambda$lambda_1) + "' lDouble='" + closure$lDouble + "' rDouble='" + closure$rDouble + "'");
     };
   }
-  function ExpressionComporator$probabilityTestComparison$lambda_2(closure$passedTests, closure$totalTests, closure$allowedPartOfErrorTests, closure$minNumberOfPointsForEquality) {
+  function ExpressionComparator$probabilityTestComparison$lambda_2(closure$passedTests, closure$totalTests, closure$allowedPartOfErrorTests, closure$minNumberOfPointsForEquality) {
     return function () {
       return "(passedTests='" + closure$passedTests.v + "' >= totalTests='" + closure$totalTests + "' * (1 - allowedPartOfErrorTests='" + closure$allowedPartOfErrorTests + "') && " + ("passedTests='" + closure$passedTests.v + "' >= minNumberOfPointsForEquality='" + closure$minNumberOfPointsForEquality + "') || ") + ("(passedTests='" + closure$passedTests.v + "' >= totalTests='" + closure$totalTests + "') failed");
     };
   }
-  ExpressionComporator.prototype.probabilityTestComparison_1lpgi8$ = function (leftOrigin, rightOrigin, comparisonType, justInDomainsIntersection, maxMinNumberOfPointsForEquality, allowedPartOfErrorTests, testWithUndefinedResultIncreasingCoef, useGradientDescentComparison) {
+  ExpressionComparator.prototype.probabilityTestComparison_1lpgi8$ = function (leftOrigin, rightOrigin, comparisonType, justInDomainsIntersection, maxMinNumberOfPointsForEquality, allowedPartOfErrorTests, testWithUndefinedResultIncreasingCoef, useGradientDescentComparison) {
     if (comparisonType === void 0)
       comparisonType = this.compiledConfiguration.comparisonSettings.defaultComparisonType;
     if (justInDomainsIntersection === void 0)
@@ -10548,7 +10827,7 @@ if (typeof kotlin === 'undefined') {
           var rDouble = typeof (tmp$_8 = this.baseOperationsComputationDouble.compute_em03xr$(rightInPoint)) === 'number' ? tmp$_8 : throwCCE();
           if (isNaN_0(lDouble) || isNaN_0(rDouble)) {
             if (isNaN_0(lDouble) !== isNaN_0(rDouble) && justInDomainsIntersection) {
-              lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComporator$probabilityTestComparison$lambda(pointI, lDouble, rDouble));
+              lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComparator$probabilityTestComparison$lambda(pointI, lDouble, rDouble));
               return false;
             } else {
               var lComplex_0 = Kotlin.isType(tmp$_9 = this.baseOperationsComputationComplex.compute_em03xr$(leftInPoint), Complex) ? tmp$_9 : throwCCE();
@@ -10556,7 +10835,7 @@ if (typeof kotlin === 'undefined') {
               if (lComplex_0.equals_m1n3ex$(rComplex_0)) {
                 passedTests.v = passedTests.v + 1;
               } else {
-                lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComporator$probabilityTestComparison$lambda_0(pointI, lComplex_0, rComplex_0));
+                lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComparator$probabilityTestComparison$lambda_0(pointI, lComplex_0, rComplex_0));
               }
             }
           } else {
@@ -10565,7 +10844,7 @@ if (typeof kotlin === 'undefined') {
             } else if (this.baseOperationsDefinitions.additivelyEqual_yvo9jy$(lDouble, rDouble)) {
               passedTests.v = passedTests.v + 1;
             } else {
-              lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComporator$probabilityTestComparison$lambda_1(pointI, lDouble, rDouble));
+              lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComparator$probabilityTestComparison$lambda_1(pointI, lDouble, rDouble));
             }
           }
         }
@@ -10575,7 +10854,7 @@ if (typeof kotlin === 'undefined') {
       if (passedTests.v >= totalTests * (1 - allowedPartOfErrorTests) && passedTests.v >= minNumberOfPointsForEquality || passedTests.v >= totalTests) {
         return true;
       } else {
-        lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComporator$probabilityTestComparison$lambda_2(passedTests, totalTests, allowedPartOfErrorTests, minNumberOfPointsForEquality));
+        lazyPrintln(this.compiledConfiguration.debugOutputMessages.expressionProbabilityComparisonFalseDetailsPrintln, ExpressionComparator$probabilityTestComparison$lambda_2(passedTests, totalTests, allowedPartOfErrorTests, minNumberOfPointsForEquality));
         return false;
       }
     } else {
@@ -10601,7 +10880,7 @@ if (typeof kotlin === 'undefined') {
       }
     }
   };
-  ExpressionComporator.prototype.compareInequalityInPoint_0 = function (left, pointI, right, justInDomainsIntersection, comparisonType) {
+  ExpressionComparator.prototype.compareInequalityInPoint_0 = function (left, pointI, right, justInDomainsIntersection, comparisonType) {
     var tmp$, tmp$_0;
     var strongInequalityComparisonEpsilon = 1.19E-9;
     var l = typeof (tmp$ = this.baseOperationsComputationDouble.compute_em03xr$(left.cloneWithNormalization_1g1bdl$(pointI, false))) === 'number' ? tmp$ : throwCCE();
@@ -10636,7 +10915,7 @@ if (typeof kotlin === 'undefined') {
     }
     return true;
   };
-  ExpressionComporator.prototype.compareWithoutSubstitutions_fb5b0y$ = function (l, r, comparisonType, definedFunctionNameNumberOfArgs, justInDomainsIntersection, maxBustCount) {
+  ExpressionComparator.prototype.compareWithoutSubstitutions_fb5b0y$ = function (l, r, comparisonType, definedFunctionNameNumberOfArgs, justInDomainsIntersection, maxBustCount) {
     if (comparisonType === void 0)
       comparisonType = this.compiledConfiguration.comparisonSettings.defaultComparisonType;
     if (definedFunctionNameNumberOfArgs === void 0)
@@ -10662,8 +10941,8 @@ if (typeof kotlin === 'undefined') {
     }if (this.compiledConfiguration.comparisonSettings.compareExpressionsWithProbabilityRulesWhenComparingExpressions) {
       var needBooleanComparison = left.isBoolExpression_ywdfdh$(this.compiledConfiguration.functionConfiguration.boolFunctions) || right.isBoolExpression_ywdfdh$(this.compiledConfiguration.functionConfiguration.boolFunctions);
       var functionIdentifierToVariableMap = LinkedHashMap_init_0();
-      left.replaceNotDefinedFunctionsOnVariables_ntjlqp$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgs, this, needBooleanComparison);
-      right.replaceNotDefinedFunctionsOnVariables_ntjlqp$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgs, this, needBooleanComparison);
+      left.replaceNotDefinedFunctionsOnVariables_lvgqkd$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgs, this, needBooleanComparison);
+      right.replaceNotDefinedFunctionsOnVariables_lvgqkd$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgs, this, needBooleanComparison);
       if (!needBooleanComparison) {
         return this.probabilityTestComparison_1lpgi8$(left, right, comparisonType, justInDomainsIntersection);
       } else {
@@ -10671,7 +10950,7 @@ if (typeof kotlin === 'undefined') {
       }
     }return false;
   };
-  ExpressionComporator.prototype.checkOpeningBracketsSubstitutions_f7l7x0$ = function (expressionToTransform, otherExpression, expressionChainComparisonType) {
+  ExpressionComparator.prototype.checkOpeningBracketsSubstitutions_f7l7x0$ = function (expressionToTransform, otherExpression, expressionChainComparisonType) {
     var tmp$;
     var openingBracketsTransformationResults = computeResultsOfOpeningBracketsSubstitutions(expressionToTransform, this.compiledConfiguration);
     tmp$ = openingBracketsTransformationResults.iterator();
@@ -10682,7 +10961,7 @@ if (typeof kotlin === 'undefined') {
       }}
     return false;
   };
-  ExpressionComporator.prototype.fastProbabilityCheckOnIncorrectTransformation_41dun6$ = function (l, r, comparisonType, maxBustCount) {
+  ExpressionComparator.prototype.fastProbabilityCheckOnIncorrectTransformation_41dun6$ = function (l, r, comparisonType, maxBustCount) {
     if (comparisonType === void 0)
       comparisonType = this.compiledConfiguration.comparisonSettings.defaultComparisonType;
     if (maxBustCount === void 0)
@@ -10703,12 +10982,12 @@ if (typeof kotlin === 'undefined') {
         return false;
       }}return true;
   };
-  ExpressionComporator.prototype.fastProbabilityCheckOnZero_em03xr$ = function (expression) {
+  ExpressionComparator.prototype.fastProbabilityCheckOnZero_em03xr$ = function (expression) {
     var $receiver = new ExpressionNode(NodeType$FUNCTION_getInstance(), '');
     $receiver.addChild_em03xr$(new ExpressionNode(NodeType$VARIABLE_getInstance(), '0'));
     return this.fastProbabilityCheckOnIncorrectTransformation_41dun6$(expression, $receiver, ComparisonType$EQUAL_getInstance());
   };
-  ExpressionComporator.prototype.compareWithTreeTransformationRules_8lnv8j$ = function (leftOriginal, rightOriginal, transformations, maxTransformationWeight, maxBustCount, minTransformationWeight, expressionChainComparisonType, maxDistBetweenDiffSteps) {
+  ExpressionComparator.prototype.compareWithTreeTransformationRules_8lnv8j$ = function (leftOriginal, rightOriginal, transformations, maxTransformationWeight, maxBustCount, minTransformationWeight, expressionChainComparisonType, maxDistBetweenDiffSteps) {
     var tmp$, tmp$_0;
     if (maxTransformationWeight === void 0)
       maxTransformationWeight = this.compiledConfiguration.comparisonSettings.maxExpressionTransformationWeight;
@@ -10768,16 +11047,16 @@ if (typeof kotlin === 'undefined') {
       return resultForOperandsInSortedOrder;
     }
   };
-  function ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda() {
+  function ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda() {
     return "COMPARISON_SIGNS_CONFLICT '";
   }
-  function ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda_0() {
+  function ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda_0() {
     return "' in expression vs '";
   }
-  function ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda_1() {
+  function ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda_1() {
     return "' in rule. MSG_CODE_";
   }
-  ExpressionComporator.prototype.compareWithTreeTransformationRulesInternal_l7tdci$ = function (leftOriginal, rightOriginal, transformations, maxTransformationWeight, maxBustCount, minTransformationWeight, expressionChainComparisonType, sortOperands, maxDistBetweenDiffSteps) {
+  ExpressionComparator.prototype.compareWithTreeTransformationRulesInternal_l7tdci$ = function (leftOriginal, rightOriginal, transformations, maxTransformationWeight, maxBustCount, minTransformationWeight, expressionChainComparisonType, sortOperands, maxDistBetweenDiffSteps) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5;
     if (maxTransformationWeight === void 0)
       maxTransformationWeight = this.compiledConfiguration.comparisonSettings.maxExpressionTransformationWeight;
@@ -10890,21 +11169,21 @@ if (typeof kotlin === 'undefined') {
       var r_0 = ensureNotNull(normFormsOfExpressionNode.get_11rb$(transformation.normalizationType)).second.clone();
       var direction = getComparingDirection(expressionChainComparisonType, transformation.comparisonType);
       if (direction == null) {
-        log_1.add_jcldl0$(expressionChainComparisonType.string, transformation.comparisonType.string, ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda, ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda_0, ExpressionComporator$compareWithTreeTransformationRulesInternal$lambda_1, void 0, void 0, MessageType$USER_getInstance());
+        log_1.add_jcldl0$(expressionChainComparisonType.string, transformation.comparisonType.string, ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda, ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda_0, ExpressionComparator$compareWithTreeTransformationRulesInternal$lambda_1, void 0, void 0, MessageType$USER_getInstance());
       }if (!equals(direction, SubstitutionDirection$RIGHT_TO_LEFT_getInstance())) {
-        tmp$_4 = transformation.findAllPossibleSubstitutionPlaces_puclxv$(l_0, this);
+        tmp$_4 = transformation.findAllPossibleSubstitutionPlaces_i8kf4x$(l_0, this);
       } else {
         tmp$_4 = emptyList();
       }
       if (!equals(direction, SubstitutionDirection$LEFT_TO_RIGHT_getInstance())) {
-        tmp$_5 = transformation.findAllPossibleSubstitutionPlaces_puclxv$(r_0, this);
+        tmp$_5 = transformation.findAllPossibleSubstitutionPlaces_i8kf4x$(r_0, this);
       } else {
         tmp$_5 = emptyList();
       }
       var substitutionPlaces = plus(tmp$_4, tmp$_5);
       var bitMaskCount = 1 << substitutionPlaces.size;
       if (Kotlin.imul(bitMaskCount, transformations.size) > maxBustCount) {
-        transformation.applySubstitution_b2jxnq$(substitutionPlaces, this);
+        transformation.applySubstitution_3grqus$(substitutionPlaces, this);
         if (this.compareWithTreeTransformationRulesInternal_l7tdci$(l_0, r_0, transformations, maxTransformationWeight - transformation.weight, maxBustCount, minTransformationWeight, expressionChainComparisonType, sortOperands))
           return true;
       } else {
@@ -10917,7 +11196,7 @@ if (typeof kotlin === 'undefined') {
     }
     return false;
   };
-  ExpressionComporator.prototype.fullExpressionsCompare_f7l7x0$ = function (left, right, expressionChainComparisonType) {
+  ExpressionComparator.prototype.fullExpressionsCompare_f7l7x0$ = function (left, right, expressionChainComparisonType) {
     if (expressionChainComparisonType === void 0)
       expressionChainComparisonType = ComparisonType$EQUAL_getInstance();
     applyAllSubstitutions(left, this.compiledConfiguration.compiledImmediateTreeTransformationRules);
@@ -10935,9 +11214,9 @@ if (typeof kotlin === 'undefined') {
     }
     return false;
   };
-  ExpressionComporator.$metadata$ = {
+  ExpressionComparator.$metadata$ = {
     kind: Kind_CLASS,
-    simpleName: 'ExpressionComporator',
+    simpleName: 'ExpressionComparator',
     interfaces: []
   };
   function getComparingDirection(expressionChainComparisonType, transformationComparisonType) {
@@ -12458,16 +12737,16 @@ if (typeof kotlin === 'undefined') {
         }}
     }return false;
   };
-  ExpressionNode.prototype.replaceNotDefinedFunctionsOnVariables_ntjlqp$ = function (functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet, expressionComporator, hasBoolFunctions) {
-    if (expressionComporator === void 0)
-      expressionComporator = null;
+  ExpressionNode.prototype.replaceNotDefinedFunctionsOnVariables_lvgqkd$ = function (functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet, expressionComparator, hasBoolFunctions) {
+    if (expressionComparator === void 0)
+      expressionComparator = null;
     if (hasBoolFunctions === void 0)
       hasBoolFunctions = false;
     var tmp$, tmp$_0, tmp$_1;
     tmp$ = this.children.iterator();
     while (tmp$.hasNext()) {
       var child = tmp$.next();
-      child.replaceNotDefinedFunctionsOnVariables_ntjlqp$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet, expressionComporator, hasBoolFunctions);
+      child.replaceNotDefinedFunctionsOnVariables_lvgqkd$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet, expressionComparator, hasBoolFunctions);
     }
     if (this.nodeType === NodeType$FUNCTION_getInstance() && !definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_' + toString(this.children.size)) && !definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_-1')) {
       var nodeExists = false;
@@ -12477,9 +12756,9 @@ if (typeof kotlin === 'undefined') {
         var expression = tmp$_2.key;
         var variable = tmp$_2.value;
         if (this.children.size === expression.children.size) {
-          if (expressionComporator != null && expressionComporator.compiledConfiguration.comparisonSettings.useTestingToCompareFunctionArgumentsInProbabilityComparison && !hasBoolFunctions) {
-            if (expressionComporator.baseOperationsDefinitions.definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_' + toString(this.children.size)) || expressionComporator.baseOperationsDefinitions.definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_-1')) {
-              if (expressionComporator.probabilityTestComparison_1lpgi8$(this, expression, ComparisonType$EQUAL_getInstance())) {
+          if (expressionComparator != null && expressionComparator.compiledConfiguration.comparisonSettings.useTestingToCompareFunctionArgumentsInProbabilityComparison && !hasBoolFunctions) {
+            if (expressionComparator.baseOperationsDefinitions.definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_' + toString(this.children.size)) || expressionComparator.baseOperationsDefinitions.definedFunctionNameNumberOfArgsSet.contains_11rb$(this.value + '_-1')) {
+              if (expressionComparator.probabilityTestComparison_1lpgi8$(this, expression, ComparisonType$EQUAL_getInstance())) {
                 nodeExists = true;
                 this.setVariable_61zpoe$(variable);
                 break;
@@ -12487,7 +12766,7 @@ if (typeof kotlin === 'undefined') {
               var hasDifferentArgs = false;
               tmp$_1 = get_lastIndex(this.children);
               for (var i = 0; i <= tmp$_1; i++) {
-                if (!expressionComporator.probabilityTestComparison_1lpgi8$(this.children.get_za3lpa$(i), expression.children.get_za3lpa$(i), ComparisonType$EQUAL_getInstance())) {
+                if (!expressionComparator.probabilityTestComparison_1lpgi8$(this.children.get_za3lpa$(i), expression.children.get_za3lpa$(i), ComparisonType$EQUAL_getInstance())) {
                   hasDifferentArgs = true;
                   break;
                 }}
@@ -13913,7 +14192,7 @@ if (typeof kotlin === 'undefined') {
         }
          while (false);
         tmp$_8 = all$result;
-      }if (tmp$_8 && !substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.fastProbabilityCheckOnZero_em03xr$(last(ensureNotNull(substitutionSelectionData.selectedSubtreeTopArguments).children))) {
+      }if (tmp$_8 && !substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.fastProbabilityCheckOnZero_em03xr$(last(ensureNotNull(substitutionSelectionData.selectedSubtreeTopArguments).children))) {
         var originalExpression = substitutionSelectionData.originalExpression.clone();
         ensureNotNull(substitutionSelectionData.selectedSubtreeTopArguments).fillStructureStringIdentifiers_5osufp$();
         var numerator = first_0(first_0(ensureNotNull(substitutionSelectionData.selectedSubtreeTopArguments).children).children);
@@ -13941,9 +14220,9 @@ if (typeof kotlin === 'undefined') {
           }var denom = tmp$_1;
           var numDivDenom = numberToInt(num / denom);
           var denomDivNum = numberToInt(denom / num);
-          if (substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(num, denom * numDivDenom)) {
+          if (substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(num, denom * numDivDenom)) {
             tmp$_2 = new ExpressionNode(NodeType$VARIABLE_getInstance(), numDivDenom.toString());
-          } else if (substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(denom, num * denomDivNum)) {
+          } else if (substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(denom, num * denomDivNum)) {
             var $receiver_2 = substitutionSelectionData.compiledConfiguration.createExpressionFunctionNode_twmih4$('/', -1);
             $receiver_2.addChild_em03xr$(new ExpressionNode(NodeType$VARIABLE_getInstance(), '1'));
             $receiver_2.addChild_em03xr$(new ExpressionNode(NodeType$VARIABLE_getInstance(), denomDivNum.toString()));
@@ -13974,7 +14253,7 @@ if (typeof kotlin === 'undefined') {
           if (numPow != null && denomPow != null) {
             if (numPow >= denomPow) {
               var pow = numPow - denomPow;
-              if (substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(pow, 1.0)) {
+              if (substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(pow, 1.0)) {
                 tmp$_4 = first_0(numerator.children).clone();
               } else {
                 var $receiver_6 = substitutionSelectionData.compiledConfiguration.createExpressionFunctionNode_twmih4$('^', -1);
@@ -13986,7 +14265,7 @@ if (typeof kotlin === 'undefined') {
               var pow_0 = denomPow - numPow;
               var $receiver_7 = substitutionSelectionData.compiledConfiguration.createExpressionFunctionNode_twmih4$('/', -1);
               $receiver_7.addChild_em03xr$(new ExpressionNode(NodeType$VARIABLE_getInstance(), '1'));
-              if (substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(pow_0, 1.0)) {
+              if (substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions.additivelyEqual_yvo9jy$(pow_0, 1.0)) {
                 $receiver_7.addChild_em03xr$(first_0(numerator.children).clone());
               } else {
                 var $receiver_8 = substitutionSelectionData.compiledConfiguration.createExpressionFunctionNode_twmih4$('^', -1);
@@ -14576,7 +14855,7 @@ if (typeof kotlin === 'undefined') {
         normalizeExpressionToUsualForm($receiver, substitutionSelectionData.compiledConfiguration);
         result.add_11rb$(new SubstitutionApplication(additiveSubstitution, originalExpression, applicationPlace, $receiver, additiveTreeNode, 'ComplicatingExtension', (tmp$_0 = subst.priority) != null ? tmp$_0 : 60));
         applicationPlaceParent.setChildOnPosition_gk94xr$(applicationPlace, applicationPlaceIndex);
-      }if (substitutionSelectionData.compiledConfiguration.expressionTreeAutogeneratedTransformationRuleIdentifiers.containsKey_11rb$('MultiplicativeComplicatingExtension') && !substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator.fastProbabilityCheckOnZero_em03xr$(applicationObject)) {
+      }if (substitutionSelectionData.compiledConfiguration.expressionTreeAutogeneratedTransformationRuleIdentifiers.containsKey_11rb$('MultiplicativeComplicatingExtension') && !substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator.fastProbabilityCheckOnZero_em03xr$(applicationObject)) {
         var subst_0 = ensureNotNull(substitutionSelectionData.compiledConfiguration.expressionTreeAutogeneratedTransformationRuleIdentifiers.get_11rb$('MultiplicativeComplicatingExtension'));
         var multiplicativeTreeNode = new ExpressionNode(NodeType$FUNCTION_getInstance(), '/');
         multiplicativeTreeNode.addChild_em03xr$(new ExpressionNode(NodeType$FUNCTION_getInstance(), '*'));
@@ -14650,10 +14929,10 @@ if (typeof kotlin === 'undefined') {
     }return substitutionInstance;
   }
   function tryToGenerateApplicationSubstitutionInstance(substitutionSelectionData, expression, substitution) {
-    var result = substitution.checkLeftCondition_puclxv$(expression, substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator);
+    var result = substitution.checkLeftCondition_i8kf4x$(expression, substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator);
     if (!result.isApplicable && substitution.matchJumbledAndNested) {
       var simplifiedExpression = expression.cloneWithExpandingNestedSameFunctions();
-      result = substitution.checkLeftCondition_puclxv$(simplifiedExpression, substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator);
+      result = substitution.checkLeftCondition_i8kf4x$(simplifiedExpression, substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator);
     }return result;
   }
   function addApplicationToResults(withReadyApplicationResult, substitutionSelectionData, simplifyNotSelectedTopArguments, applicationToSelectedPartResult, result, transformation, substitutionType, priority, onSameBracketLevel) {
@@ -14849,7 +15128,7 @@ if (typeof kotlin === 'undefined') {
               continue;
             }var selectedNodeParent = tmp$_1;
             var selectedNodeIndex = selectedNodeParent.children.indexOf_11rb$(selectedNode);
-            var applicationResult = rule.checkAndApply_puclxv$(selectedNode, substitutionSelectionData.compiledConfiguration.factComporator.expressionComporator);
+            var applicationResult = rule.checkAndApply_i8kf4x$(selectedNode, substitutionSelectionData.compiledConfiguration.factComparator.expressionComparator);
             if (applicationResult != null) {
               selectedNodeParent.setChildOnPosition_gk94xr$(applicationResult, selectedNodeIndex);
               happenedReplacementsCount = happenedReplacementsCount + 1 | 0;
@@ -16911,12 +17190,12 @@ if (typeof kotlin === 'undefined') {
       tmp$ = !intersect(this.leftFunctions, functions).isEmpty();
     }return tmp$;
   };
-  ExpressionSubstitution.prototype.checkCondition_i5btdh$ = function (expressionNode, conditionNode, substitutionInstance, expressionComporator, nameArgsMap) {
+  ExpressionSubstitution.prototype.checkCondition_vurz5v$ = function (expressionNode, conditionNode, substitutionInstance, expressionComparator, nameArgsMap) {
     if (nameArgsMap === void 0) {
       nameArgsMap = LinkedHashMap_init_0();
     }var tmp$;
     ExpressionSubstitution$Companion_getInstance().checkConditionCompanion_tiu7wf$(expressionNode, conditionNode, substitutionInstance, nameArgsMap, this.basedOnTaskContext, this.matchJumbledAndNested);
-    if (substitutionInstance.isApplicable && expressionComporator != null) {
+    if (substitutionInstance.isApplicable && expressionComparator != null) {
       var nonZeroVariables = this.right.getNonZeroVariables();
       tmp$ = nonZeroVariables.iterator();
       while (tmp$.hasNext()) {
@@ -16924,7 +17203,7 @@ if (typeof kotlin === 'undefined') {
         var nonZeroVariableValue = substitutionInstance.getExprVar_61zpoe$(nonZeroVariable);
         if (nonZeroVariableValue == null) {
           return;
-        }if (expressionComporator.fastProbabilityCheckOnZero_em03xr$(nonZeroVariableValue)) {
+        }if (expressionComparator.fastProbabilityCheckOnZero_em03xr$(nonZeroVariableValue)) {
           substitutionInstance.isApplicable = false;
         }}
     }};
@@ -17145,36 +17424,36 @@ if (typeof kotlin === 'undefined') {
       new ExpressionSubstitution$Companion();
     }return ExpressionSubstitution$Companion_instance;
   }
-  ExpressionSubstitution.prototype.checkLeftCondition_puclxv$ = function (expressionNode, expressionComporator) {
-    if (expressionComporator === void 0)
-      expressionComporator = null;
+  ExpressionSubstitution.prototype.checkLeftCondition_i8kf4x$ = function (expressionNode, expressionComparator) {
+    if (expressionComparator === void 0)
+      expressionComparator = null;
     var substitutionInstance = new SubstitutionInstance();
-    this.checkCondition_i5btdh$(expressionNode, this.left.children.get_za3lpa$(0), substitutionInstance, expressionComporator);
+    this.checkCondition_vurz5v$(expressionNode, this.left.children.get_za3lpa$(0), substitutionInstance, expressionComparator);
     return substitutionInstance;
   };
-  ExpressionSubstitution.prototype.findAllPossibleSubstitutionPlaces_0 = function (root, originalExpression, expressionComporator, result) {
+  ExpressionSubstitution.prototype.findAllPossibleSubstitutionPlaces_0 = function (root, originalExpression, expressionComparator, result) {
     var tmp$;
     tmp$ = root.children.size;
     for (var i = 0; i < tmp$; i++) {
-      this.findAllPossibleSubstitutionPlaces_0(root.children.get_za3lpa$(i), originalExpression, expressionComporator, result);
-      var substitutionInstance = this.checkLeftCondition_puclxv$(root.children.get_za3lpa$(i), expressionComporator);
+      this.findAllPossibleSubstitutionPlaces_0(root.children.get_za3lpa$(i), originalExpression, expressionComparator, result);
+      var substitutionInstance = this.checkLeftCondition_i8kf4x$(root.children.get_za3lpa$(i), expressionComparator);
       if (substitutionInstance.isApplicable) {
         result.add_11rb$(new SubstitutionPlace(root, i, substitutionInstance, root.children.get_za3lpa$(i), originalExpression));
       }}
   };
-  ExpressionSubstitution.prototype.findAllPossibleSubstitutionPlaces_puclxv$ = function (root, expressionComporator) {
+  ExpressionSubstitution.prototype.findAllPossibleSubstitutionPlaces_i8kf4x$ = function (root, expressionComparator) {
     var result = ArrayList_init();
-    this.findAllPossibleSubstitutionPlaces_0(root, root, expressionComporator, result);
+    this.findAllPossibleSubstitutionPlaces_0(root, root, expressionComparator, result);
     return result;
   };
-  ExpressionSubstitution.prototype.applySubstitution_b2jxnq$ = function (substitutionPlaces, expressionComporator) {
-    if (expressionComporator === void 0)
-      expressionComporator = null;
+  ExpressionSubstitution.prototype.applySubstitution_3grqus$ = function (substitutionPlaces, expressionComparator) {
+    if (expressionComparator === void 0)
+      expressionComparator = null;
     var tmp$;
     tmp$ = substitutionPlaces.iterator();
     while (tmp$.hasNext()) {
       var substitutionPlace = tmp$.next();
-      var newValue = this.checkAndApply_puclxv$(substitutionPlace.nodeParent.children.get_za3lpa$(substitutionPlace.nodeChildIndex), expressionComporator);
+      var newValue = this.checkAndApply_i8kf4x$(substitutionPlace.nodeParent.children.get_za3lpa$(substitutionPlace.nodeChildIndex), expressionComparator);
       if (newValue != null) {
         substitutionPlace.nodeParent.children.set_wxm5ur$(substitutionPlace.nodeChildIndex, newValue);
         substitutionPlace.nodeParent.normalizeParentLinks();
@@ -17215,10 +17494,10 @@ if (typeof kotlin === 'undefined') {
       tmp$_0 = null;
     return tmp$_0;
   };
-  ExpressionSubstitution.prototype.checkAndApply_puclxv$ = function (expressionNode, expressionComporator) {
-    if (expressionComporator === void 0)
-      expressionComporator = null;
-    var substitutionInstance = this.checkLeftCondition_puclxv$(expressionNode, expressionComporator);
+  ExpressionSubstitution.prototype.checkAndApply_i8kf4x$ = function (expressionNode, expressionComparator) {
+    if (expressionComparator === void 0)
+      expressionComparator = null;
+    var substitutionInstance = this.checkLeftCondition_i8kf4x$(expressionNode, expressionComparator);
     if (substitutionInstance.isApplicable) {
       return this.applyRight_b48iti$(substitutionInstance, void 0, expressionNode.nodeId);
     } else
@@ -17236,7 +17515,7 @@ if (typeof kotlin === 'undefined') {
       applyAllFunctionSubstitutions($receiver.children.get_za3lpa$(i), compiledSubstitutions);
       var substitution = compiledSubstitutions.get_11rb$($receiver.children.get_za3lpa$(i).value + '_' + toString($receiver.children.get_za3lpa$(i).children.size));
       if (substitution != null) {
-        $receiver.children.set_wxm5ur$(i, (tmp$ = substitution.checkAndApply_puclxv$($receiver.children.get_za3lpa$(i), null)) != null ? tmp$ : $receiver.children.get_za3lpa$(i));
+        $receiver.children.set_wxm5ur$(i, (tmp$ = substitution.checkAndApply_i8kf4x$($receiver.children.get_za3lpa$(i), null)) != null ? tmp$ : $receiver.children.get_za3lpa$(i));
       }i = i + 1 | 0;
     }
     $receiver.normalizeParentLinks();
@@ -17246,8 +17525,8 @@ if (typeof kotlin === 'undefined') {
     tmp$ = expressionSubstitutions.iterator();
     while (tmp$.hasNext()) {
       var substitution = tmp$.next();
-      var substitutionPlaces = substitution.findAllPossibleSubstitutionPlaces_puclxv$($receiver, null);
-      substitution.applySubstitution_b2jxnq$(substitutionPlaces, null);
+      var substitutionPlaces = substitution.findAllPossibleSubstitutionPlaces_i8kf4x$($receiver, null);
+      substitution.applySubstitution_3grqus$(substitutionPlaces, null);
     }
     $receiver.normalizeParentLinks();
   }
@@ -20274,10 +20553,10 @@ if (typeof kotlin === 'undefined') {
   ComparableTransformationPartType.valueOf_61zpoe$ = ComparableTransformationPartType$valueOf;
   function ComparableTransformationsPart() {
   }
-  ComparableTransformationsPart.prototype.check_628dyb$ = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck, callback$default) {
+  ComparableTransformationsPart.prototype.check_i0qcxd$ = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck, callback$default) {
     if (skipTrivialCheck === void 0)
       skipTrivialCheck = false;
-    return callback$default ? callback$default(factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) : this.check_628dyb$$default(factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
+    return callback$default ? callback$default(factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) : this.check_i0qcxd$$default(factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
   };
   ComparableTransformationsPart.$metadata$ = {
     kind: Kind_INTERFACE,
@@ -20405,7 +20684,7 @@ if (typeof kotlin === 'undefined') {
   Expression.prototype.getLastExpression = function () {
     return this;
   };
-  Expression.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
+  Expression.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
     var tmp$;
     tmp$ = forbidden.iterator();
     while (tmp$.hasNext()) {
@@ -20415,9 +20694,9 @@ if (typeof kotlin === 'undefined') {
       }}
     return null;
   };
-  Expression.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
+  Expression.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
     var tmp$;
-    var tmp$_0 = factComporator.expressionComporator;
+    var tmp$_0 = factComparator.expressionComparator;
     var tmp$_1 = this.data;
     var tmp$_2 = void 0;
     var $receiver = (new FunctionConfiguration()).notChangesOnVariablesInComparisonFunction;
@@ -20451,8 +20730,8 @@ if (typeof kotlin === 'undefined') {
       return new GeneralError('Not enough multipliers in the answer');
     }return null;
   };
-  Expression.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
-    var tmp$ = factComporator.expressionComporator;
+  Expression.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
+    var tmp$ = factComparator.expressionComparator;
     var tmp$_0 = this.data;
     var tmp$_1 = void 0;
     var $receiver = (new FunctionConfiguration()).notChangesOnVariablesInComparisonFunction;
@@ -20538,7 +20817,7 @@ if (typeof kotlin === 'undefined') {
     this.data = baseOperationsDefinitions.computeExpressionTree_em03xr$(this.data);
   };
   Expression.prototype.replaceNotDefinedFunctionsOnVariables_ioe5p3$ = function (functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet) {
-    this.data.replaceNotDefinedFunctionsOnVariables_ntjlqp$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet);
+    this.data.replaceNotDefinedFunctionsOnVariables_lvgqkd$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet);
   };
   Expression.prototype.copyNode = function () {
     return new Expression(this.startPosition, this.endPosition, new ExpressionNode(NodeType$EMPTY_getInstance(), ''), void 0, this.parent);
@@ -20546,7 +20825,7 @@ if (typeof kotlin === 'undefined') {
   function Expression$check$lambda() {
     return 'This method must not been called. Undefined behaviour. MSG_CODE_1537133804710';
   }
-  Expression.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  Expression.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     log_1.addMessage_cte53e$(Expression$check$lambda);
     return new ComparisonResult(true, ArrayList_init(), this, this);
   };
@@ -20904,7 +21183,7 @@ if (typeof kotlin === 'undefined') {
       return CheckingKeyWords$Companion_getInstance().expressionChainVerified + ". '" + first_0(this$ExpressionChain.chain) + "' " + this$ExpressionChain.comparisonType.string + " '" + last(this$ExpressionChain.chain) + "'";
     };
   }
-  ExpressionChain.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  ExpressionChain.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6, tmp$_7, tmp$_8, tmp$_9, tmp$_10, tmp$_11, tmp$_12, tmp$_13, tmp$_14, tmp$_15, tmp$_16, tmp$_17, tmp$_18, tmp$_19, tmp$_20, tmp$_21, tmp$_22, tmp$_23, tmp$_24, tmp$_25;
     log_1.addMessage_cte53e$(ExpressionChain$check$lambda, MessageType$USER_getInstance(), void 0, 1);
     log_1.add_ww6hhz$(this.chain.toString(), ExpressionChain$check$lambda_0, ExpressionChain$check$lambda_1);
@@ -20919,7 +21198,7 @@ if (typeof kotlin === 'undefined') {
         if (this.chain.get_za3lpa$(currentRightIndex).type() === ComparableTransformationPartType$RULE_getInstance()) {
           var rule = Kotlin.isType(tmp$ = this.chain.get_za3lpa$(currentRightIndex), Rule) ? tmp$ : throwCCE();
           log_1.addMessageWithFactDetail_d1xyjh$(ExpressionChain$check$lambda_5, rule.root, MessageType$USER_getInstance(), currentLogLevel.v);
-          var checkingResult = rule.check_628dyb$(factComporator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
+          var checkingResult = rule.check_i0qcxd$(factComparator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
           if (checkingResult.isCorrect && rule.expressionSubstitution != null) {
             log_1.addMessageWithExpressionSubstitutionShort_w3y3zc$(ExpressionChain$check$lambda_6, ensureNotNull(rule.expressionSubstitution), MessageType$USER_getInstance(), currentLogLevel.v);
             tmp$_1 = ensureNotNull(rule.expressionSubstitution);
@@ -20930,8 +21209,8 @@ if (typeof kotlin === 'undefined') {
               return new ComparisonResult(false, coloringTasks, this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex + 1 | 0), 'RULE VERIFICATION_FAILED');
             } else {
               log_1.addMessage_cte53e$(ExpressionChain$check$lambda_8, MessageType$USER_getInstance(), currentLogLevel.v);
-              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor, ExpressionChain$check$lambda_9, ExpressionChain$check$lambda_10, ExpressionChain$check$lambda_11, ExpressionChain$check$lambda_12, currentLogLevel.v);
-              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor));
+              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor, ExpressionChain$check$lambda_9, ExpressionChain$check$lambda_10, ExpressionChain$check$lambda_11, ExpressionChain$check$lambda_12, currentLogLevel.v);
+              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor));
               return new ComparisonResult(false, coloringTasks, this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex + 1 | 0), 'RULE CANNOT_BE_APPLIED_TO_EXPRESSIONS');
             }
           }
@@ -20949,8 +21228,8 @@ if (typeof kotlin === 'undefined') {
           var rules = destination;
           if (rules.isEmpty()) {
             log_1.add_ww6hhz$(ruleName, ExpressionChain$check$lambda_15, ExpressionChain$check$lambda_16, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, ExpressionChain$check$lambda_17, ExpressionChain$check$lambda_18, ExpressionChain$check$lambda_19, ExpressionChain$check$lambda_20, currentLogLevel.v);
-            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
+            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, ExpressionChain$check$lambda_17, ExpressionChain$check$lambda_18, ExpressionChain$check$lambda_19, ExpressionChain$check$lambda_20, currentLogLevel.v);
+            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
             var tmp$_27 = this.chain.get_za3lpa$(currentLeftIndex);
             var tmp$_28 = this.chain.get_za3lpa$(currentRightIndex + 1 | 0);
             var tmp$_29 = "Rule with name '" + ruleName + "' not found. Exists only rules with names: ";
@@ -20978,16 +21257,16 @@ if (typeof kotlin === 'undefined') {
         currentLogLevel.v = currentLogLevel.v + 1 | 0;
         log_1.addMessageWithExpression_3hyvb1$(ExpressionChain$check$lambda_24, (Kotlin.isType(tmp$_2 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_2 : throwCCE()).data, MessageType$USER_getInstance(), currentLogLevel.v);
         log_1.addMessageWithExpression_3hyvb1$(ExpressionChain$check$lambda_25, (Kotlin.isType(tmp$_3 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_3 : throwCCE()).data, MessageType$USER_getInstance(), currentLogLevel.v);
-        var result = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$((Kotlin.isType(tmp$_4 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_4 : throwCCE()).data, (Kotlin.isType(tmp$_5 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_5 : throwCCE()).data, listOf(transformation), void 0, void 0, void 0, this.comparisonType, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+        var result = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$((Kotlin.isType(tmp$_4 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_4 : throwCCE()).data, (Kotlin.isType(tmp$_5 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_5 : throwCCE()).data, listOf(transformation), void 0, void 0, void 0, this.comparisonType, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
         if (result) {
-          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_26, ExpressionChain$check$lambda_27, ExpressionChain$check$lambda_28, ExpressionChain$check$lambda_29, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_26, ExpressionChain$check$lambda_27, ExpressionChain$check$lambda_28, ExpressionChain$check$lambda_29, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
           log_1.add_ww6hhz$(transformation.basedOnTaskContext, ExpressionChain$check$lambda_30, ExpressionChain$check$lambda_31, currentLogLevel.v, void 0, MessageType$USER_getInstance());
           if (transformation.basedOnTaskContext) {
             additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, ExpressionChain$check$lambda_32);
           }} else {
-          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor, ExpressionChain$check$lambda_33, ExpressionChain$check$lambda_34, ExpressionChain$check$lambda_35, ExpressionChain$check$lambda_36, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor));
+          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor, ExpressionChain$check$lambda_33, ExpressionChain$check$lambda_34, ExpressionChain$check$lambda_35, ExpressionChain$check$lambda_36, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factNotHelpFactColor));
           log_1.addMessage_cte53e$(ExpressionChain$check$lambda_37, MessageType$USER_getInstance(), currentLogLevel.v);
           return new ComparisonResult(false, coloringTasks, this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex), "Unclear transformation between '" + (Kotlin.isType(tmp$_6 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_6 : throwCCE()).data + "' and '" + (Kotlin.isType(tmp$_7 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_7 : throwCCE()).data + "' even with rule");
         }
@@ -20995,7 +21274,7 @@ if (typeof kotlin === 'undefined') {
       } else {
         log_1.addMessageWithExpression_3hyvb1$(ExpressionChain$check$lambda_38, (Kotlin.isType(tmp$_8 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_8 : throwCCE()).data, MessageType$USER_getInstance(), currentLogLevel.v);
         log_1.addMessageWithExpression_3hyvb1$(ExpressionChain$check$lambda_39, (Kotlin.isType(tmp$_9 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_9 : throwCCE()).data, MessageType$USER_getInstance(), currentLogLevel.v);
-        tmp$_14 = factComporator.expressionComporator;
+        tmp$_14 = factComparator.expressionComparator;
         tmp$_11 = (Kotlin.isType(tmp$_10 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_10 : throwCCE()).data;
         tmp$_13 = (Kotlin.isType(tmp$_12 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_12 : throwCCE()).data;
         var destination_2 = ArrayList_init();
@@ -21006,7 +21285,7 @@ if (typeof kotlin === 'undefined') {
           if (!element_1.basedOnTaskContext)
             destination_2.add_11rb$(element_1);
         }
-        var $receiver = factComporator.compiledConfiguration.compiledExpressionTreeTransformationRules;
+        var $receiver = factComparator.compiledConfiguration.compiledExpressionTreeTransformationRules;
         var destination_3 = ArrayList_init();
         var tmp$_33;
         tmp$_33 = $receiver.iterator();
@@ -21015,17 +21294,17 @@ if (typeof kotlin === 'undefined') {
           if (!element_2.basedOnTaskContext)
             destination_3.add_11rb$(element_2);
         }
-        var result_0 = tmp$_14.compareWithTreeTransformationRules_8lnv8j$(tmp$_11, tmp$_13, plus(destination_2, destination_3), void 0, void 0, void 0, this.comparisonType, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+        var result_0 = tmp$_14.compareWithTreeTransformationRules_8lnv8j$(tmp$_11, tmp$_13, plus(destination_2, destination_3), void 0, void 0, void 0, this.comparisonType, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
         if (result_0) {
-          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_40, ExpressionChain$check$lambda_41, ExpressionChain$check$lambda_42, ExpressionChain$check$lambda_43, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_40, ExpressionChain$check$lambda_41, ExpressionChain$check$lambda_42, ExpressionChain$check$lambda_43, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
           log_1.addMessage_cte53e$(ExpressionChain$check$lambda_44, MessageType$USER_getInstance(), currentLogLevel.v);
         } else {
           log_1.addMessage_cte53e$(ExpressionChain$check$lambda_45, MessageType$USER_getInstance(), currentLogLevel.v);
-          var resultInContext = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$((Kotlin.isType(tmp$_15 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_15 : throwCCE()).data, (Kotlin.isType(tmp$_16 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_16 : throwCCE()).data, plus(expressionTransformations, factComporator.compiledConfiguration.compiledExpressionTreeTransformationRules), void 0, void 0, void 0, this.comparisonType, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+          var resultInContext = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$((Kotlin.isType(tmp$_15 = this.chain.get_za3lpa$(currentLeftIndex), Expression) ? tmp$_15 : throwCCE()).data, (Kotlin.isType(tmp$_16 = this.chain.get_za3lpa$(currentRightIndex), Expression) ? tmp$_16 : throwCCE()).data, plus(expressionTransformations, factComparator.compiledConfiguration.compiledExpressionTreeTransformationRules), void 0, void 0, void 0, this.comparisonType, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
           if (resultInContext) {
-            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_46, ExpressionChain$check$lambda_47, ExpressionChain$check$lambda_48, ExpressionChain$check$lambda_49, currentLogLevel.v);
-            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionChain$check$lambda_46, ExpressionChain$check$lambda_47, ExpressionChain$check$lambda_48, ExpressionChain$check$lambda_49, currentLogLevel.v);
+            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
             log_1.addMessage_cte53e$(ExpressionChain$check$lambda_50, MessageType$USER_getInstance(), currentLogLevel.v);
             additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, ExpressionChain$check$lambda_51);
           } else {
@@ -21040,14 +21319,14 @@ if (typeof kotlin === 'undefined') {
               var item_0 = tmp$_36.next();
               destination_4.add_11rb$(item_0.computeOutIdentifier_6taknv$(true));
             }
-            var result_1 = factComporator.compareAsIs_4xgx46$(tmp$_34, tmp$_35, sorted(destination_4));
+            var result_1 = factComparator.compareAsIs_4xgx46$(tmp$_34, tmp$_35, sorted(destination_4));
             if (result_1) {
-              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, ExpressionChain$check$lambda_53, ExpressionChain$check$lambda_54, ExpressionChain$check$lambda_55, ExpressionChain$check$lambda_56, currentLogLevel.v);
-              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
+              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, ExpressionChain$check$lambda_53, ExpressionChain$check$lambda_54, ExpressionChain$check$lambda_55, ExpressionChain$check$lambda_56, currentLogLevel.v);
+              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
               additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, ExpressionChain$check$lambda_57);
             } else {
-              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor, ExpressionChain$check$lambda_58, ExpressionChain$check$lambda_59, ExpressionChain$check$lambda_60, ExpressionChain$check$lambda_61, currentLogLevel.v);
-              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor));
+              log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor, ExpressionChain$check$lambda_58, ExpressionChain$check$lambda_59, ExpressionChain$check$lambda_60, ExpressionChain$check$lambda_61, currentLogLevel.v);
+              coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor));
               log_1.addMessage_cte53e$(ExpressionChain$check$lambda_62, MessageType$USER_getInstance(), currentLogLevel.v);
               tmp$_19 = this.chain.get_za3lpa$(currentLeftIndex);
               tmp$_20 = this.chain.get_za3lpa$(currentRightIndex);
@@ -21119,20 +21398,20 @@ if (typeof kotlin === 'undefined') {
   ExpressionComparison.prototype.getLastExpression = function () {
     return this.rightExpression.getLastExpression();
   };
-  ExpressionComparison.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
-    if (!targetExpression.children.isEmpty() && !factComporator.expressionComporator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
+  ExpressionComparison.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
+    if (!targetExpression.children.isEmpty() && !factComparator.expressionComparator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
       return new GeneralError('Wrong start expression');
-    }return this.rightExpression.isSolutionWithoutFunctions_hklomv$(forbidden, targetExpression, factComporator);
+    }return this.rightExpression.isSolutionWithoutFunctions_o78e5l$(forbidden, targetExpression, factComparator);
   };
-  ExpressionComparison.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
-    if (!factComporator.expressionComporator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
+  ExpressionComparison.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
+    if (!factComparator.expressionComparator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
       return new GeneralError('Wrong start expression');
-    }return this.rightExpression.isFactorizationForVariables_ytdd42$(minNumberOfMultipliers, targetVariables, targetExpression, factComporator);
+    }return this.rightExpression.isFactorizationForVariables_s6qnlc$(minNumberOfMultipliers, targetVariables, targetExpression, factComparator);
   };
-  ExpressionComparison.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
-    if (!factComporator.expressionComporator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
+  ExpressionComparison.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
+    if (!factComparator.expressionComparator.compareAsIs_5gxvt3$(this.leftExpression.data, targetExpression)) {
       return new GeneralError('Wrong start expression');
-    }return this.rightExpression.hasNoFractions_jpz981$(maxNumberOfDivisions, targetExpression, factComporator);
+    }return this.rightExpression.hasNoFractions_qclyqr$(maxNumberOfDivisions, targetExpression, factComparator);
   };
   ExpressionComparison.prototype.isSolutionForVariables_axkv0l$$default = function (targetVariables, left, allowedVariables) {
     var error = this.leftExpression.isSolutionForVariables_axkv0l$(targetVariables, true, allowedVariables);
@@ -21227,7 +21506,7 @@ if (typeof kotlin === 'undefined') {
   function ExpressionComparison$check$lambda_25() {
     return 'VERIFICATION_FAILED';
   }
-  ExpressionComparison.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  ExpressionComparison.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     var tmp$, tmp$_0, tmp$_1;
     log_1.addMessage_cte53e$(ExpressionComparison$check$lambda, MessageType$USER_getInstance(), void 0, 1);
     var currentLogLevel = {v: log_1.currentLevel};
@@ -21236,7 +21515,7 @@ if (typeof kotlin === 'undefined') {
     log_1.addMessageWithExpression_3hyvb1$(ExpressionComparison$check$lambda_2, this.rightExpression.data, MessageType$USER_getInstance(), currentLogLevel.v);
     var coloringTasks = ArrayList_init();
     var additionalFactUsed = false;
-    var tmp$_2 = factComporator.expressionComporator;
+    var tmp$_2 = factComparator.expressionComparator;
     var tmp$_3 = this.leftExpression.data;
     var tmp$_4 = this.rightExpression.data;
     var destination = ArrayList_init();
@@ -21247,14 +21526,14 @@ if (typeof kotlin === 'undefined') {
       if (!element.basedOnTaskContext)
         destination.add_11rb$(element);
     }
-    var result = tmp$_2.compareWithTreeTransformationRules_8lnv8j$(tmp$_3, tmp$_4, plus(destination, factComporator.compiledConfiguration.compiledExpressionTreeTransformationRules), void 0, void 0, void 0, this.comparisonType, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+    var result = tmp$_2.compareWithTreeTransformationRules_8lnv8j$(tmp$_3, tmp$_4, plus(destination, factComparator.compiledConfiguration.compiledExpressionTreeTransformationRules), void 0, void 0, void 0, this.comparisonType, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
     if (result) {
-      log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionComparison$check$lambda_3, ExpressionComparison$check$lambda_4, ExpressionComparison$check$lambda_5, ExpressionComparison$check$lambda_6, currentLogLevel.v);
-      coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+      log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionComparison$check$lambda_3, ExpressionComparison$check$lambda_4, ExpressionComparison$check$lambda_5, ExpressionComparison$check$lambda_6, currentLogLevel.v);
+      coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
       log_1.addMessage_cte53e$(ExpressionComparison$check$lambda_7, MessageType$USER_getInstance(), currentLogLevel.v);
     } else {
       log_1.addMessage_cte53e$(ExpressionComparison$check$lambda_8, MessageType$USER_getInstance(), currentLogLevel.v);
-      var tmp$_6 = factComporator.expressionComporator;
+      var tmp$_6 = factComparator.expressionComparator;
       var tmp$_7 = this.leftExpression.data;
       var tmp$_8 = this.rightExpression.data;
       var destination_0 = ArrayList_init();
@@ -21265,10 +21544,10 @@ if (typeof kotlin === 'undefined') {
         if (element_0.basedOnTaskContext)
           destination_0.add_11rb$(element_0);
       }
-      var resultInContext = tmp$_6.compareWithTreeTransformationRules_8lnv8j$(tmp$_7, tmp$_8, destination_0, void 0, void 0, void 0, this.comparisonType, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+      var resultInContext = tmp$_6.compareWithTreeTransformationRules_8lnv8j$(tmp$_7, tmp$_8, destination_0, void 0, void 0, void 0, this.comparisonType, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
       if (resultInContext) {
-        log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionComparison$check$lambda_9, ExpressionComparison$check$lambda_10, ExpressionComparison$check$lambda_11, ExpressionComparison$check$lambda_12, currentLogLevel.v);
-        coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+        log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, ExpressionComparison$check$lambda_9, ExpressionComparison$check$lambda_10, ExpressionComparison$check$lambda_11, ExpressionComparison$check$lambda_12, currentLogLevel.v);
+        coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
         log_1.addMessage_cte53e$(ExpressionComparison$check$lambda_13, MessageType$USER_getInstance(), currentLogLevel.v);
         additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, ExpressionComparison$check$lambda_14);
       } else {
@@ -21282,14 +21561,14 @@ if (typeof kotlin === 'undefined') {
           var item = tmp$_12.next();
           destination_1.add_11rb$(item.computeOutIdentifier_6taknv$(true));
         }
-        var result_0 = factComporator.compareAsIs_4xgx46$(tmp$_10, tmp$_11, sorted(destination_1));
+        var result_0 = factComparator.compareAsIs_4xgx46$(tmp$_10, tmp$_11, sorted(destination_1));
         if (result_0) {
-          log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, ExpressionComparison$check$lambda_16, ExpressionComparison$check$lambda_17, ExpressionComparison$check$lambda_18, ExpressionComparison$check$lambda_19, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
+          log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, ExpressionComparison$check$lambda_16, ExpressionComparison$check$lambda_17, ExpressionComparison$check$lambda_18, ExpressionComparison$check$lambda_19, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
           additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, ExpressionComparison$check$lambda_20);
         } else {
-          log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor, ExpressionComparison$check$lambda_21, ExpressionComparison$check$lambda_22, ExpressionComparison$check$lambda_23, ExpressionComparison$check$lambda_24, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor));
+          log_1.add_czegqf$(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor, ExpressionComparison$check$lambda_21, ExpressionComparison$check$lambda_22, ExpressionComparison$check$lambda_23, ExpressionComparison$check$lambda_24, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.leftExpression.endPosition, this.rightExpression.startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongTransformationFactColor));
           log_1.addMessage_cte53e$(ExpressionComparison$check$lambda_25, MessageType$USER_getInstance(), currentLogLevel.v);
           tmp$ = this.leftExpression;
           tmp$_0 = this.rightExpression;
@@ -21452,7 +21731,7 @@ if (typeof kotlin === 'undefined') {
   function RulePointer$check$lambda() {
     return 'ERROR: This RulePointer method must not been called. Undefined behaviour. ';
   }
-  RulePointer.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  RulePointer.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     log_1.addMessage_cte53e$(RulePointer$check$lambda);
     return new ComparisonResult(true, ArrayList_init(), this, this);
   };
@@ -21497,13 +21776,13 @@ if (typeof kotlin === 'undefined') {
   RulePointer.prototype.isSolutionForVariables_axkv0l$$default = function (targetVariables, left, allowedVariables) {
     return null;
   };
-  RulePointer.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
+  RulePointer.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
     return null;
   };
-  RulePointer.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
+  RulePointer.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
     return null;
   };
-  RulePointer.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
+  RulePointer.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
     return null;
   };
   RulePointer.prototype.getLastExpression = function () {
@@ -21586,29 +21865,29 @@ if (typeof kotlin === 'undefined') {
       return CheckingKeyWords$Companion_getInstance().rule + (!isBlank(this$Rule.name) ? " '" + this$Rule.name + "'" : '') + ' ' + CheckingKeyWords$Companion_getInstance().verificationFailed;
     };
   }
-  Rule.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  Rule.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     var tmp$, tmp$_0;
     log_1.addMessageWithFactDetail_d1xyjh$(Rule$check$lambda(this), this.root, MessageType$USER_getInstance(), void 0, 1);
     var currentLogLevel = {v: log_1.currentLevel};
     log_1.addMessage_cte53e$(Rule$check$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
     log_1.logCheckParams_yiwyc7$(onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts);
-    var comparisonResult = this.root.check_628dyb$(factComporator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
+    var comparisonResult = this.root.check_i0qcxd$(factComparator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
     if (comparisonResult.isCorrect) {
       log_1.addMessage_cte53e$(Rule$check$lambda_1(this), void 0, currentLogLevel.v);
       if (!this.root.expressionTransformationChains.isEmpty()) {
         var left = Kotlin.isType(tmp$ = first_0(first_0(this.root.expressionTransformationChains).chain), Expression) ? tmp$ : throwCCE();
         var right = Kotlin.isType(tmp$_0 = last(first_0(this.root.expressionTransformationChains).chain), Expression) ? tmp$_0 : throwCCE();
-        applyAllImmediateSubstitutions(left.data, factComporator.compiledConfiguration);
-        applyAllImmediateSubstitutions(right.data, factComporator.compiledConfiguration);
-        if (!factComporator.expressionComporator.compareAsIs_5gxvt3$(left.data, right.data)) {
+        applyAllImmediateSubstitutions(left.data, factComparator.compiledConfiguration);
+        applyAllImmediateSubstitutions(right.data, factComparator.compiledConfiguration);
+        if (!factComparator.expressionComparator.compareAsIs_5gxvt3$(left.data, right.data)) {
           this.expressionSubstitution = new ExpressionSubstitution(left.data, right.data, void 0, comparisonResult.additionalFactUsed, this.name, void 0, void 0, first_0(this.root.expressionTransformationChains).comparisonType);
           log_1.addMessageWithExpressionSubstitutionShort_w3y3zc$(Rule$check$lambda_2, ensureNotNull(this.expressionSubstitution), MessageType$USER_getInstance(), currentLogLevel.v);
         }} else {
         if (!this.root.factTransformationChains.isEmpty()) {
           var left_0 = first_0(first_0(this.root.factTransformationChains).chain);
           var right_0 = last(first_0(this.root.factTransformationChains).chain);
-          if (!factComporator.compareAsIs_4xgx46$(left_0, right_0)) {
-            this.factSubstitution = new FactSubstitution(left_0, right_0, void 0, comparisonResult.additionalFactUsed, void 0, this.name, factComporator);
+          if (!factComparator.compareAsIs_4xgx46$(left_0, right_0)) {
+            this.factSubstitution = new FactSubstitution(left_0, right_0, void 0, comparisonResult.additionalFactUsed, void 0, this.name, factComparator);
             log_1.addMessageWithFactSubstitutionDetail_garven$(Rule$check$lambda_3, ensureNotNull(this.factSubstitution), MessageType$USER_getInstance(), currentLogLevel.v);
           }}}
     } else {
@@ -21659,13 +21938,13 @@ if (typeof kotlin === 'undefined') {
   Rule.prototype.isSolutionForVariables_axkv0l$$default = function (targetVariables, left, allowedVariables) {
     return null;
   };
-  Rule.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
+  Rule.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
     return null;
   };
-  Rule.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
+  Rule.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
     return null;
   };
-  Rule.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
+  Rule.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
     return null;
   };
   Rule.prototype.getLastExpression = function () {
@@ -21987,7 +22266,7 @@ if (typeof kotlin === 'undefined') {
       return CheckingKeyWords$Companion_getInstance().factChainVerified + ". '" + first_0(this$MainChain.chain) + "' -> '" + last(this$MainChain.chain) + "'";
     };
   }
-  MainChain.prototype.check_628dyb$ = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  MainChain.prototype.check_i0qcxd$ = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6, tmp$_7, tmp$_8, tmp$_9, tmp$_10, tmp$_11, tmp$_12, tmp$_13, tmp$_14, tmp$_15, tmp$_16, tmp$_17, tmp$_18, tmp$_19, tmp$_20, tmp$_21, tmp$_22, tmp$_23, tmp$_24, tmp$_25, tmp$_26, tmp$_27, tmp$_28;
     log_1.addMessage_cte53e$(MainChain$check$lambda, MessageType$USER_getInstance(), void 0, 1);
     log_1.add_ww6hhz$(this.chain.toString(), MainChain$check$lambda_0, MainChain$check$lambda_1);
@@ -22005,7 +22284,7 @@ if (typeof kotlin === 'undefined') {
         if (this.chain.get_za3lpa$(currentRightIndex).type() === ComparableTransformationPartType$RULE_getInstance()) {
           var rule = Kotlin.isType(tmp$ = this.chain.get_za3lpa$(currentRightIndex), Rule) ? tmp$ : throwCCE();
           log_1.addMessageWithFactDetail_d1xyjh$(MainChain$check$lambda_6, rule.root, MessageType$USER_getInstance(), currentLogLevel.v);
-          var checkingResult = rule.check_628dyb$(factComporator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
+          var checkingResult = rule.check_i0qcxd$(factComparator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
           if (checkingResult.isCorrect) {
             if (rule.factSubstitution != null) {
               actualFactsTransformations = listOf(ensureNotNull(rule.factSubstitution));
@@ -22040,8 +22319,8 @@ if (typeof kotlin === 'undefined') {
           actualExpressionTransformations = destination_0;
           if (actualFactsTransformations.isEmpty() && actualExpressionTransformations.isEmpty()) {
             log_1.add_ww6hhz$(ruleName, MainChain$check$lambda_12, MainChain$check$lambda_13, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, MainChain$check$lambda_14, MainChain$check$lambda_15, MainChain$check$lambda_16, MainChain$check$lambda_17, currentLogLevel.v);
-            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
+            log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, MainChain$check$lambda_14, MainChain$check$lambda_15, MainChain$check$lambda_16, MainChain$check$lambda_17, currentLogLevel.v);
+            coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex + 1 | 0).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
             var tmp$_31 = this.chain.get_za3lpa$(currentLeftIndex);
             var tmp$_32 = this.chain.get_za3lpa$(currentRightIndex + 1 | 0);
             var tmp$_33 = "Rule with name '" + ruleName + "' not found. Exists only rules with names: ";
@@ -22085,25 +22364,25 @@ if (typeof kotlin === 'undefined') {
             log_1.addMessage_cte53e$(MainChain$check$lambda_25, MessageType$USER_getInstance(), currentLogLevel.v);
             var leftSubtraction = subtractionTree(leftExpressionComparison.leftExpression.data, leftExpressionComparison.rightExpression.data);
             var rightSubtraction = subtractionTree(rightExpressionComparison.leftExpression.data, rightExpressionComparison.rightExpression.data);
-            var subtractionResult = factComporator.expressionComporator.compareWithoutSubstitutions_fb5b0y$(leftSubtraction, rightSubtraction, ComparisonType$EQUAL_getInstance());
+            var subtractionResult = factComparator.expressionComparator.compareWithoutSubstitutions_fb5b0y$(leftSubtraction, rightSubtraction, ComparisonType$EQUAL_getInstance());
             if (subtractionResult) {
               transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_26);
               log_1.addMessage_cte53e$(MainChain$check$lambda_27, MessageType$USER_getInstance(), currentLogLevel.v);
             }if (!transformationVerified) {
               switch (leftExpressionComparison.comparisonType.name) {
                 case 'EQUAL':
-                  var ll = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var ll = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(ll, MainChain$check$lambda_28, MainChain$check$lambda_29, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-                  var rr = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var rr = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(rr, MainChain$check$lambda_30, MainChain$check$lambda_31, currentLogLevel.v, void 0, MessageType$USER_getInstance());
                   if (ll && rr) {
                     transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_32);
                     log_1.addMessage_cte53e$(MainChain$check$lambda_33, MessageType$USER_getInstance(), currentLogLevel.v);
                   } else {
                     log_1.addMessage_cte53e$(MainChain$check$lambda_34);
-                    var lr = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                    var lr = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                     log_1.add_ww6hhz$(lr, MainChain$check$lambda_35, MainChain$check$lambda_36, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-                    var rl = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                    var rl = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, void 0, factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                     log_1.add_ww6hhz$(lr, MainChain$check$lambda_37, MainChain$check$lambda_38, currentLogLevel.v, void 0, MessageType$USER_getInstance());
                     if (lr && rl) {
                       transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_39);
@@ -22116,7 +22395,7 @@ if (typeof kotlin === 'undefined') {
                   if (!transformationVerified) {
                     var leftDivision = divisionTree(leftExpressionComparison.leftExpression.data, leftExpressionComparison.rightExpression.data);
                     var rightDivision = divisionTree(rightExpressionComparison.leftExpression.data, rightExpressionComparison.rightExpression.data);
-                    var divisionResult = factComporator.expressionComporator.compareWithoutSubstitutions_fb5b0y$(leftDivision, rightDivision, ComparisonType$EQUAL_getInstance(), void 0, true);
+                    var divisionResult = factComparator.expressionComparator.compareWithoutSubstitutions_fb5b0y$(leftDivision, rightDivision, ComparisonType$EQUAL_getInstance(), void 0, true);
                     if (divisionResult) {
                       transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_42);
                       log_1.addMessage_cte53e$(MainChain$check$lambda_43, MessageType$USER_getInstance(), currentLogLevel.v);
@@ -22124,9 +22403,9 @@ if (typeof kotlin === 'undefined') {
                   break;
                 case 'LEFT_MORE':
                 case 'LEFT_MORE_OR_EQUAL':
-                  var ll_0 = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_LESS_OR_EQUAL_getInstance(), factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var ll_0 = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_LESS_OR_EQUAL_getInstance(), factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(ll_0, MainChain$check$lambda_44, MainChain$check$lambda_45, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-                  var rr_0 = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_MORE_OR_EQUAL_getInstance(), factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var rr_0 = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_MORE_OR_EQUAL_getInstance(), factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(rr_0, MainChain$check$lambda_46, MainChain$check$lambda_47, currentLogLevel.v, void 0, MessageType$USER_getInstance());
                   if (ll_0 && rr_0) {
                     transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_48);
@@ -22138,9 +22417,9 @@ if (typeof kotlin === 'undefined') {
                   break;
                 case 'LEFT_LESS':
                 case 'LEFT_LESS_OR_EQUAL':
-                  var ll_1 = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_MORE_OR_EQUAL_getInstance(), factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var ll_1 = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.leftExpression.data, rightExpressionComparison.leftExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_MORE_OR_EQUAL_getInstance(), factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(ll_1, MainChain$check$lambda_51, MainChain$check$lambda_52, currentLogLevel.v, void 0, MessageType$USER_getInstance());
-                  var rr_1 = factComporator.expressionComporator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_LESS_OR_EQUAL_getInstance(), factComporator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
+                  var rr_1 = factComparator.expressionComparator.compareWithTreeTransformationRules_8lnv8j$(leftExpressionComparison.rightExpression.data, rightExpressionComparison.rightExpression.data, actualExpressionTransformations, void 0, void 0, void 0, ComparisonType$LEFT_LESS_OR_EQUAL_getInstance(), factComparator.compiledConfiguration.comparisonSettings.maxDistBetweenDiffSteps);
                   log_1.add_ww6hhz$(rr_1, MainChain$check$lambda_53, MainChain$check$lambda_54, currentLogLevel.v, void 0, MessageType$USER_getInstance());
                   if (ll_1 && rr_1) {
                     transformationVerified = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_55);
@@ -22266,7 +22545,7 @@ if (typeof kotlin === 'undefined') {
               tmp$_25 = get_lastIndex(leftFacts);
               for (var i_1 = 0; i_1 <= tmp$_25; i_1++) {
                 var mainChain = new MainChain(mutableListOf([leftFacts.get_za3lpa$(i_1), rightFacts.get_za3lpa$(i_1)]));
-                var result = mainChain.check_628dyb$(factComporator, true, actualFactsTransformations, plus(actualExpressionTransformations, expressionTransformationRulesFromLeftFact), emptyList(), skipTrivialCheck);
+                var result = mainChain.check_i0qcxd$(factComparator, true, actualFactsTransformations, plus(actualExpressionTransformations, expressionTransformationRulesFromLeftFact), emptyList(), skipTrivialCheck);
                 if (!result.isCorrect) {
                   uncorrectTransformationFound = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_68);
                   log_1.add_ww6hhz$(i_1, MainChain$check$lambda_69, MainChain$check$lambda_70, currentLogLevel.v, void 0, MessageType$USER_getInstance());
@@ -22279,23 +22558,23 @@ if (typeof kotlin === 'undefined') {
       }if (!transformationVerified) {
         log_1.addMessage_cte53e$(MainChain$check$lambda_73);
         var additionalFactInCurrentTransformationApplicationUsed = ArrayList_init();
-        var result_0 = factComporator.compareWithTreeTransformationRules_p9xvyu$(this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex), additionalFacts, actualFactsTransformations, void 0, void 0, void 0, void 0, additionalFactInCurrentTransformationApplicationUsed);
+        var result_0 = factComparator.compareWithTreeTransformationRules_p9xvyu$(this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex), additionalFacts, actualFactsTransformations, void 0, void 0, void 0, void 0, additionalFactInCurrentTransformationApplicationUsed);
         if (result_0) {
-          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, MainChain$check$lambda_74, MainChain$check$lambda_75, MainChain$check$lambda_76, MainChain$check$lambda_77, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
+          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor, MainChain$check$lambda_74, MainChain$check$lambda_75, MainChain$check$lambda_76, MainChain$check$lambda_77, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.factHelpFactColor));
           var isInTaskContext = !additionalFactInCurrentTransformationApplicationUsed.isEmpty();
           log_1.add_ww6hhz$(isInTaskContext, MainChain$check$lambda_78, MainChain$check$lambda_79, currentLogLevel.v, void 0, MessageType$USER_getInstance());
           if (isInTaskContext) {
             additionalFactUsed = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainChain$check$lambda_80);
           }} else {
-          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, MainChain$check$lambda_81, MainChain$check$lambda_82, MainChain$check$lambda_83, MainChain$check$lambda_84, currentLogLevel.v);
-          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
+          log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor, MainChain$check$lambda_81, MainChain$check$lambda_82, MainChain$check$lambda_83, MainChain$check$lambda_84, currentLogLevel.v);
+          coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.wrongFactColor));
           log_1.addMessage_cte53e$(MainChain$check$lambda_85, MessageType$USER_getInstance(), currentLogLevel.v);
           return new ComparisonResult(false, coloringTasks, this.chain.get_za3lpa$(currentLeftIndex), this.chain.get_za3lpa$(currentRightIndex), "Unclear transformation between '" + this.chain.get_za3lpa$(currentLeftIndex) + "' and '" + this.chain.get_za3lpa$(currentRightIndex) + "' ");
         }
       } else {
-        log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, MainChain$check$lambda_86, MainChain$check$lambda_87, MainChain$check$lambda_88, MainChain$check$lambda_89, currentLogLevel.v);
-        coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComporator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
+        log_1.add_czegqf$(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor, MainChain$check$lambda_86, MainChain$check$lambda_87, MainChain$check$lambda_88, MainChain$check$lambda_89, currentLogLevel.v);
+        coloringTasks.add_11rb$(new ColoringTask(this.chain.get_za3lpa$(currentLeftIndex).endPosition, this.chain.get_za3lpa$(currentRightIndex).startPosition, factComparator.compiledConfiguration.checkedFactAccentuation.checkedFactColor.correctFactColor));
         log_1.addMessage_cte53e$(MainChain$check$lambda_90, MessageType$USER_getInstance(), currentLogLevel.v);
       }
       if (this.chain.get_za3lpa$(currentRightIndex).type() === ComparableTransformationPartType$MAIN_LINE_AND_NODE_getInstance() || this.chain.get_za3lpa$(currentRightIndex).type() === ComparableTransformationPartType$MAIN_LINE_OR_NODE_getInstance()) {
@@ -22687,7 +22966,7 @@ if (typeof kotlin === 'undefined') {
   function MainLineAndNode$check$lambda_31() {
     return 'Fact node checked and it is correct, out facts are computed: ';
   }
-  MainLineAndNode.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  MainLineAndNode.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6;
     log_1.addMessageWithFactDetail_d1xyjh$(MainLineAndNode$check$lambda, this, MessageType$USER_getInstance(), void 0, 1);
     var currentLogLevel = {v: log_1.currentLevel};
@@ -22701,7 +22980,7 @@ if (typeof kotlin === 'undefined') {
     tmp$ = this.factTransformationChains.iterator();
     while (tmp$.hasNext()) {
       var factChain = tmp$.next();
-      var checkingResult = first_0(factChain.chain).check_628dyb$(factComporator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
+      var checkingResult = first_0(factChain.chain).check_i0qcxd$(factComparator, false, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck);
       coloringTasks.addAll_brywnq$(checkingResult.coloringTasks);
       if (checkingResult.isCorrect) {
         log_1.addMessageWithFactDetail_d1xyjh$(MainLineAndNode$check$lambda_3, first_0(factChain.chain), MessageType$USER_getInstance(), currentLogLevel.v);
@@ -22719,7 +22998,7 @@ if (typeof kotlin === 'undefined') {
     tmp$_0 = this.rules.iterator();
     while (tmp$_0.hasNext()) {
       var rule = tmp$_0.next();
-      var checkingResult_0 = rule.check_628dyb$(factComporator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
+      var checkingResult_0 = rule.check_i0qcxd$(factComparator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
       coloringTasks.addAll_brywnq$(checkingResult_0.coloringTasks);
       if (checkingResult_0.isCorrect) {
         if (rule.factSubstitution != null || rule.expressionSubstitution != null) {
@@ -22731,7 +23010,7 @@ if (typeof kotlin === 'undefined') {
             while (tmp$_1.hasNext()) {
               var knownFact = tmp$_1.next();
               log_1.addMessageWithFactShort_d1xyjh$(MainLineAndNode$check$lambda_11, knownFact, void 0, currentLogLevel.v);
-              if (factComporator.compareAsIs_4xgx46$(knownFact, ensureNotNull(rule.factSubstitution).left)) {
+              if (factComparator.compareAsIs_4xgx46$(knownFact, ensureNotNull(rule.factSubstitution).left)) {
                 leftFactIsKnown = log_1.assignAndLog_746w4o$(true, currentLogLevel.v, MainLineAndNode$check$lambda_12);
                 break;
               }}
@@ -22757,7 +23036,7 @@ if (typeof kotlin === 'undefined') {
     tmp$_3 = this.expressionTransformationChains.iterator();
     while (tmp$_3.hasNext()) {
       var expressionChain = tmp$_3.next();
-      var checkingResult_1 = expressionChain.check_628dyb$(factComporator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
+      var checkingResult_1 = expressionChain.check_i0qcxd$(factComparator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
       coloringTasks.addAll_brywnq$(checkingResult_1.coloringTasks);
       if (checkingResult_1.isCorrect) {
         this.outFacts.add_11rb$(new ExpressionComparison(void 0, void 0, Kotlin.isType(tmp$_4 = first_0(expressionChain.chain), Expression) ? tmp$_4 : throwCCE(), Kotlin.isType(tmp$_5 = last(expressionChain.chain), Expression) ? tmp$_5 : throwCCE(), expressionChain.comparisonType, this));
@@ -22774,7 +23053,7 @@ if (typeof kotlin === 'undefined') {
     tmp$_6 = this.factTransformationChains.iterator();
     while (tmp$_6.hasNext()) {
       var factChain_0 = tmp$_6.next();
-      var checkingResult_2 = factChain_0.check_628dyb$(factComporator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
+      var checkingResult_2 = factChain_0.check_i0qcxd$(factComparator, false, plus(factsTransformations, nodeFactsTransformations), plus(expressionTransformations, nodeExpressionTransformations), plus(additionalFacts, this.inFacts), skipTrivialCheck);
       coloringTasks.addAll_brywnq$(checkingResult_2.coloringTasks);
       if (checkingResult_2.isCorrect) {
         this.outFacts.add_11rb$(last(factChain_0.chain));
@@ -22898,19 +23177,19 @@ if (typeof kotlin === 'undefined') {
     var childrenFactsIdentifiers = destination;
     return 'AND_NODE(' + joinToString(sorted(childrenFactsIdentifiers), ';mn;', void 0, void 0, void 0, void 0, MainLineAndNode$computeSortedOutIdentifier$lambda) + ')';
   };
-  MainLineAndNode.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
+  MainLineAndNode.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).isFactorizationForVariables_ytdd42$(minNumberOfMultipliers, targetVariables, targetExpression, factComporator);
+      return last(this.outFacts).isFactorizationForVariables_s6qnlc$(minNumberOfMultipliers, targetVariables, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
-  MainLineAndNode.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
+  MainLineAndNode.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).isSolutionWithoutFunctions_hklomv$(forbidden, targetExpression, factComporator);
+      return last(this.outFacts).isSolutionWithoutFunctions_o78e5l$(forbidden, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
-  MainLineAndNode.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
+  MainLineAndNode.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).hasNoFractions_jpz981$(maxNumberOfDivisions, targetExpression, factComporator);
+      return last(this.outFacts).hasNoFractions_qclyqr$(maxNumberOfDivisions, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
   function MainLineAndNode$Companion() {
@@ -23218,7 +23497,7 @@ if (typeof kotlin === 'undefined') {
       element_0.replaceNotDefinedFunctionsOnVariables_ioe5p3$(functionIdentifierToVariableMap, definedFunctionNameNumberOfArgsSet);
     }
   };
-  MainLineOrNode.prototype.check_628dyb$$default = function (factComporator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
+  MainLineOrNode.prototype.check_i0qcxd$$default = function (factComparator, onExpressionLevel, factsTransformations, expressionTransformations, additionalFacts, skipTrivialCheck) {
     throw new NotImplementedError_init('An operation is not implemented: ' + 'not implemented');
   };
   MainLineOrNode.prototype.getActualChain = function () {
@@ -23367,19 +23646,19 @@ if (typeof kotlin === 'undefined') {
       new MainLineOrNode$Companion();
     }return MainLineOrNode$Companion_instance;
   }
-  MainLineOrNode.prototype.isFactorizationForVariables_ytdd42$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComporator) {
+  MainLineOrNode.prototype.isFactorizationForVariables_s6qnlc$ = function (minNumberOfMultipliers, targetVariables, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).isFactorizationForVariables_ytdd42$(minNumberOfMultipliers, targetVariables, targetExpression, factComporator);
+      return last(this.outFacts).isFactorizationForVariables_s6qnlc$(minNumberOfMultipliers, targetVariables, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
-  MainLineOrNode.prototype.isSolutionWithoutFunctions_hklomv$ = function (forbidden, targetExpression, factComporator) {
+  MainLineOrNode.prototype.isSolutionWithoutFunctions_o78e5l$ = function (forbidden, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).isSolutionWithoutFunctions_hklomv$(forbidden, targetExpression, factComporator);
+      return last(this.outFacts).isSolutionWithoutFunctions_o78e5l$(forbidden, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
-  MainLineOrNode.prototype.hasNoFractions_jpz981$ = function (maxNumberOfDivisions, targetExpression, factComporator) {
+  MainLineOrNode.prototype.hasNoFractions_qclyqr$ = function (maxNumberOfDivisions, targetExpression, factComparator) {
     if (!this.outFacts.isEmpty()) {
-      return last(this.outFacts).hasNoFractions_jpz981$(maxNumberOfDivisions, targetExpression, factComporator);
+      return last(this.outFacts).hasNoFractions_qclyqr$(maxNumberOfDivisions, targetExpression, factComparator);
     }return new GeneralError('No answer');
   };
   MainLineOrNode.$metadata$ = {
@@ -23473,10 +23752,10 @@ if (typeof kotlin === 'undefined') {
     var wrapper = tmp$_0;
     return new MainLineAndNode(void 0, void 0, void 0, void 0, mutableListOf([wrapper]), mutableListOf([wrapper]));
   }
-  function checkTransformationChain($receiver, factComporator, onExpressionLevel, additionalFacts, skipTrivialCheck) {
+  function checkTransformationChain($receiver, factComparator, onExpressionLevel, additionalFacts, skipTrivialCheck) {
     if (skipTrivialCheck === void 0)
       skipTrivialCheck = false;
-    var compiledConfiguration = factComporator.compiledConfiguration;
+    var compiledConfiguration = factComparator.compiledConfiguration;
     $receiver.variableReplacement_y0zsll$(compiledConfiguration.compiledImmediateVariableReplacements);
     var tmp$;
     tmp$ = additionalFacts.iterator();
@@ -23484,7 +23763,7 @@ if (typeof kotlin === 'undefined') {
       var element = tmp$.next();
       element.variableReplacement_y0zsll$(compiledConfiguration.compiledImmediateVariableReplacements);
     }
-    return $receiver.check_628dyb$(factComporator, onExpressionLevel, compiledConfiguration.compiledFactTreeTransformationRules, compiledConfiguration.compiledExpressionTreeTransformationRules, additionalFacts, skipTrivialCheck);
+    return $receiver.check_i0qcxd$(factComparator, onExpressionLevel, compiledConfiguration.compiledFactTreeTransformationRules, compiledConfiguration.compiledExpressionTreeTransformationRules, additionalFacts, skipTrivialCheck);
   }
   function FactConstructorViewer(compiledConfiguration, expressionNodeConstructor, openBracket, closeBracket, mainLineNodePartSuffix) {
     if (compiledConfiguration === void 0)
@@ -23817,7 +24096,7 @@ if (typeof kotlin === 'undefined') {
                   tmp$_11 = this.constructFactByIdentifier_5jrdui$(factSubstitutionData.list.get_za3lpa$(1));
                   tmp$_12 = SubstitutionDirection$valueOf(factSubstitutionData.list.get_za3lpa$(2));
                   tmp$_13 = this.booleanFromData_pdl1vz$(factSubstitutionData.list.get_za3lpa$(3));
-                  tmp$_14 = new FactSubstitution(tmp$_10, tmp$_11, toDouble(factSubstitutionData.list.get_za3lpa$(4)), tmp$_13, tmp$_12, void 0, this.compiledConfiguration.factComporator);
+                  tmp$_14 = new FactSubstitution(tmp$_10, tmp$_11, toDouble(factSubstitutionData.list.get_za3lpa$(4)), tmp$_13, tmp$_12, void 0, this.compiledConfiguration.factComparator);
                 }
                 var factSubstitution = tmp$_14;
                 tmp$_17 = newFact.rules;
@@ -23960,219 +24239,219 @@ if (typeof kotlin === 'undefined') {
       };
     };
   });
-  function FactComporator() {
-    this.compiledConfiguration_w0t7mh$_0 = this.compiledConfiguration_w0t7mh$_0;
-    this.expressionComporator_yc1aig$_0 = this.expressionComporator_yc1aig$_0;
+  function FactComparator() {
+    this.compiledConfiguration_klcwm1$_0 = this.compiledConfiguration_klcwm1$_0;
+    this.expressionComparator_w91byg$_0 = this.expressionComparator_w91byg$_0;
   }
-  Object.defineProperty(FactComporator.prototype, 'compiledConfiguration', {
+  Object.defineProperty(FactComparator.prototype, 'compiledConfiguration', {
     get: function () {
-      if (this.compiledConfiguration_w0t7mh$_0 == null)
+      if (this.compiledConfiguration_klcwm1$_0 == null)
         return throwUPAE('compiledConfiguration');
-      return this.compiledConfiguration_w0t7mh$_0;
+      return this.compiledConfiguration_klcwm1$_0;
     },
     set: function (compiledConfiguration) {
-      this.compiledConfiguration_w0t7mh$_0 = compiledConfiguration;
+      this.compiledConfiguration_klcwm1$_0 = compiledConfiguration;
     }
   });
-  Object.defineProperty(FactComporator.prototype, 'expressionComporator', {
+  Object.defineProperty(FactComparator.prototype, 'expressionComparator', {
     get: function () {
-      if (this.expressionComporator_yc1aig$_0 == null)
-        return throwUPAE('expressionComporator');
-      return this.expressionComporator_yc1aig$_0;
+      if (this.expressionComparator_w91byg$_0 == null)
+        return throwUPAE('expressionComparator');
+      return this.expressionComparator_w91byg$_0;
     },
-    set: function (expressionComporator) {
-      this.expressionComporator_yc1aig$_0 = expressionComporator;
+    set: function (expressionComparator) {
+      this.expressionComparator_w91byg$_0 = expressionComparator;
     }
   });
-  FactComporator.prototype.init_g18hfp$ = function (compiledConfiguration, expressionComporator) {
-    if (expressionComporator === void 0)
-      expressionComporator = new ExpressionComporator();
+  FactComparator.prototype.init_9elrwz$ = function (compiledConfiguration, expressionComparator) {
+    if (expressionComparator === void 0)
+      expressionComparator = new ExpressionComparator();
     this.compiledConfiguration = compiledConfiguration;
-    this.expressionComporator = expressionComporator;
-    this.expressionComporator.init_3b06hw$(compiledConfiguration);
+    this.expressionComparator = expressionComparator;
+    this.expressionComparator.init_3b06hw$(compiledConfiguration);
   };
-  function FactComporator$compareAsIs$lambda() {
+  function FactComparator$compareAsIs$lambda() {
     return 'compareAsIs started';
   }
-  function FactComporator$compareAsIs$lambda_0(closure$currentLogLevel) {
+  function FactComparator$compareAsIs$lambda_0(closure$currentLogLevel) {
     return function () {
       return 'Current log level: ' + closure$currentLogLevel.v;
     };
   }
-  function FactComporator$compareAsIs$lambda_1() {
+  function FactComparator$compareAsIs$lambda_1() {
     return 'Expression pribability comparison';
   }
-  function FactComporator$compareAsIs$lambda_2() {
+  function FactComparator$compareAsIs$lambda_2() {
     return "Result of comparison left.left with right.left: '";
   }
-  function FactComporator$compareAsIs$lambda_3() {
+  function FactComparator$compareAsIs$lambda_3() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_4() {
+  function FactComparator$compareAsIs$lambda_4() {
     return "Result of comparison left.right with right.right: '";
   }
-  function FactComporator$compareAsIs$lambda_5() {
+  function FactComparator$compareAsIs$lambda_5() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_6() {
+  function FactComparator$compareAsIs$lambda_6() {
     return 'Expression Comparisons are equal';
   }
-  function FactComporator$compareAsIs$lambda_7() {
+  function FactComparator$compareAsIs$lambda_7() {
     return 'Simple check failed. Try to reverse comparison';
   }
-  function FactComporator$compareAsIs$lambda_8() {
+  function FactComparator$compareAsIs$lambda_8() {
     return "Result of comparison left.left with right.right: '";
   }
-  function FactComporator$compareAsIs$lambda_9() {
+  function FactComparator$compareAsIs$lambda_9() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_10() {
+  function FactComparator$compareAsIs$lambda_10() {
     return "Result of comparison left.right with right.left: '";
   }
-  function FactComporator$compareAsIs$lambda_11() {
+  function FactComparator$compareAsIs$lambda_11() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_12() {
+  function FactComparator$compareAsIs$lambda_12() {
     return 'left';
   }
-  function FactComporator$compareAsIs$lambda_13() {
+  function FactComparator$compareAsIs$lambda_13() {
     return 'right';
   }
-  function FactComporator$compareAsIs$lambda_14() {
+  function FactComparator$compareAsIs$lambda_14() {
     return 'Comparison in exist order';
   }
-  function FactComporator$compareAsIs$lambda_15() {
+  function FactComparator$compareAsIs$lambda_15() {
     return "facts at position '";
   }
-  function FactComporator$compareAsIs$lambda_16() {
+  function FactComparator$compareAsIs$lambda_16() {
     return "' are not equal. Order may be different";
   }
-  function FactComporator$compareAsIs$lambda_17() {
+  function FactComparator$compareAsIs$lambda_17() {
     return 'Comparison in sorted order';
   }
-  function FactComporator$compareAsIs$lambda_18(it) {
+  function FactComparator$compareAsIs$lambda_18(it) {
     return it.computeSortedOutIdentifier_6taknv$(true);
   }
-  function FactComporator$compareAsIs$lambda_19(it) {
+  function FactComparator$compareAsIs$lambda_19(it) {
     return it.computeSortedOutIdentifier_6taknv$(true);
   }
-  function FactComporator$compareAsIs$lambda_20() {
+  function FactComparator$compareAsIs$lambda_20() {
     return 'sorted left';
   }
-  function FactComporator$compareAsIs$lambda_21() {
+  function FactComparator$compareAsIs$lambda_21() {
     return 'sorted right';
   }
-  function FactComporator$compareAsIs$lambda_22() {
+  function FactComparator$compareAsIs$lambda_22() {
     return "Additional fact used to match left fact at left: '";
   }
-  function FactComporator$compareAsIs$lambda_23() {
+  function FactComparator$compareAsIs$lambda_23() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_24() {
+  function FactComparator$compareAsIs$lambda_24() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_25() {
+  function FactComparator$compareAsIs$lambda_25() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_26() {
+  function FactComparator$compareAsIs$lambda_26() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_27() {
+  function FactComparator$compareAsIs$lambda_27() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_28() {
+  function FactComparator$compareAsIs$lambda_28() {
     return "Additional fact used to match right fact at left: '";
   }
-  function FactComporator$compareAsIs$lambda_29() {
+  function FactComparator$compareAsIs$lambda_29() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_30() {
+  function FactComparator$compareAsIs$lambda_30() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_31() {
+  function FactComparator$compareAsIs$lambda_31() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_32() {
+  function FactComparator$compareAsIs$lambda_32() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_33() {
+  function FactComparator$compareAsIs$lambda_33() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_34() {
+  function FactComparator$compareAsIs$lambda_34() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_35() {
+  function FactComparator$compareAsIs$lambda_35() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_36() {
+  function FactComparator$compareAsIs$lambda_36() {
     return "' in not MAIN_LINE_AND_NODE";
   }
-  function FactComporator$compareAsIs$lambda_37() {
+  function FactComparator$compareAsIs$lambda_37() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_38() {
+  function FactComparator$compareAsIs$lambda_38() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_39() {
+  function FactComparator$compareAsIs$lambda_39() {
     return "'";
   }
-  function FactComporator$compareAsIs$lambda_40() {
+  function FactComparator$compareAsIs$lambda_40() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_41() {
+  function FactComparator$compareAsIs$lambda_41() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_42() {
+  function FactComparator$compareAsIs$lambda_42() {
     return "' during search in left facts";
   }
-  function FactComporator$compareAsIs$lambda_43() {
+  function FactComparator$compareAsIs$lambda_43() {
     return "DiscrepancyFound at left: '";
   }
-  function FactComporator$compareAsIs$lambda_44() {
+  function FactComparator$compareAsIs$lambda_44() {
     return "' and right '";
   }
-  function FactComporator$compareAsIs$lambda_45() {
+  function FactComparator$compareAsIs$lambda_45() {
     return "' during search in right facts";
   }
-  function FactComporator$compareAsIs$lambda_46() {
+  function FactComparator$compareAsIs$lambda_46() {
     return "result: '";
   }
-  function FactComporator$compareAsIs$lambda_47() {
+  function FactComparator$compareAsIs$lambda_47() {
     return "'";
   }
-  FactComporator.prototype.compareAsIs_4xgx46$ = function (left, right, additionalFactsSortedIdentifiers, compareExpressionsWithProbabilityTest) {
+  FactComparator.prototype.compareAsIs_4xgx46$ = function (left, right, additionalFactsSortedIdentifiers, compareExpressionsWithProbabilityTest) {
     if (additionalFactsSortedIdentifiers === void 0) {
       additionalFactsSortedIdentifiers = emptyList();
     }if (compareExpressionsWithProbabilityTest === void 0)
       compareExpressionsWithProbabilityTest = false;
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5;
-    log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda, void 0, void 0, 1);
+    log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda, void 0, void 0, 1);
     log_1.logFactsCompareAsIsParams_69ddxq$(left, right, additionalFactsSortedIdentifiers, compareExpressionsWithProbabilityTest);
     var currentLogLevel = {v: log_1.currentLevel};
-    log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
+    log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
     if (left.type() !== right.type()) {
       return false;
     }switch (left.type().name) {
       case 'EXPRESSION':
-        log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_1, void 0, currentLogLevel.v);
-        tmp$_5 = this.expressionComporator.probabilityTestComparison_1lpgi8$((Kotlin.isType(tmp$ = left, Expression) ? tmp$ : throwCCE()).data.clone(), (Kotlin.isType(tmp$_0 = right, Expression) ? tmp$_0 : throwCCE()).data.clone());
+        log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_1, void 0, currentLogLevel.v);
+        tmp$_5 = this.expressionComparator.probabilityTestComparison_1lpgi8$((Kotlin.isType(tmp$ = left, Expression) ? tmp$ : throwCCE()).data.clone(), (Kotlin.isType(tmp$_0 = right, Expression) ? tmp$_0 : throwCCE()).data.clone());
         break;
       case 'EXPRESSION_COMPARISON':
         var leftComparison = Kotlin.isType(tmp$_1 = left, ExpressionComparison) ? tmp$_1 : throwCCE();
         var rightComparison = Kotlin.isType(tmp$_2 = right, ExpressionComparison) ? tmp$_2 : throwCCE();
         var leftOriginal = this.compareAsIs_4xgx46$(leftComparison.leftExpression, rightComparison.leftExpression, additionalFactsSortedIdentifiers);
-        log_1.add_ww6hhz$(leftOriginal, FactComporator$compareAsIs$lambda_2, FactComporator$compareAsIs$lambda_3, currentLogLevel.v);
+        log_1.add_ww6hhz$(leftOriginal, FactComparator$compareAsIs$lambda_2, FactComparator$compareAsIs$lambda_3, currentLogLevel.v);
         var rightOriginal = this.compareAsIs_4xgx46$(leftComparison.rightExpression, rightComparison.rightExpression, additionalFactsSortedIdentifiers);
-        log_1.add_ww6hhz$(rightOriginal, FactComporator$compareAsIs$lambda_4, FactComporator$compareAsIs$lambda_5, currentLogLevel.v);
+        log_1.add_ww6hhz$(rightOriginal, FactComparator$compareAsIs$lambda_4, FactComparator$compareAsIs$lambda_5, currentLogLevel.v);
         if (leftOriginal && rightOriginal && leftComparison.comparisonType === rightComparison.comparisonType) {
-          log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_6, void 0, currentLogLevel.v);
+          log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_6, void 0, currentLogLevel.v);
           tmp$_5 = true;
         } else {
-          log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_7, void 0, currentLogLevel.v);
+          log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_7, void 0, currentLogLevel.v);
           var leftEqualRight = this.compareAsIs_4xgx46$(leftComparison.leftExpression, rightComparison.rightExpression, additionalFactsSortedIdentifiers);
-          log_1.add_ww6hhz$(leftEqualRight, FactComporator$compareAsIs$lambda_8, FactComporator$compareAsIs$lambda_9, currentLogLevel.v);
+          log_1.add_ww6hhz$(leftEqualRight, FactComparator$compareAsIs$lambda_8, FactComparator$compareAsIs$lambda_9, currentLogLevel.v);
           var rightEqualLeft = this.compareAsIs_4xgx46$(leftComparison.rightExpression, rightComparison.leftExpression, additionalFactsSortedIdentifiers);
-          log_1.add_ww6hhz$(rightEqualLeft, FactComporator$compareAsIs$lambda_10, FactComporator$compareAsIs$lambda_11, currentLogLevel.v);
+          log_1.add_ww6hhz$(rightEqualLeft, FactComparator$compareAsIs$lambda_10, FactComparator$compareAsIs$lambda_11, currentLogLevel.v);
           if (!leftEqualRight || !rightEqualLeft)
             tmp$_5 = false;
           else {
@@ -24203,27 +24482,27 @@ if (typeof kotlin === 'undefined') {
       case 'MAIN_LINE_OR_NODE':
         var leftNodeOutFacts = getOutFactsFromMainLineNode(left);
         var rightNodeInFacts = getInFactsFromMainLineNode(right);
-        log_1.logSystemFacts_s4ig9i$(left.type(), leftNodeOutFacts, FactComporator$compareAsIs$lambda_12);
-        log_1.logSystemFacts_s4ig9i$(right.type(), rightNodeInFacts, FactComporator$compareAsIs$lambda_13);
+        log_1.logSystemFacts_s4ig9i$(left.type(), leftNodeOutFacts, FactComparator$compareAsIs$lambda_12);
+        log_1.logSystemFacts_s4ig9i$(right.type(), rightNodeInFacts, FactComparator$compareAsIs$lambda_13);
         var orderIsDifferent = false;
         if (leftNodeOutFacts.size === rightNodeInFacts.size) {
-          log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_14, void 0, currentLogLevel.v);
+          log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_14, void 0, currentLogLevel.v);
           tmp$_3 = get_lastIndex(leftNodeOutFacts);
           for (var i = 0; i <= tmp$_3; i++) {
             if (!this.compareAsIs_4xgx46$(leftNodeOutFacts.get_za3lpa$(i), rightNodeInFacts.get_za3lpa$(i), additionalFactsSortedIdentifiers)) {
               orderIsDifferent = true;
-              log_1.add_ww6hhz$(i, FactComporator$compareAsIs$lambda_15, FactComporator$compareAsIs$lambda_16, currentLogLevel.v);
+              log_1.add_ww6hhz$(i, FactComparator$compareAsIs$lambda_15, FactComparator$compareAsIs$lambda_16, currentLogLevel.v);
               break;
             }}
         }
         if (!orderIsDifferent && leftNodeOutFacts.size === rightNodeInFacts.size) {
           tmp$_5 = true;
         } else {
-          log_1.addMessage_cte53e$(FactComporator$compareAsIs$lambda_17);
-          var leftNodeOutFactsSorted = sortedWith(leftNodeOutFacts, new Comparator$ObjectLiteral_4(compareBy$lambda_2(FactComporator$compareAsIs$lambda_18)));
-          var rightNodeOutFactsSorted = sortedWith(rightNodeInFacts, new Comparator$ObjectLiteral_4(compareBy$lambda_2(FactComporator$compareAsIs$lambda_19)));
-          log_1.logSystemFacts_s4ig9i$(left.type(), leftNodeOutFactsSorted, FactComporator$compareAsIs$lambda_20);
-          log_1.logSystemFacts_s4ig9i$(right.type(), rightNodeOutFactsSorted, FactComporator$compareAsIs$lambda_21);
+          log_1.addMessage_cte53e$(FactComparator$compareAsIs$lambda_17);
+          var leftNodeOutFactsSorted = sortedWith(leftNodeOutFacts, new Comparator$ObjectLiteral_4(compareBy$lambda_2(FactComparator$compareAsIs$lambda_18)));
+          var rightNodeOutFactsSorted = sortedWith(rightNodeInFacts, new Comparator$ObjectLiteral_4(compareBy$lambda_2(FactComparator$compareAsIs$lambda_19)));
+          log_1.logSystemFacts_s4ig9i$(left.type(), leftNodeOutFactsSorted, FactComparator$compareAsIs$lambda_20);
+          log_1.logSystemFacts_s4ig9i$(right.type(), rightNodeOutFactsSorted, FactComparator$compareAsIs$lambda_21);
           var discrepancyFound = false;
           var leftCounter = 0;
           var rightCounter = 0;
@@ -24236,36 +24515,36 @@ if (typeof kotlin === 'undefined') {
             } else if (left.type() === ComparableTransformationPartType$MAIN_LINE_AND_NODE_getInstance()) {
               if (Kotlin.compareTo(leftIdentifier, rightIdentifier) < 0) {
                 if (binarySearch(additionalFactsSortedIdentifiers, leftIdentifier) >= 0) {
-                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_22, FactComporator$compareAsIs$lambda_23, FactComporator$compareAsIs$lambda_24, currentLogLevel.v);
+                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_22, FactComparator$compareAsIs$lambda_23, FactComparator$compareAsIs$lambda_24, currentLogLevel.v);
                   leftCounter = leftCounter + 1 | 0;
                 } else {
                   discrepancyFound = true;
-                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_25, FactComporator$compareAsIs$lambda_26, FactComporator$compareAsIs$lambda_27, currentLogLevel.v);
+                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_25, FactComparator$compareAsIs$lambda_26, FactComparator$compareAsIs$lambda_27, currentLogLevel.v);
                   break;
                 }
               } else if (Kotlin.compareTo(leftIdentifier, rightIdentifier) > 0) {
                 if (binarySearch(additionalFactsSortedIdentifiers, rightIdentifier) >= 0) {
-                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_28, FactComporator$compareAsIs$lambda_29, FactComporator$compareAsIs$lambda_30, currentLogLevel.v);
+                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_28, FactComparator$compareAsIs$lambda_29, FactComparator$compareAsIs$lambda_30, currentLogLevel.v);
                   tmp$_4 = rightCounter, rightCounter = tmp$_4 + 1 | 0;
                 } else {
-                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_31, FactComporator$compareAsIs$lambda_32, FactComporator$compareAsIs$lambda_33, currentLogLevel.v);
+                  log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_31, FactComparator$compareAsIs$lambda_32, FactComparator$compareAsIs$lambda_33, currentLogLevel.v);
                   discrepancyFound = true;
                   break;
                 }
               }} else {
-              log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_34, FactComporator$compareAsIs$lambda_35, FactComporator$compareAsIs$lambda_36, currentLogLevel.v);
+              log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_34, FactComparator$compareAsIs$lambda_35, FactComparator$compareAsIs$lambda_36, currentLogLevel.v);
               discrepancyFound = true;
               break;
             }
           }
           if (left.type() !== ComparableTransformationPartType$MAIN_LINE_AND_NODE_getInstance() && (leftCounter < leftNodeOutFactsSorted.size || rightCounter < rightNodeOutFactsSorted.size)) {
-            log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_37, FactComporator$compareAsIs$lambda_38, FactComporator$compareAsIs$lambda_39, currentLogLevel.v);
+            log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_37, FactComparator$compareAsIs$lambda_38, FactComparator$compareAsIs$lambda_39, currentLogLevel.v);
             discrepancyFound = true;
           }while (!discrepancyFound && leftCounter < leftNodeOutFactsSorted.size) {
             if (binarySearch(additionalFactsSortedIdentifiers, leftNodeOutFactsSorted.get_za3lpa$(leftCounter).computeSortedOutIdentifier_6taknv$(true)) >= 0) {
               leftCounter = leftCounter + 1 | 0;
             } else {
-              log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_40, FactComporator$compareAsIs$lambda_41, FactComporator$compareAsIs$lambda_42, currentLogLevel.v);
+              log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_40, FactComparator$compareAsIs$lambda_41, FactComparator$compareAsIs$lambda_42, currentLogLevel.v);
               discrepancyFound = true;
               break;
             }
@@ -24274,12 +24553,12 @@ if (typeof kotlin === 'undefined') {
             if (binarySearch(additionalFactsSortedIdentifiers, rightNodeOutFactsSorted.get_za3lpa$(rightCounter).computeSortedOutIdentifier_6taknv$(true)) >= 0) {
               rightCounter = rightCounter + 1 | 0;
             } else {
-              log_1.add_jcldl0$(leftCounter, rightCounter, FactComporator$compareAsIs$lambda_43, FactComporator$compareAsIs$lambda_44, FactComporator$compareAsIs$lambda_45, currentLogLevel.v);
+              log_1.add_jcldl0$(leftCounter, rightCounter, FactComparator$compareAsIs$lambda_43, FactComparator$compareAsIs$lambda_44, FactComparator$compareAsIs$lambda_45, currentLogLevel.v);
               discrepancyFound = true;
               break;
             }
           }
-          log_1.add_ww6hhz$(discrepancyFound, FactComporator$compareAsIs$lambda_46, FactComporator$compareAsIs$lambda_47, currentLogLevel.v);
+          log_1.add_ww6hhz$(discrepancyFound, FactComparator$compareAsIs$lambda_46, FactComparator$compareAsIs$lambda_47, currentLogLevel.v);
           tmp$_5 = !discrepancyFound;
         }
 
@@ -24289,30 +24568,30 @@ if (typeof kotlin === 'undefined') {
     }
     return tmp$_5;
   };
-  function FactComporator$compareWithoutSubstitutions$lambda() {
+  function FactComparator$compareWithoutSubstitutions$lambda() {
     return 'compareWithoutSubstitutions started';
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_0(closure$currentLogLevel) {
+  function FactComparator$compareWithoutSubstitutions$lambda_0(closure$currentLogLevel) {
     return function () {
       return 'Current log level: ' + closure$currentLogLevel.v;
     };
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_1() {
+  function FactComparator$compareWithoutSubstitutions$lambda_1() {
     return 'Left fact after normalization: ';
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_2() {
+  function FactComparator$compareWithoutSubstitutions$lambda_2() {
     return 'Right fact after normalization: ';
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_3() {
+  function FactComparator$compareWithoutSubstitutions$lambda_3() {
     return 'Left fact after complicated function replacement: ';
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_4() {
+  function FactComparator$compareWithoutSubstitutions$lambda_4() {
     return 'Right fact after complicated function replacement: ';
   }
-  function FactComporator$compareWithoutSubstitutions$lambda_5() {
+  function FactComparator$compareWithoutSubstitutions$lambda_5() {
     return 'Expression numeric trees computed. ';
   }
-  FactComporator.prototype.compareWithoutSubstitutions_m17jg3$ = function (left, right, additionalFacts, additionalFactsSortedIdentifiers) {
+  FactComparator.prototype.compareWithoutSubstitutions_m17jg3$ = function (left, right, additionalFacts, additionalFactsSortedIdentifiers) {
     if (additionalFactsSortedIdentifiers === void 0) {
       var destination = ArrayList_init_0(collectionSizeOrDefault(additionalFacts, 10));
       var tmp$;
@@ -24322,27 +24601,27 @@ if (typeof kotlin === 'undefined') {
         destination.add_11rb$(item.computeOutIdentifier_6taknv$(true));
       }
       additionalFactsSortedIdentifiers = sorted(destination);
-    }log_1.addMessage_cte53e$(FactComporator$compareWithoutSubstitutions$lambda, void 0, void 0, 1);
+    }log_1.addMessage_cte53e$(FactComparator$compareWithoutSubstitutions$lambda, void 0, void 0, 1);
     log_1.logFactsCompareAsIsParams_69ddxq$(left, right, additionalFactsSortedIdentifiers);
     var currentLogLevel = {v: log_1.currentLevel};
-    log_1.addMessage_cte53e$(FactComporator$compareWithoutSubstitutions$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
+    log_1.addMessage_cte53e$(FactComparator$compareWithoutSubstitutions$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
     var l = left.cloneWithNormalization_1g1bdl$(LinkedHashMap_init_0(), true);
     var r = right.cloneWithNormalization_1g1bdl$(LinkedHashMap_init_0(), true);
-    log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithoutSubstitutions$lambda_1, l, void 0, currentLogLevel.v);
-    log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithoutSubstitutions$lambda_2, r, void 0, currentLogLevel.v);
+    log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithoutSubstitutions$lambda_1, l, void 0, currentLogLevel.v);
+    log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithoutSubstitutions$lambda_2, r, void 0, currentLogLevel.v);
     if (this.compiledConfiguration.comparisonSettings.compareExpressionsAndFactsWithProbabilityRules) {
       throw new NotImplementedError_init('An operation is not implemented: ' + 'implement');
     } else if (this.compiledConfiguration.comparisonSettings.compareExpressionsWithProbabilityRulesWhenComparingFacts) {
       var functionIdentifierToVariableMap = LinkedHashMap_init_0();
-      l.replaceNotDefinedFunctionsOnVariables_ioe5p3$(functionIdentifierToVariableMap, this.expressionComporator.definedFunctionNameNumberOfArgsSet);
-      r.replaceNotDefinedFunctionsOnVariables_ioe5p3$(functionIdentifierToVariableMap, this.expressionComporator.definedFunctionNameNumberOfArgsSet);
-      log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithoutSubstitutions$lambda_3, l, void 0, currentLogLevel.v);
-      log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithoutSubstitutions$lambda_4, r, void 0, currentLogLevel.v);
+      l.replaceNotDefinedFunctionsOnVariables_ioe5p3$(functionIdentifierToVariableMap, this.expressionComparator.definedFunctionNameNumberOfArgsSet);
+      r.replaceNotDefinedFunctionsOnVariables_ioe5p3$(functionIdentifierToVariableMap, this.expressionComparator.definedFunctionNameNumberOfArgsSet);
+      log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithoutSubstitutions$lambda_3, l, void 0, currentLogLevel.v);
+      log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithoutSubstitutions$lambda_4, r, void 0, currentLogLevel.v);
       if (this.compareAsIs_4xgx46$(l, r, additionalFactsSortedIdentifiers, true)) {
         return true;
-      }l.computeExpressionTrees_r1dnaj$(this.expressionComporator.baseOperationsDefinitions);
-      r.computeExpressionTrees_r1dnaj$(this.expressionComporator.baseOperationsDefinitions);
-      log_1.addMessage_cte53e$(FactComporator$compareWithoutSubstitutions$lambda_5, void 0, currentLogLevel.v);
+      }l.computeExpressionTrees_r1dnaj$(this.expressionComparator.baseOperationsDefinitions);
+      r.computeExpressionTrees_r1dnaj$(this.expressionComparator.baseOperationsDefinitions);
+      log_1.addMessage_cte53e$(FactComparator$compareWithoutSubstitutions$lambda_5, void 0, currentLogLevel.v);
       var res = this.compareAsIs_4xgx46$(l, r, additionalFactsSortedIdentifiers, true);
       return res;
     } else {
@@ -24350,90 +24629,90 @@ if (typeof kotlin === 'undefined') {
       return res_0;
     }
   };
-  function FactComporator$compareWithTreeTransformationRules$lambda() {
+  function FactComparator$compareWithTreeTransformationRules$lambda() {
     return 'compareWithTreeTransformationRules called';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_0(closure$currentLogLevel) {
+  function FactComparator$compareWithTreeTransformationRules$lambda_0(closure$currentLogLevel) {
     return function () {
       return 'Current log level: ' + closure$currentLogLevel.v;
     };
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_1() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_1() {
     return 'Left fact after first normalization: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_2() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_2() {
     return 'Right fact after first normalization: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_3() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_3() {
     return 'COMPARISON_WITHOUT_SUBSTITUTIONS FAILED; Transformation rules search started.';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_4() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_4() {
     return 'Considering rule: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_5() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_5() {
     return 'Left fact after fact wrapping: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_6() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_6() {
     return 'Right fact after fact wrapping: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_7() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_7() {
     return '';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_8() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_8() {
     return ' possible applications found';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_9() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_9() {
     return '';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_10() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_10() {
     return ' possible applications found => ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_11() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_11() {
     return ' possible combinations';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_12() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_12() {
     return "Possible application places count more than max count for boosting: '";
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_13() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_13() {
     return "'. Apply in all of them together";
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_14() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_14() {
     return 'Left fact after transformation: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_15() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_15() {
     return 'Right fact after transformation: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_16() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_16() {
     return 'TRANSFORMATION_VERIFIED. ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_17() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_17() {
     return 'TASK_CONTEXT_FACT_USED. ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_18() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_18() {
     return "bitmask: '";
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_19() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_19() {
     return "' of '";
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_20() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_20() {
     return "'";
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_21() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_21() {
     return 'Left fact after transformation: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_22() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_22() {
     return 'Right fact after transformation: ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_23() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_23() {
     return 'TRANSFORMATION_VERIFIED. ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_24() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_24() {
     return 'TASK_CONTEXT_FACT_USED. ';
   }
-  function FactComporator$compareWithTreeTransformationRules$lambda_25() {
+  function FactComparator$compareWithTreeTransformationRules$lambda_25() {
     return 'applicable TRANSFORMATION_NOT_FOUND';
   }
-  FactComporator.prototype.compareWithTreeTransformationRules_p9xvyu$ = function (leftOriginal, rightOriginal, additionalFacts, transformations, maxTransformationWeight, maxBustCount, minPossibleTransformationWeight, additionalFactsSortedIdentifiers, additionalFactUsed) {
+  FactComparator.prototype.compareWithTreeTransformationRules_p9xvyu$ = function (leftOriginal, rightOriginal, additionalFacts, transformations, maxTransformationWeight, maxBustCount, minPossibleTransformationWeight, additionalFactsSortedIdentifiers, additionalFactUsed) {
     var tmp$, tmp$_0, tmp$_1;
     if (maxTransformationWeight === void 0)
       maxTransformationWeight = this.compiledConfiguration.comparisonSettings.maxTransformationWeight;
@@ -24474,17 +24753,17 @@ if (typeof kotlin === 'undefined') {
       additionalFactsSortedIdentifiers = sorted(destination);
     }var left = leftOriginal.clone();
     var right = rightOriginal.clone();
-    log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda, MessageType$USER_getInstance(), void 0, 1);
+    log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda, MessageType$USER_getInstance(), void 0, 1);
     log_1.logFactsCompareAsIsParams_6nwrqg$(left, right, additionalFacts, maxTransformationWeight, maxBustCount, minPossibleTransformationWeight, additionalFactUsed);
     var currentLogLevel = {v: log_1.currentLevel};
-    log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
+    log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_0(currentLogLevel), void 0, currentLogLevel.v);
     left.applyAllExpressionSubstitutions_itxcjl$(this.compiledConfiguration.compiledImmediateTreeTransformationRules);
     right.applyAllExpressionSubstitutions_itxcjl$(this.compiledConfiguration.compiledImmediateTreeTransformationRules);
-    log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_1, left, void 0, currentLogLevel.v);
-    log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_2, right, void 0, currentLogLevel.v);
+    log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_1, left, void 0, currentLogLevel.v);
+    log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_2, right, void 0, currentLogLevel.v);
     if (this.compareWithoutSubstitutions_m17jg3$(left, right, additionalFacts, additionalFactsSortedIdentifiers))
       return true;
-    log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_3, MessageType$USER_getInstance(), currentLogLevel.v);
+    log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_3, MessageType$USER_getInstance(), currentLogLevel.v);
     if (maxTransformationWeight < minPossibleTransformationWeight)
       return false;
     var destination_0 = ArrayList_init();
@@ -24498,50 +24777,50 @@ if (typeof kotlin === 'undefined') {
     tmp$_1 = destination_0.iterator();
     while (tmp$_1.hasNext()) {
       var transformation = tmp$_1.next();
-      log_1.addMessageWithFactSubstitutionDetail_garven$(FactComporator$compareWithTreeTransformationRules$lambda_4, transformation, MessageType$USER_getInstance(), currentLogLevel.v);
+      log_1.addMessageWithFactSubstitutionDetail_garven$(FactComparator$compareWithTreeTransformationRules$lambda_4, transformation, MessageType$USER_getInstance(), currentLogLevel.v);
       var transformationLogLevel = currentLogLevel.v + 1 | 0;
       var l = left.clone();
       var r = right.clone();
       var lParent = factWrapperForCheckingTransformations(l, true);
       var rParent = factWrapperForCheckingTransformations(r, false);
-      log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_5, lParent, void 0, transformationLogLevel);
-      log_1.addMessageWithFactShort_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_6, rParent, void 0, transformationLogLevel);
+      log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_5, lParent, void 0, transformationLogLevel);
+      log_1.addMessageWithFactShort_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_6, rParent, void 0, transformationLogLevel);
       var substitutionPlaces = plus(transformation.findAllPossibleSubstitutionPlaces_fyc0t6$(lParent, true, additionalFacts), transformation.findAllPossibleSubstitutionPlaces_fyc0t6$(rParent, false, additionalFacts));
-      log_1.add_ww6hhz$(substitutionPlaces.size, FactComporator$compareWithTreeTransformationRules$lambda_7, FactComporator$compareWithTreeTransformationRules$lambda_8);
+      log_1.add_ww6hhz$(substitutionPlaces.size, FactComparator$compareWithTreeTransformationRules$lambda_7, FactComparator$compareWithTreeTransformationRules$lambda_8);
       var bitMaskCount = 1 << substitutionPlaces.size;
-      log_1.add_jcldl0$(substitutionPlaces.size, bitMaskCount, FactComporator$compareWithTreeTransformationRules$lambda_9, FactComporator$compareWithTreeTransformationRules$lambda_10, FactComporator$compareWithTreeTransformationRules$lambda_11, transformationLogLevel, void 0, MessageType$USER_getInstance());
+      log_1.add_jcldl0$(substitutionPlaces.size, bitMaskCount, FactComparator$compareWithTreeTransformationRules$lambda_9, FactComparator$compareWithTreeTransformationRules$lambda_10, FactComparator$compareWithTreeTransformationRules$lambda_11, transformationLogLevel, void 0, MessageType$USER_getInstance());
       if (Kotlin.imul(bitMaskCount, transformations.size) > maxBustCount) {
-        log_1.add_ww6hhz$(maxBustCount / transformations.size | 0, FactComporator$compareWithTreeTransformationRules$lambda_12, FactComporator$compareWithTreeTransformationRules$lambda_13, transformationLogLevel, void 0, MessageType$USER_getInstance());
+        log_1.add_ww6hhz$(maxBustCount / transformations.size | 0, FactComparator$compareWithTreeTransformationRules$lambda_12, FactComparator$compareWithTreeTransformationRules$lambda_13, transformationLogLevel, void 0, MessageType$USER_getInstance());
         var additionalFactInCurrentTransformationApplicationUsed = ArrayList_init();
         transformation.applySubstitution_7ayt38$(substitutionPlaces, additionalFacts, additionalFactInCurrentTransformationApplicationUsed);
-        log_1.addMessageWithFactDetail_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_14, lParent, MessageType$USER_getInstance(), transformationLogLevel);
-        log_1.addMessageWithFactDetail_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_15, rParent, MessageType$USER_getInstance(), transformationLogLevel);
+        log_1.addMessageWithFactDetail_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_14, lParent, MessageType$USER_getInstance(), transformationLogLevel);
+        log_1.addMessageWithFactDetail_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_15, rParent, MessageType$USER_getInstance(), transformationLogLevel);
         if (this.compareWithTreeTransformationRules_p9xvyu$(lParent, rParent, additionalFacts, transformations, maxTransformationWeight - transformation.weight, maxBustCount, minPossibleTransformationWeight, additionalFactsSortedIdentifiers, additionalFactInCurrentTransformationApplicationUsed)) {
-          log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_16, MessageType$USER_getInstance(), transformationLogLevel);
+          log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_16, MessageType$USER_getInstance(), transformationLogLevel);
           if (!additionalFactInCurrentTransformationApplicationUsed.isEmpty()) {
             additionalFactUsed.add_11rb$(true);
-            log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_17, MessageType$USER_getInstance(), transformationLogLevel);
+            log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_17, MessageType$USER_getInstance(), transformationLogLevel);
           }return true;
         }} else {
         for (var bitMask = 1; bitMask < bitMaskCount; bitMask++) {
-          log_1.add_jcldl0$(toString_0(bitMask, 2), toString_0(bitMaskCount, 2), FactComporator$compareWithTreeTransformationRules$lambda_18, FactComporator$compareWithTreeTransformationRules$lambda_19, FactComporator$compareWithTreeTransformationRules$lambda_20, transformationLogLevel, void 0, MessageType$USER_getInstance());
+          log_1.add_jcldl0$(toString_0(bitMask, 2), toString_0(bitMaskCount, 2), FactComparator$compareWithTreeTransformationRules$lambda_18, FactComparator$compareWithTreeTransformationRules$lambda_19, FactComparator$compareWithTreeTransformationRules$lambda_20, transformationLogLevel, void 0, MessageType$USER_getInstance());
           var additionalFactInCurrentTransformationApplicationUsed_0 = ArrayList_init();
           transformation.applySubstitutionByBitMask_anc5oi$(substitutionPlaces, bitMask, additionalFactInCurrentTransformationApplicationUsed_0);
-          log_1.addMessageWithFactDetail_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_21, lParent, MessageType$USER_getInstance(), transformationLogLevel);
-          log_1.addMessageWithFactDetail_d1xyjh$(FactComporator$compareWithTreeTransformationRules$lambda_22, rParent, MessageType$USER_getInstance(), transformationLogLevel);
+          log_1.addMessageWithFactDetail_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_21, lParent, MessageType$USER_getInstance(), transformationLogLevel);
+          log_1.addMessageWithFactDetail_d1xyjh$(FactComparator$compareWithTreeTransformationRules$lambda_22, rParent, MessageType$USER_getInstance(), transformationLogLevel);
           if (this.compareWithTreeTransformationRules_p9xvyu$(lParent.cloneWithNormalization_1g1bdl$(LinkedHashMap_init_0(), false), rParent.cloneWithNormalization_1g1bdl$(LinkedHashMap_init_0(), false), additionalFacts, transformations, maxTransformationWeight - transformation.weight, maxBustCount, minPossibleTransformationWeight, additionalFactsSortedIdentifiers, additionalFactInCurrentTransformationApplicationUsed_0)) {
-            log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_23, MessageType$USER_getInstance(), transformationLogLevel);
+            log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_23, MessageType$USER_getInstance(), transformationLogLevel);
             if (!additionalFactInCurrentTransformationApplicationUsed_0.isEmpty()) {
               additionalFactUsed.add_11rb$(true);
-              log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_24, MessageType$USER_getInstance(), transformationLogLevel);
+              log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_24, MessageType$USER_getInstance(), transformationLogLevel);
             }return true;
           }}
       }
     }
-    log_1.addMessage_cte53e$(FactComporator$compareWithTreeTransformationRules$lambda_25, MessageType$USER_getInstance(), currentLogLevel.v);
+    log_1.addMessage_cte53e$(FactComparator$compareWithTreeTransformationRules$lambda_25, MessageType$USER_getInstance(), currentLogLevel.v);
     return false;
   };
-  FactComporator.prototype.fullFactsCompare_nklmij$ = function (left, right, additionalFacts, additionalFactUsed) {
+  FactComparator.prototype.fullFactsCompare_nklmij$ = function (left, right, additionalFacts, additionalFactUsed) {
     left.applyAllExpressionSubstitutions_itxcjl$(this.compiledConfiguration.compiledImmediateTreeTransformationRules);
     right.applyAllExpressionSubstitutions_itxcjl$(this.compiledConfiguration.compiledImmediateTreeTransformationRules);
     if (this.compiledConfiguration.comparisonSettings.isComparisonWithRules) {
@@ -24551,8 +24830,8 @@ if (typeof kotlin === 'undefined') {
           additionalFactUsed.add_11rb$(true);
         }return true;
       }additionalFactInCurrentTransformationApplicationUsed.clear();
-      left.computeExpressionTrees_r1dnaj$(this.expressionComporator.baseOperationsDefinitions);
-      right.computeExpressionTrees_r1dnaj$(this.expressionComporator.baseOperationsDefinitions);
+      left.computeExpressionTrees_r1dnaj$(this.expressionComparator.baseOperationsDefinitions);
+      right.computeExpressionTrees_r1dnaj$(this.expressionComparator.baseOperationsDefinitions);
       if (this.compareWithTreeTransformationRules_p9xvyu$(left, right, additionalFacts, this.compiledConfiguration.compiledFactTreeTransformationRules, this.compiledConfiguration.comparisonSettings.maxTransformationWeight, this.compiledConfiguration.comparisonSettings.maxBustCount, void 0, void 0, additionalFactInCurrentTransformationApplicationUsed)) {
         if (!additionalFactInCurrentTransformationApplicationUsed.isEmpty()) {
           additionalFactUsed.add_11rb$(true);
@@ -24563,9 +24842,9 @@ if (typeof kotlin === 'undefined') {
       }}
     return false;
   };
-  FactComporator.$metadata$ = {
+  FactComparator.$metadata$ = {
     kind: Kind_CLASS,
-    simpleName: 'FactComporator',
+    simpleName: 'FactComparator',
     interfaces: []
   };
   function SubstitutionDirection(name, ordinal, beginString, endString) {
@@ -24666,7 +24945,7 @@ if (typeof kotlin === 'undefined') {
   FactSubstitutionPlace.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.parentChain, other.parentChain) && Kotlin.equals(this.replaceableNodeIndex, other.replaceableNodeIndex) && Kotlin.equals(this.substitutionInstance, other.substitutionInstance) && Kotlin.equals(this.checkOutMainLineNodePart, other.checkOutMainLineNodePart) && Kotlin.equals(this.originalValue, other.originalValue)))));
   };
-  function FactSubstitution(left, right, weight, basedOnTaskContext, direction, name, factComporator) {
+  function FactSubstitution(left, right, weight, basedOnTaskContext, direction, name, factComparator) {
     if (weight === void 0)
       weight = 1.0;
     if (basedOnTaskContext === void 0)
@@ -24681,7 +24960,7 @@ if (typeof kotlin === 'undefined') {
     this.basedOnTaskContext = basedOnTaskContext;
     this.direction = direction;
     this.name = name;
-    this.factComporator = factComporator;
+    this.factComparator = factComparator;
     this.identifier = '';
   }
   FactSubstitution.prototype.computeIdentifier_6taknv$ = function (recomputeIfComputed) {
@@ -24733,7 +25012,7 @@ if (typeof kotlin === 'undefined') {
               return;
             }
           } else {
-            if (!this.factComporator.compareAsIs_4xgx46$(Kotlin.isType(tmp$_5 = varValue, MainChainPart) ? tmp$_5 : throwCCE(), Kotlin.isType(tmp$_6 = factNode, MainChainPart) ? tmp$_6 : throwCCE(), emptyList())) {
+            if (!this.factComparator.compareAsIs_4xgx46$(Kotlin.isType(tmp$_5 = varValue, MainChainPart) ? tmp$_5 : throwCCE(), Kotlin.isType(tmp$_6 = factNode, MainChainPart) ? tmp$_6 : throwCCE(), emptyList())) {
               substitutionInstance.isApplicable = false;
               return;
             }}
@@ -24877,11 +25156,11 @@ if (typeof kotlin === 'undefined') {
               var conditionFact_1 = conditionFacts.get_za3lpa$(j_1);
               switch (conditionFact_1.type().name) {
                 case 'EXPRESSION_COMPARISON':
-                  tmp$_19 = (Kotlin.isType(tmp$_17 = conditionFact_1, ExpressionComparison) ? tmp$_17 : throwCCE()).computeIfNumeric_gb8qxc$(substitutionInstance, this.factComporator.expressionComporator.baseOperationsDefinitions);
+                  tmp$_19 = (Kotlin.isType(tmp$_17 = conditionFact_1, ExpressionComparison) ? tmp$_17 : throwCCE()).computeIfNumeric_gb8qxc$(substitutionInstance, this.factComparator.expressionComparator.baseOperationsDefinitions);
                   break;
                 case 'MAIN_LINE_AND_NODE':
                 case 'MAIN_LINE_OR_NODE':
-                  tmp$_19 = (Kotlin.isType(tmp$_18 = conditionFact_1, MainLineNode) ? tmp$_18 : throwCCE()).computeIfNumeric_cazeuv$(substitutionInstance, this.factComporator.expressionComporator.baseOperationsDefinitions, true);
+                  tmp$_19 = (Kotlin.isType(tmp$_18 = conditionFact_1, MainLineNode) ? tmp$_18 : throwCCE()).computeIfNumeric_cazeuv$(substitutionInstance, this.factComparator.expressionComparator.baseOperationsDefinitions, true);
                   break;
                 default:tmp$_19 = false;
                   break;
@@ -25160,7 +25439,7 @@ if (typeof kotlin === 'undefined') {
     interfaces: []
   };
   function emptyFactSubstitution() {
-    return new FactSubstitution(emptyExpression(), emptyExpression(), void 0, void 0, void 0, '', new FactComporator());
+    return new FactSubstitution(emptyExpression(), emptyExpression(), void 0, void 0, void 0, '', new FactComparator());
   }
   function TransformationChainParser(originalTransformationChain, nameForRuleDesignationsPossible, functionConfiguration, factsLogicConfiguration, compiledImmediateVariableReplacements, transformationChain, isMathML) {
     if (nameForRuleDesignationsPossible === void 0)
@@ -27233,7 +27512,7 @@ if (typeof kotlin === 'undefined') {
     } else {
       log_1.addMessage_cte53e$(checkFactsInMathML$lambda_2, MessageType$USER_getInstance(), 0);
       log_1.addMessageWithFactDetail_d1xyjh$(checkFactsInMathML$lambda_3, transformationChainParser.root, MessageType$USER_getInstance());
-      var factComporator = compiledConfiguration.factComporator;
+      var factComparator = compiledConfiguration.factComparator;
       var solutionRoot = combineSolutionRoot(targetFactIdentifier, transformationChainParser, compiledConfiguration);
       log_1.addMessage_cte53e$(checkFactsInMathML$lambda_4, MessageType$USER_getInstance(), 0);
       tmp$ = emptyList();
@@ -27243,7 +27522,7 @@ if (typeof kotlin === 'undefined') {
         tmp$_1 = getListOfExpressionComparisonFactsFromFirstSystem(solutionRoot);
       } else
         tmp$_1 = emptyList();
-      var checkingResult = solutionRoot.check_628dyb$(factComporator, false, tmp$, tmp$_0, plus(tmp$_2, tmp$_1));
+      var checkingResult = solutionRoot.check_i0qcxd$(factComparator, false, tmp$, tmp$_0, plus(tmp$_2, tmp$_1));
       log_1.addMessage_cte53e$(checkFactsInMathML$lambda_5(checkingResult), MessageType$USER_getInstance(), 0);
       var resultWithColoredTasks = brushMathMl(transformationChainParser.originalTransformationChain, checkingResult.coloringTasks);
       var result = setBackgroundColorMathMl(resultWithColoredTasks, compiledConfiguration.checkedFactAccentuation.checkedFactColor.checkedFactBackgroundColor);
@@ -27269,7 +27548,7 @@ if (typeof kotlin === 'undefined') {
         }
         var targetVariables = toSet(destination);
         var targetExpression = (Kotlin.isType(tmp$_4 = log_1.factConstructorViewer.constructFactByIdentifier_5jrdui$(targetFactIdentifier), Expression) ? tmp$_4 : throwCCE()).data;
-        var error_0 = solutionRoot.isFactorizationForVariables_ytdd42$(minNumberOfMultipliers, targetVariables, targetExpression, factComporator);
+        var error_0 = solutionRoot.isFactorizationForVariables_s6qnlc$(minNumberOfMultipliers, targetVariables, targetExpression, factComparator);
         if (error_0 != null) {
           log_1.addMessage_cte53e$(checkFactsInMathML$lambda_7(error_0), MessageType$USER_getInstance(), 0);
           return addErrorStringToMathMLSolution(result, error_0.description, errorPrefix);
@@ -27277,7 +27556,7 @@ if (typeof kotlin === 'undefined') {
         if (!isBlank(maxNumberOfDivisionsInAnswer)) {
           var maxNumberOfDivisions = toInt(maxNumberOfDivisionsInAnswer);
           var targetExpression_0 = (Kotlin.isType(tmp$_5 = log_1.factConstructorViewer.constructFactByIdentifier_5jrdui$(targetFactIdentifier), Expression) ? tmp$_5 : throwCCE()).data;
-          var error_1 = solutionRoot.hasNoFractions_jpz981$(maxNumberOfDivisions, targetExpression_0, factComporator);
+          var error_1 = solutionRoot.hasNoFractions_qclyqr$(maxNumberOfDivisions, targetExpression_0, factComparator);
           if (error_1 != null) {
             log_1.addMessage_cte53e$(checkFactsInMathML$lambda_8(error_1), MessageType$USER_getInstance(), 0);
             return addErrorStringToMathMLSolution(result, error_1.description, errorPrefix);
@@ -27324,7 +27603,7 @@ if (typeof kotlin === 'undefined') {
             }}if (!isBlank(forbiddenFunctions)) {
             var forbidden = pairsStringIntFromString(forbiddenFunctions);
             var targetExpression_1 = (Kotlin.isType(tmp$_8 = log_1.factConstructorViewer.constructFactByIdentifier_5jrdui$(targetFactIdentifier), Expression) ? tmp$_8 : throwCCE()).data;
-            var error_3 = solutionRoot.isSolutionWithoutFunctions_hklomv$(forbidden, targetExpression_1, factComporator);
+            var error_3 = solutionRoot.isSolutionWithoutFunctions_o78e5l$(forbidden, targetExpression_1, factComparator);
             if (error_3 != null) {
               log_1.addMessage_cte53e$(checkFactsInMathML$lambda_11(error_3), MessageType$USER_getInstance(), 0);
               return addErrorStringToMathMLSolution(result, error_3.description, errorPrefix);
@@ -27615,10 +27894,10 @@ if (typeof kotlin === 'undefined') {
     } else {
       log_1.addMessage_cte53e$(checkFactsInTex$lambda_2, MessageType$USER_getInstance(), 0);
       log_1.addMessageWithFactDetail_d1xyjh$(checkFactsInTex$lambda_3, transformationChainParser.root, MessageType$USER_getInstance());
-      var factComporator = compiledConfiguration.factComporator;
+      var factComparator = compiledConfiguration.factComparator;
       var solutionRoot = combineSolutionRoot(targetFactIdentifier, transformationChainParser, compiledConfiguration, startExpressionIdentifier, endExpressionIdentifier, comparisonSign);
       log_1.addMessage_cte53e$(checkFactsInTex$lambda_4, MessageType$USER_getInstance(), 0);
-      var checkingResult = solutionRoot.check_628dyb$(factComporator, false, emptyList(), emptyList(), additionalFactsFromItsIdentifiers(log_1.factConstructorViewer, additionalFactsIdentifiers), skipTrivialCheck);
+      var checkingResult = solutionRoot.check_i0qcxd$(factComparator, false, emptyList(), emptyList(), additionalFactsFromItsIdentifiers(log_1.factConstructorViewer, additionalFactsIdentifiers), skipTrivialCheck);
       log_1.addMessage_cte53e$(checkFactsInTex$lambda_5(checkingResult), MessageType$USER_getInstance(), 0);
       var tmp$_2 = transformationChainParser.originalTransformationChain;
       var $receiver = checkingResult.coloringTasks;
@@ -27655,7 +27934,7 @@ if (typeof kotlin === 'undefined') {
             if (typeof hiddenGoalExpression === 'string') {
               var hiddenGoalExpressionNode = expressionNodeConstructor.construct_61zpoe$(hiddenGoalExpression);
               log_1.addMessage_cte53e$(checkFactsInTex$lambda_9(hiddenGoalExpressionNode), void 0, 0);
-              if (compiledConfiguration.factComporator.expressionComporator.compareAsIs_5gxvt3$(hiddenGoalExpressionNode, resultExpression.data, void 0, true)) {
+              if (compiledConfiguration.factComparator.expressionComparator.compareAsIs_5gxvt3$(hiddenGoalExpressionNode, resultExpression.data, void 0, true)) {
                 log_1.addMessage_cte53e$(checkFactsInTex$lambda_10(hiddenGoalExpression), void 0, 0);
                 answerPatterFound = true;
               }}}
@@ -30229,6 +30508,83 @@ if (typeof kotlin === 'undefined') {
     simpleName: 'DomainPointGenerator',
     interfaces: []
   };
+  function entriesOf(jsObject) {
+    var tmp$;
+    var $receiver = (typeof (tmp$ = Object.entries) === 'function' ? tmp$ : throwCCE())(jsObject);
+    var destination = ArrayList_init_0($receiver.length);
+    var tmp$_0;
+    for (tmp$_0 = 0; tmp$_0 !== $receiver.length; ++tmp$_0) {
+      var item = $receiver[tmp$_0];
+      var tmp$_1;
+      destination.add_11rb$(to(typeof (tmp$_1 = item[0]) === 'string' ? tmp$_1 : throwCCE(), item[1]));
+    }
+    return destination;
+  }
+  function mapOf_1(jsObject) {
+    return toMap(entriesOf(jsObject));
+  }
+  function JsonParser() {
+    JsonParser$Companion_getInstance();
+  }
+  function JsonParser$Companion() {
+    JsonParser$Companion_instance = this;
+  }
+  JsonParser$Companion.prototype.parseMap_61zpoe$ = function (json) {
+    var jsonObj = JSON.parse(json);
+    return this.parseMapRecursive_qk3xy8$(jsonObj);
+  };
+  JsonParser$Companion.prototype.parseMapRecursive_qk3xy8$ = function (jsonObj) {
+    var tmp$, tmp$_0, tmp$_1;
+    var res = LinkedHashMap_init_0();
+    tmp$ = mapOf_1(jsonObj).entries.iterator();
+    while (tmp$.hasNext()) {
+      var tmp$_2 = tmp$.next();
+      var key = tmp$_2.key;
+      var valueObj = tmp$_2.value;
+      if (valueObj != null) {
+        if (typeof valueObj === 'string')
+          tmp$_1 = valueObj;
+        else if (Kotlin.isType(valueObj, Collection)) {
+          var destination = ArrayList_init_0(collectionSizeOrDefault(valueObj, 10));
+          var tmp$_3;
+          tmp$_3 = valueObj.iterator();
+          while (tmp$_3.hasNext()) {
+            var item = tmp$_3.next();
+            var tmp$_4 = destination.add_11rb$;
+            var transform$result;
+            var tmp$_5;
+            if (Kotlin.isType(item, JSON)) {
+              transform$result = this.parseMapRecursive_qk3xy8$(Kotlin.isType(tmp$_5 = item, Object) ? tmp$_5 : throwCCE());
+            } else {
+              transform$result = item;
+            }
+            tmp$_4.call(destination, transform$result);
+          }
+          tmp$_1 = destination;
+        } else {
+          tmp$_1 = this.parseMapRecursive_qk3xy8$(Kotlin.isType(tmp$_0 = valueObj, Object) ? tmp$_0 : throwCCE());
+        }
+        var value = tmp$_1;
+        res.put_xwzc9p$(key, value);
+      }}
+    return res;
+  };
+  JsonParser$Companion.$metadata$ = {
+    kind: Kind_OBJECT,
+    simpleName: 'Companion',
+    interfaces: []
+  };
+  var JsonParser$Companion_instance = null;
+  function JsonParser$Companion_getInstance() {
+    if (JsonParser$Companion_instance === null) {
+      new JsonParser$Companion();
+    }return JsonParser$Companion_instance;
+  }
+  JsonParser.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'JsonParser',
+    interfaces: []
+  };
   var random_0;
   function defaultRandom() {
     return random_0.nextDouble();
@@ -31503,7 +31859,7 @@ if (typeof kotlin === 'undefined') {
   function generateExpressionTransformationTasks(expressionTaskGeneratorSettings) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3, tmp$_4, tmp$_5, tmp$_6, tmp$_7, tmp$_8, tmp$_9, tmp$_10, tmp$_11, tmp$_12, tmp$_13;
     var compiledConfiguration = expressionTaskGeneratorSettings.compiledConfiguration;
-    var expressionComporator = compiledConfiguration.factComporator.expressionComporator;
+    var expressionComparator = compiledConfiguration.factComparator.expressionComparator;
     if (expressionTaskGeneratorSettings.expressionGenerationDirection === ExpressionGenerationDirection$FINAL_TO_ORIGINAL_getInstance()) {
       tmp$ = swapPartsInExpressionSubstitutions(expressionTaskGeneratorSettings.extendingExpressionSubstitutions);
     } else {
@@ -31583,7 +31939,7 @@ if (typeof kotlin === 'undefined') {
         while (tmp$_7.hasNext()) {
           var expressionSubstitution = tmp$_7.next();
           if (expressionSubstitution.isAppropriateToFunctions_ywdfdh$(functionsInExpression) && expressionSubstitution.left.nodeType !== NodeType$EMPTY_getInstance()) {
-            if (!expressionSubstitution.findAllPossibleSubstitutionPlaces_puclxv$(currentExpression, expressionComporator).isEmpty()) {
+            if (!expressionSubstitution.findAllPossibleSubstitutionPlaces_i8kf4x$(currentExpression, expressionComparator).isEmpty()) {
               appropriateSubstitutions.add_11rb$(expressionSubstitution);
             }}}
         var tmp$_15;
@@ -31606,7 +31962,7 @@ if (typeof kotlin === 'undefined') {
             currentSubstitutionIndex = currentSubstitutionIndex + 1 | 0;
           }
           var selectedSubstitution = appropriateSubstitutions.get_za3lpa$(currentSubstitutionIndex);
-          var places = selectedSubstitution.findAllPossibleSubstitutionPlaces_puclxv$(newTask_0.currentExpression, expressionComporator);
+          var places = selectedSubstitution.findAllPossibleSubstitutionPlaces_i8kf4x$(newTask_0.currentExpression, expressionComparator);
           if (places.size === 0) {
             continue loop_label;
           } else {
@@ -31706,7 +32062,7 @@ if (typeof kotlin === 'undefined') {
       }
       currentTasks = toMutableList(destination_0);
     }
-    var baseOperationsDefinitions = compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions;
+    var baseOperationsDefinitions = compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions;
     var tmp$_23;
     tmp$_23 = allTasks.iterator();
     while (tmp$_23.hasNext()) {
@@ -31722,7 +32078,7 @@ if (typeof kotlin === 'undefined') {
       tmp$_13 = resultAllTasks.iterator();
       while (tmp$_13.hasNext()) {
         var resultTask = tmp$_13.next();
-        if (compiledConfiguration.factComporator.expressionComporator.compareAsIs_5gxvt3$(task.currentExpression, resultTask.currentExpression)) {
+        if (compiledConfiguration.factComparator.expressionComparator.compareAsIs_5gxvt3$(task.currentExpression, resultTask.currentExpression)) {
           isNew = false;
           break;
         }}
@@ -31762,7 +32118,7 @@ if (typeof kotlin === 'undefined') {
         var item = tmp$_26.next();
         destination_2.add_11rb$(first_0(item));
       }
-      element_5.requiredSubstitutions = toMutableSet_0(destination_2);
+      element_5.requiredSubstitutions = toMutableSet_1(destination_2);
       var $receiver_9 = element_5.requiredSubstitutions;
       var destination_3 = ArrayList_init_0(collectionSizeOrDefault($receiver_9, 10));
       var tmp$_27;
@@ -31818,7 +32174,7 @@ if (typeof kotlin === 'undefined') {
     return destination_5;
   }
   function simplifyAndNormalizeExpression(expression, compiledConfiguration) {
-    var result = {v: compiledConfiguration.factComporator.expressionComporator.baseOperationsDefinitions.computeExpressionTree_em03xr$(expression)};
+    var result = {v: compiledConfiguration.factComparator.expressionComparator.baseOperationsDefinitions.computeExpressionTree_em03xr$(expression)};
     normalizeExpressionToUsualForm(result.v, compiledConfiguration);
     result.v.normalizeTrivialFunctions();
     simplifyExpressionRecursive(result.v, compiledConfiguration);
@@ -32380,6 +32736,15 @@ if (typeof kotlin === 'undefined') {
   _.encryptResult = encryptResult;
   _.decodeUrlSymbols = decodeUrlSymbols_JS;
   _.compareWithoutSubstitutions = compareWithoutSubstitutions;
+  _.createExpressionFrontInput = createExpressionFrontInput_JS;
+  _.createRuleITR = createRuleITR_JS;
+  _.createRulePackITR = createRulePackITR_JS;
+  _.createTaskITR = createTaskITR_JS;
+  _.arrayToList = arrayToList_JS;
+  _.arrayToSet = arrayToSet_JS;
+  _.dinamicToMap = dinamicToMap_JS;
+  _.jsonStringToMap = jsonStringToMap_JS;
+  _.jsonToMap = jsonToMap_JS;
   var package$mathhelper = _.mathhelper || (_.mathhelper = {});
   var package$twf = package$mathhelper.twf || (package$mathhelper.twf = {});
   var package$api = package$twf.api || (package$twf.api = {});
@@ -32454,6 +32819,9 @@ if (typeof kotlin === 'undefined') {
   package$api.findStructureStringsSubstitutionPlacesCoordinatesInExpressionJSON_jm5u2b$ = findStructureStringsSubstitutionPlacesCoordinatesInExpressionJSON;
   package$api.applyExpressionBySubstitutionPlaceCoordinates_7elrlf$ = applyExpressionBySubstitutionPlaceCoordinates;
   package$api.applyExpressionByStructureStringsSubstitutionPlaceCoordinates_7elrlf$ = applyExpressionByStructureStringsSubstitutionPlaceCoordinates;
+  package$api.createExpressionFrontInput_puj7f4$ = createExpressionFrontInput;
+  package$api.createRuleITR_ho8e7n$ = createRuleITR;
+  package$api.createTaskITR_6c0yxu$ = createTaskITR;
   package$api.checkSolutionInTex_gw7uj5$ = checkSolutionInTex;
   package$api.checkSolutionInTex_o41bvz$ = checkSolutionInTex_0;
   package$api.checkSolutionInTexWithCompiledConfiguration_43fm9k$ = checkSolutionInTexWithCompiledConfiguration;
@@ -32641,6 +33009,7 @@ if (typeof kotlin === 'undefined') {
   package$config.VariableConfiguration = VariableConfiguration;
   var package$defaultcontent = package$twf.defaultcontent || (package$twf.defaultcontent = {});
   package$defaultcontent.ExpressionFrontInput = ExpressionFrontInput;
+  package$defaultcontent.toStructureStructureString_8vd3dx$ = toStructureStructureString;
   package$defaultcontent.RuleFrontInput = RuleFrontInput;
   package$defaultcontent.toRuleFrontInput_j2uxf$ = toRuleFrontInput;
   package$defaultcontent.TaskFrontInput = TaskFrontInput;
@@ -32852,7 +33221,7 @@ if (typeof kotlin === 'undefined') {
   package$expressiontree.DomainCalculator = DomainCalculator;
   package$expressiontree.ParserError = ParserError;
   package$expressiontree.GeneralError = GeneralError;
-  package$expressiontree.ExpressionComporator = ExpressionComporator;
+  package$expressiontree.ExpressionComparator = ExpressionComparator;
   package$expressiontree.getComparingDirection_pi90oc$ = getComparingDirection;
   Object.defineProperty(NodeType, 'FUNCTION', {
     get: NodeType$FUNCTION_getInstance
@@ -33150,10 +33519,10 @@ if (typeof kotlin === 'undefined') {
   package$factstransformations.parseFromFactIdentifier_r5gof1$ = parseFromFactIdentifier;
   package$factstransformations.normalizeFactsForComparison_obm516$ = normalizeFactsForComparison;
   package$factstransformations.factWrapperForCheckingTransformations_48t8ok$ = factWrapperForCheckingTransformations;
-  package$factstransformations.checkTransformationChain_2mbwyz$ = checkTransformationChain;
+  package$factstransformations.checkTransformationChain_ducisj$ = checkTransformationChain;
   package$factstransformations.FactConstructorViewer = FactConstructorViewer;
   package$factstransformations.ExpressionComparisonExpanse = ExpressionComparisonExpanse;
-  package$factstransformations.FactComporator = FactComporator;
+  package$factstransformations.FactComparator = FactComparator;
   Object.defineProperty(SubstitutionDirection, 'LEFT_TO_RIGHT', {
     get: SubstitutionDirection$LEFT_TO_RIGHT_getInstance
   });
@@ -33289,6 +33658,12 @@ if (typeof kotlin === 'undefined') {
   package$optimizerutils.CompressedNode = CompressedNode;
   package$optimizerutils.DomainPointGenerator = DomainPointGenerator;
   var package$platformdependent = package$twf.platformdependent || (package$twf.platformdependent = {});
+  package$platformdependent.entriesOf_za3rmp$ = entriesOf;
+  package$platformdependent.mapOf_za3rmp$ = mapOf_1;
+  Object.defineProperty(JsonParser, 'Companion', {
+    get: JsonParser$Companion_getInstance
+  });
+  package$platformdependent.JsonParser = JsonParser;
   Object.defineProperty(package$platformdependent, 'random', {
     get: function () {
       return random_0;
@@ -33421,24 +33796,24 @@ if (typeof kotlin === 'undefined') {
   package$visualization.brushTex_12vgky$ = brushTex;
   package$visualization.dropPerformedTexBrushing_61zpoe$ = dropPerformedTexBrushing;
   package$visualization.dropPerformedTexBrushingInternal_61zpoe$ = dropPerformedTexBrushingInternal;
-  MainChainPart.prototype.check_628dyb$ = ComparableTransformationsPart.prototype.check_628dyb$;
+  MainChainPart.prototype.check_i0qcxd$ = ComparableTransformationsPart.prototype.check_i0qcxd$;
   MainLineNode.prototype.isSolutionForVariables_axkv0l$ = MainChainPart.prototype.isSolutionForVariables_axkv0l$;
-  MainLineNode.prototype.check_628dyb$ = MainChainPart.prototype.check_628dyb$;
+  MainLineNode.prototype.check_i0qcxd$ = MainChainPart.prototype.check_i0qcxd$;
   Expression.prototype.isSolutionForVariables_axkv0l$ = MainChainPart.prototype.isSolutionForVariables_axkv0l$;
-  Expression.prototype.check_628dyb$ = MainChainPart.prototype.check_628dyb$;
-  ExpressionChain.prototype.check_628dyb$ = ComparableTransformationsPart.prototype.check_628dyb$;
+  Expression.prototype.check_i0qcxd$ = MainChainPart.prototype.check_i0qcxd$;
+  ExpressionChain.prototype.check_i0qcxd$ = ComparableTransformationsPart.prototype.check_i0qcxd$;
   ExpressionComparison.prototype.isSolutionForVariables_axkv0l$ = MainChainPart.prototype.isSolutionForVariables_axkv0l$;
-  ExpressionComparison.prototype.check_628dyb$ = MainChainPart.prototype.check_628dyb$;
-  RulePointer.prototype.check_628dyb$ = MainChainPart.prototype.check_628dyb$;
+  ExpressionComparison.prototype.check_i0qcxd$ = MainChainPart.prototype.check_i0qcxd$;
+  RulePointer.prototype.check_i0qcxd$ = MainChainPart.prototype.check_i0qcxd$;
   RulePointer.prototype.isSolutionForVariables_axkv0l$ = MainChainPart.prototype.isSolutionForVariables_axkv0l$;
-  Rule.prototype.check_628dyb$ = MainChainPart.prototype.check_628dyb$;
+  Rule.prototype.check_i0qcxd$ = MainChainPart.prototype.check_i0qcxd$;
   Rule.prototype.isSolutionForVariables_axkv0l$ = MainChainPart.prototype.isSolutionForVariables_axkv0l$;
   MainLineAndNode.prototype.isEmpty = MainLineNode.prototype.isEmpty;
   MainLineAndNode.prototype.isSolutionForVariables_axkv0l$ = MainLineNode.prototype.isSolutionForVariables_axkv0l$;
-  MainLineAndNode.prototype.check_628dyb$ = MainLineNode.prototype.check_628dyb$;
+  MainLineAndNode.prototype.check_i0qcxd$ = MainLineNode.prototype.check_i0qcxd$;
   MainLineOrNode.prototype.isEmpty = MainLineNode.prototype.isEmpty;
   MainLineOrNode.prototype.isSolutionForVariables_axkv0l$ = MainLineNode.prototype.isSolutionForVariables_axkv0l$;
-  MainLineOrNode.prototype.check_628dyb$ = MainLineNode.prototype.check_628dyb$;
+  MainLineOrNode.prototype.check_i0qcxd$ = MainLineNode.prototype.check_i0qcxd$;
   rulePacksMap = mapOf([new Pair('Algebra', getAllAlgebraSubstitutions()), new Pair('ArithmeticPositiveAddition', getArithmeticPositiveAdditionSubstitutions()), new Pair('ArithmeticAddition', getArithmeticAdditionSubstitutions()), new Pair('ArithmeticMultiplication', getArithmeticMultiplicationSubstitutions()), new Pair('ArithmeticDivision', getArithmeticDivisionSubstitutions()), new Pair('ArithmeticPow', getArithmeticPowSubstitutions()), new Pair('ArithmeticPowExtension', getArithmeticPowExtensionSubstitutions()), new Pair('ShortMultiplication', getShortMultiplicationSubstitutions()), new Pair('Logarithm', getLogarithmSubstitutions()), new Pair('FactorialRecurrent', getFactorialSubstitutions()), new Pair('Combinatorics', getCombinatoricsSubstitutions()), new Pair('Trigonometry', getTrigonometrySubstitutions()), new Pair('Complexes', getComplexNumbersSubstitutions()), new Pair('TrigonometryCompleteTgCtg', getAdvancedTrigonometrySubstitutions()), new Pair('Logic', getLogicBaseSubstitutions()), new Pair('LogicAbsorption', getLogicAbsorptionLawSubstitutions()), new Pair('LogicResolution', getLogicResolutionSubstitutions()), new Pair('PhysicsSimpleMoving', getPhysicsSimpleMovingSubstitutions()), new Pair('PhysicsCircleMoving', getPhysicsCircleMovingSubstitutions()), new Pair('PhysicsNuclear', getPhysicsNuclearSubstitutions()), new Pair('PhysicsMolecular', getPhysicsMolecularSubstitutions()), new Pair('PhysicsElectrodynamics', getPhysicsElectrodynamicsSubstitutions())]);
   DomainAll = new DefinitionDomain(emptySet(), void 0, setOf(DomainSegment$Companion_getInstance().inclusive_lu1900$(kotlin_js_internal_DoubleCompanionObject.NEGATIVE_INFINITY, kotlin_js_internal_DoubleCompanionObject.POSITIVE_INFINITY)));
   DomainNil = new DefinitionDomain(emptySet(), void 0, emptySet());
