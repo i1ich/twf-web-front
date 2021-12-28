@@ -69,10 +69,6 @@ class TaskSetConstructorFormatter {
           computationGoalType = ComputationGoalType.WEIGHT;
           reductionGoalType = ReductionGoalType.WEIGHT;
         }
-        if (task.goalPattern) {
-          computationGoalType = ComputationGoalType.PATTERN;
-          reductionGoalType = ReductionGoalType.PATTERN;
-        }
         if (task.goalType == GoalType.FACTORIZATION) {
           reductionGoalType = ReductionGoalType.FACTORIZATION;
         }
@@ -81,6 +77,10 @@ class TaskSetConstructorFormatter {
         }
         if (task.goalType == GoalType.POLYNOM) {
           reductionGoalType = ReductionGoalType.POLYNOMIAL;
+        }
+        if (!computationGoalType && !computationGoalType && task.goalPattern) {
+          computationGoalType = ComputationGoalType.PATTERN;
+          reductionGoalType = ReductionGoalType.PATTERN;
         }
 
         const taskCopy: TaskConstructorInputs = {
@@ -371,7 +371,6 @@ class TaskSetConstructorFormatter {
             return rule.left && rule.right && rule.left.expression.trim() && rule.right.expression.trim();
           }).map((rule: RuleConstructorInputs) => {
             const formattedRule: RuleConstructorSendForm = {...rule};
-
             // @ts-ignore
             const left = rule.left as ExpressionInput;
             formattedRule.leftStructureString = convertMathInput(
