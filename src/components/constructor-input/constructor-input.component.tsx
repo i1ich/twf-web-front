@@ -38,7 +38,7 @@ const ConstructorInput = ({
           display: isVisible ? "block" : "none",
           marginBottom: isExpressionInput ? "2rem" : "1.5rem",
           flexBasis: `${width - 1}%`,
-          marginRight: '1%'
+          marginRight: "1%",
         }}
       >
         <label>{label}</label>

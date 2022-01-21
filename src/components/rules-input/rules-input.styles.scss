@@ -4,3 +4,24 @@
   min-width: 17rem;
   margin-bottom: 1rem;
 }
+
+.rule-input-block {
+  display: inline-block;
+  width: 40%;
+}
+
+.sign-block {
+  display: inline-block;
+  width: 1%;
+}
+
+.remove-rule-btn {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.append-rule-btn {
+  padding: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}

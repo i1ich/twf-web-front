@@ -1,10 +1,10 @@
-import {ConstructorFormProps} from "../constructor-form/constructor-form.types";
+import { ConstructorFormProps } from "../constructor-form/constructor-form.types";
 
 export interface ConstructorFormPanel {
   header: string;
   key: string;
 }
 
-export interface ConstructorPanelFormProps extends ConstructorFormProps{
-  panels: ConstructorFormPanel[]
+export interface ConstructorPanelFormProps extends ConstructorFormProps {
+  panels: ConstructorFormPanel[];
 }

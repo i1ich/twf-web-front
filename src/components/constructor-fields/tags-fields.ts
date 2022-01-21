@@ -1,7 +1,7 @@
-import {ConstructorFormInput} from "../constructor-form/constructor-form.types";
-import {Panel} from "./constructor-fields.type";
+import { ConstructorFormInput } from "../constructor-form/constructor-form.types";
+import { Panel } from "./constructor-fields.type";
 
-export const getTagsFields = () : ConstructorFormInput[] => {
+export const getTagsFields = (): ConstructorFormInput[] => {
   return [
     {
       name: "tags",
@@ -10,7 +10,7 @@ export const getTagsFields = () : ConstructorFormInput[] => {
       isMulti: false,
       isTags: true,
       options: [],
-      panel: Panel.TAGS
+      panel: Panel.TAGS,
     },
-  ]
+  ];
 };

@@ -6,10 +6,12 @@ import {
 } from "../redux/constructor-jsons/constructor-jsons.types";
 import {
   ConstructorFormExpressionInput,
-  ConstructorFormInput, ConstructorFormMultipleExpressionInput,
-  ConstructorFormSelectInput, ConstructorRulesInput,
+  ConstructorFormInput,
+  ConstructorFormMultipleExpressionInput,
+  ConstructorFormSelectInput,
+  ConstructorRulesInput,
 } from "../components/constructor-form/constructor-form.types";
-import {AxiosError} from "axios";
+import { AxiosError } from "axios";
 
 export const filterReactSelectOptions = (options: any[]) => {
   return options.map((option: any) => {
@@ -37,16 +39,15 @@ export const isMultipleExpressionInput = (
   input: ConstructorFormInput
 ): input is ConstructorFormMultipleExpressionInput => {
   return (
-    (input as ConstructorFormMultipleExpressionInput).isMultipleExpressionInput !== undefined
+    (input as ConstructorFormMultipleExpressionInput)
+      .isMultipleExpressionInput !== undefined
   );
 };
 
 export const isRulesInput = (
   input: ConstructorFormInput
 ): input is ConstructorRulesInput => {
-  return (
-    (input as ConstructorRulesInput).isRulesInput !== undefined
-  );
+  return (input as ConstructorRulesInput).isRulesInput !== undefined;
 };
 
 export const formatConstructorSelect = (
@@ -58,14 +59,20 @@ export const formatConstructorSelect = (
     : options.find((option: SelectOption) => option.value === selectedOption);
 };
 
-export const makeServerRequestErrorMessage = (
-    e: AxiosError
-) => {
+export const makeServerRequestErrorMessage = (e: AxiosError) => {
   if (e.response) {
     if (e.response.data.error) {
-      return "Произошла ошибка: '" + e.response.data.error + "' -> '" + e.message + "'";
+      return (
+        "Произошла ошибка: '" +
+        e.response.data.error +
+        "' -> '" +
+        e.message +
+        "'"
+      );
     } else {
-      return "Произошла ошибка: '" + e.response.data + "' -> '" + e.message + "'";
+      return (
+        "Произошла ошибка: '" + e.response.data + "' -> '" + e.message + "'"
+      );
     }
   } else {
     return "Произошла ошибка: '" + e.message + "'";

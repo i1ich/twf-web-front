@@ -12,26 +12,28 @@ export interface ConstructorFormBaseInput {
   panel?: string;
 }
 
-export interface ConstructorFormDefaultInput extends ConstructorFormBaseInput{
+export interface ConstructorFormDefaultInput extends ConstructorFormBaseInput {
   type: "text" | "number";
   isTextArea?: boolean;
 }
 
-export interface ConstructorFormSelectInput extends ConstructorFormBaseInput{
+export interface ConstructorFormSelectInput extends ConstructorFormBaseInput {
   options: LabeledValue[];
   isMulti: boolean;
   isTags?: boolean;
 }
 
-export interface ConstructorFormExpressionInput extends ConstructorFormBaseInput{
+export interface ConstructorFormExpressionInput
+  extends ConstructorFormBaseInput {
   isExpressionInput: true;
 }
 
-export interface ConstructorFormMultipleExpressionInput extends ConstructorFormBaseInput{
+export interface ConstructorFormMultipleExpressionInput
+  extends ConstructorFormBaseInput {
   isMultipleExpressionInput: true;
 }
 
-export interface ConstructorRulesInput extends ConstructorFormBaseInput{
+export interface ConstructorRulesInput extends ConstructorFormBaseInput {
   isRulesInput: true;
 }
 

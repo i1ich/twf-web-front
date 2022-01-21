@@ -1,5 +1,5 @@
-import {ConstructorFormInput} from "../constructor-form/constructor-form.types";
-import {Panel} from "./constructor-fields.type";
+import { ConstructorFormInput } from "../constructor-form/constructor-form.types";
+import { Panel } from "./constructor-fields.type";
 
 const textDescFields: ConstructorFormInput[] = [
   {
@@ -41,9 +41,9 @@ const textDescFields: ConstructorFormInput[] = [
   },
 ];
 
-export const getTextDescFields = () : ConstructorFormInput[] => {
-  return [...textDescFields].map(input => {
-    input.panel = Panel.TEXT_DESC
+export const getTextDescFields = (): ConstructorFormInput[] => {
+  return textDescFields.map((input) => {
+    input.panel = Panel.TEXT_DESC;
     return input;
-  })
+  });
 };

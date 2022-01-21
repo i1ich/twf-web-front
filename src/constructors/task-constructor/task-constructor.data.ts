@@ -13,29 +13,27 @@ export const allPossibleGoalTypes = [
 export const allPossibleReductionTypes = [
   {
     value: GoalType.COMPUTATION,
-    label: 'Вычисление'
+    label: "Вычисление",
   },
   {
     value: GoalType.SIMPLIFICATION,
-    label: 'Упрощение'
+    label: "Упрощение",
   },
   {
     value: GoalType.CNF,
-    label: 'x-КНФ'
+    label: "x-КНФ",
   },
   {
     value: GoalType.DNF,
-    label: 'x-ДНФ'
+    label: "x-ДНФ",
   },
   {
     value: GoalType.FACTORIZATION,
-    label: 'Факторизация'
+    label: "Факторизация",
   },
 ];
 
-export const allPossibleXTypes = [
-  1, 2, 3, 4
-];
+export const allPossibleXTypes = [1, 2, 3, 4];
 
 export const mockSubjectTypes: string[] = [
   "subject type 1",

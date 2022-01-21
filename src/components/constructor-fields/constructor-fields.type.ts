@@ -1,7 +1,7 @@
 export enum TaskType {
   PROOF = "PROOF",
   REDUCTION = "REDUCTION",
-  COMPUTATION = "COMPUTATION"
+  COMPUTATION = "COMPUTATION",
 }
 
 export enum ComputationGoalType {
@@ -24,10 +24,10 @@ export enum ReductionGoalType {
 }
 
 export enum Panel {
-  SUBJECT_TASK_TYPE = 'subject_task_type',
-  BASIC_CONDITIONS = 'basic_conditions',
-  ADD_CONDITIONS = 'add_conditions',
-  TAGS = 'tags',
-  RULE_PACKS = 'rule_packs',
-  TEXT_DESC = 'text_desc',
+  SUBJECT_TASK_TYPE = "subject_task_type",
+  BASIC_CONDITIONS = "basic_conditions",
+  ADD_CONDITIONS = "add_conditions",
+  TAGS = "tags",
+  RULE_PACKS = "rule_packs",
+  TEXT_DESC = "text_desc",
 }

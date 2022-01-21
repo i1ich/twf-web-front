@@ -1,7 +1,9 @@
-import {ConstructorFormInput} from "../constructor-form/constructor-form.types";
-import {Panel} from "./constructor-fields.type";
+import { ConstructorFormInput } from "../constructor-form/constructor-form.types";
+import { Panel } from "./constructor-fields.type";
 
-export const getRulePacksFields = (rulePacks: string[]) : ConstructorFormInput[] => {
+export const getRulePacksFields = (
+  rulePacks: string[]
+): ConstructorFormInput[] => {
   return [
     {
       name: "rulePacks",
@@ -11,5 +13,5 @@ export const getRulePacksFields = (rulePacks: string[]) : ConstructorFormInput[]
       options: rulePacks.map((rp: string) => ({ label: rp, value: rp })),
       panel: Panel.RULE_PACKS,
     },
-  ]
+  ];
 };

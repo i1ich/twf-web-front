@@ -1,6 +1,6 @@
-import {ConstructorFormInput} from "../constructor-form/constructor-form.types";
+import { ConstructorFormInput } from "../constructor-form/constructor-form.types";
 
-export const getOtherFields = () : ConstructorFormInput[] => {
+export const getOtherFields = (): ConstructorFormInput[] => {
   return [
     {
       name: "stepsNumber",
@@ -87,5 +87,5 @@ export const getOtherFields = () : ConstructorFormInput[] => {
       type: "text",
       isTextArea: true,
     },
-  ]
+  ];
 };

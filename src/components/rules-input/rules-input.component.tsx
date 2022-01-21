@@ -1,39 +1,38 @@
 import React from "react";
-import {RulesInputProps} from "./rules-input.types";
+import { RulesInputProps } from "./rules-input.types";
 import Icon from "@mdi/react";
-import {mdiClose, mdiNumericPositive1} from "@mdi/js";
+import { mdiClose, mdiNumericPositive1 } from "@mdi/js";
 import "./rules-input.styles.scss";
 import MixedInput from "../mixed-input/mixed-input.component";
-import {MathInputFormat} from "../../utils/kotlin-lib-functions";
-import {ArrayField, useFieldArray, useFormContext} from "react-hook-form";
-import {RuleConstructorInputs} from "../../constructors/rule-constructor/rule-constructor.types";
-import {taskRuleConstructorDefaultValues} from "../../constructors/task-constructor/task-rule-constructor.data";
+import { MathInputFormat } from "../../utils/kotlin-lib-functions";
+import { ArrayField, useFieldArray, useFormContext } from "react-hook-form";
+import { RuleConstructorInputs } from "../../constructors/rule-constructor/rule-constructor.types";
+import { taskRuleConstructorDefaultValues } from "../../constructors/task-constructor/task-rule-constructor.data";
 
-const RulesInput = (
-  {
-    onChangeInputValue,
-    constructorType,
-    name,
-    style,
-    label,
-    isRendered = true,
-    isVisible = true,
-    width = 100,
-  }: RulesInputProps
-) => {
-
+const RulesInput = ({
+  onChangeInputValue,
+  constructorType,
+  name,
+  style,
+  label,
+  isRendered = true,
+  isVisible = true,
+  width = 100,
+}: RulesInputProps) => {
   // react-hook-form core functions from parent component's context
   // TaskConstructor should be wrapped inside FormProvider component
   const { control } = useFormContext();
 
   // react-hook-form's fieldArray initialization and getting its needed tools
   // in order to manage rule constructors
-  const { fields: fieldsRules, append: appendRule, remove: removeRule } = useFieldArray<RuleConstructorInputs>(
-    {
-      control,
-      name: name,
-    }
-  );
+  const {
+    fields: fieldsRules,
+    append: appendRule,
+    remove: removeRule,
+  } = useFieldArray<RuleConstructorInputs>({
+    control,
+    name: name,
+  });
 
   return (
     <div
@@ -41,8 +40,12 @@ const RulesInput = (
       style={
         style
           ? { ...style, display: isVisible ? "block" : "hidden" }
-          : { display: isVisible ? "block" : "hidden", flexBasis: `${width - 1}%`, marginRight: '1%' }
-      }>
+          : {
+              display: isVisible ? "block" : "hidden",
+              flexBasis: `${width - 1}%`,
+            }
+      }
+    >
       {label && <div className="label">{label}</div>}
       {fieldsRules.map(
         (
@@ -51,7 +54,7 @@ const RulesInput = (
         ) => {
           return (
             <div key={field.id}>
-              <div style={{display: 'inline-block', width: '40%'}}>
+              <div className="rule-input-block">
                 <MixedInput
                   style={style}
                   isRendered={isRendered}
@@ -77,10 +80,8 @@ const RulesInput = (
                   }}
                 />
               </div>
-              <div style={{display: 'inline-block', width: '1%'}}>
-                =
-              </div>
-              <div style={{display: 'inline-block', width: '40%'}}>
+              <div className="sign-block">=</div>
+              <div className="rule-input-block">
                 <MixedInput
                   style={style}
                   isRendered={isRendered}
@@ -108,25 +109,30 @@ const RulesInput = (
               </div>
 
               <button
-                className="btn"
-                style={{padding: 0, marginBottom: 5}}
+                className="btn remove-rule-btn"
                 type="button"
-                onClick={() => {if(fieldsRules.length > 1) removeRule(fieldIdx)}}
+                onClick={() => {
+                  if (fieldsRules.length > 1) removeRule(fieldIdx);
+                }}
               >
-                <Icon path={mdiClose} size={1}/>
+                <Icon path={mdiClose} size={1} />
               </button>
-              {fieldIdx == fieldsRules.length - 1 &&
-              <button
-                  className="btn"
-                  style={{padding: 0, marginBottom: 5, marginLeft: 5}}
+              {fieldIdx === fieldsRules.length - 1 && (
+                <button
+                  className="btn append-rule-btn"
                   type="button"
-                  onClick={() => {if(fieldsRules.length < 5) appendRule({ ...taskRuleConstructorDefaultValues })}}
-              >
-                  <Icon path={mdiNumericPositive1} size={1}/>
-              </button>}
+                  onClick={() => {
+                    if (fieldsRules.length < 5)
+                      appendRule({ ...taskRuleConstructorDefaultValues });
+                  }}
+                >
+                  <Icon path={mdiNumericPositive1} size={1} />
+                </button>
+              )}
             </div>
-          )
-        })}
+          );
+        }
+      )}
     </div>
   );
 };

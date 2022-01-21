@@ -32,7 +32,11 @@ const ConstructorSelect = ({
       <ConfigProvider locale={ruRu}>
         <div
           className="constructor-select-input u-mb-sm"
-          style={{ display: isVisible ? "block" : "none", flexBasis: `${width - 1}%`, marginRight: '1%'}}
+          style={{
+            display: isVisible ? "block" : "none",
+            flexBasis: `${width - 1}%`,
+            marginRight: "1%",
+          }}
         >
           <h4>{label}</h4>
           <Select

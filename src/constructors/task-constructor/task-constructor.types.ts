@@ -1,6 +1,9 @@
 import { RulePackLink } from "../rule-pack-constructor/rule-pack-constructor.types";
 import { MathInputFormat } from "../../utils/kotlin-lib-functions";
-import { RuleConstructorInputs, RuleConstructorReceivedForm } from "../rule-constructor/rule-constructor.types";
+import {
+  RuleConstructorInputs,
+  RuleConstructorReceivedForm,
+} from "../rule-constructor/rule-constructor.types";
 
 export interface ExpressionInput {
   format: MathInputFormat;

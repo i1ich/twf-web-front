@@ -1,5 +1,5 @@
 import React from "react";
-import {ConstructorJSONType} from "../../redux/constructor-jsons/constructor-jsons.types";
+import { ConstructorJSONType } from "../../redux/constructor-jsons/constructor-jsons.types";
 
 export interface MultipleMixedInputProps {
   name: string;
