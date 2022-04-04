@@ -11,6 +11,7 @@ import ConstructorMenuPageComponent from "./pages/constructor-menu-page/construc
 import SolveMathPage from "./pages/solve-math-page/solve-math-page";
 import ConstructorPage from "./pages/constructor-page/constructor-page.component";
 import DownloadReportPage from "./pages/download-report-page/download-report-page.component";
+import SampleUserPage from "./pages/profile-page/profile-page";
 
 const Routes: React.FC = () => {
   return (
@@ -41,6 +42,8 @@ const Routes: React.FC = () => {
       />
       <Route path={"/constructor"} component={ConstructorPage} />
       <Route path={"/download-report/:entityType/:entityCode"} component={DownloadReportPage} />
+      <Route path={"/user"} component={SampleUserPage} />
+
     </Switch>
   );
 };
