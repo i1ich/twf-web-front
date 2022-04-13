@@ -14,13 +14,14 @@ import {
 } from "../../forms/regiser-form/register-form.data";
 import { NamespaceReceivedForm } from "../../constructors/namespace-constructor/namespace-constructor.types";
 
+
 function SampleUserPage() {
   let token = getAuthToken();
   let s = "";
   let url = process.env.REACT_APP_SERVER_API;
   if (token != null)
-    //s = token;
-    s = "Vovochka"
+    s = token;
+    //s = "Vovochka"
   else
     s = "aassddff";
   axios({
@@ -30,18 +31,37 @@ function SampleUserPage() {
       Authorization: "Bearer " + getAuthToken()
     },
   })
-    .then((res: AxiosResponse<NamespaceReceivedForm>) => {
-      s = res.data.code;
-    })
-    .catch((e: AxiosError) => {
-      console.warn(
-        e.response,
-        e.message
-      );
-      throw e;
-    });
+  .then((res: AxiosResponse<NamespaceReceivedForm>) => {
+    s = res.data.code;
+  })
+  .catch((e: AxiosError) => {
+    console.warn(
+      e.response,
+      e.message
+    );
+    throw e;
+  });
 
-
+  let login = ""
+  if (localStorage.getItem('Cookie_login') != null){
+    login = localStorage.getItem('Cookie_login')!;
+  }
+  let name = ""
+  if (localStorage.getItem('Cookie_name') != null){
+    name = localStorage.getItem('Cookie_name')!;
+  }
+  let email = ""
+  if (localStorage.getItem('Cookie_email') != null){
+    email = localStorage.getItem('Cookie_email')!;
+  }
+  let fullName = ""
+  if (localStorage.getItem('Cookie_fullName') != null){
+    fullName = localStorage.getItem('Cookie_fullName')!;
+  }
+  let additional = ""
+  if (localStorage.getItem('Cookie_additional') != null){
+    additional = localStorage.getItem('Cookie_additional')!;
+  }
   return (
 
     <div className="ratings-section">
@@ -60,59 +80,41 @@ function SampleUserPage() {
                 <h4 className="text-right">Profile Settings</h4>
               </div>
               <div className="row mt-2">
-                <div className="col-md-6"><label className="labels">Name</label><input type="text"
+                <div className="col-md-6"><label className="labels">Login</label><input type="text"
                                                                                        className="form-control"
-                                                                                       placeholder={s}
-                                                                                       value={s} /></div>
-                <div className="col-md-6"><label className="labels">Surname</label><input type="text"
+                                                                                       placeholder={login}
+                                                                                       defaultValue={login} /></div>
+                <div className="col-md-6"><label className="labels">Name</label><input type="text"
                                                                                           className="form-control"
-                                                                                          value=""
-                                                                                          placeholder="surname" /></div>
+                                                                                          defaultValue={name}
+                                                                                          placeholder="enter name" /></div>
               </div>
               <div className="row mt-3">
-                <div className="col-md-12"><label className="labels">Mobile Number</label><input type="text"
+                <div className="col-md-12"><label className="labels">Email</label><input type="text"
                                                                                                  className="form-control"
-                                                                                                 placeholder="enter phone number"
-                                                                                                 value="" /></div>
-                <div className="col-md-12"><label className="labels">Address Line 1</label><input type="text"
+                                                                                                 placeholder="enter email"
+                                                                                                 defaultValue={email} /></div>
+                <div className="col-md-12"><label className="labels">Password</label><input type="password"
                                                                                                   className="form-control"
-                                                                                                  placeholder="enter address line 1"
-                                                                                                  value="" /></div>
-                <div className="col-md-12"><label className="labels">Address Line 2</label><input type="text"
+                                                                                                  placeholder="enter password"
+                                                                                                  defaultValue="" /></div>
+                <div className="col-md-12"><label className="labels">Debug Info 1 </label><input type="text"
                                                                                                   className="form-control"
                                                                                                   placeholder="enter address line 2"
-                                                                                                  value="" /></div>
-                <div className="col-md-12"><label className="labels">Postcode</label><input type="text"
+                                                                                                  defaultValue={s} /></div>
+                <div className="col-md-12"><label className="labels">Debug Info 2</label><input type="text"
                                                                                             className="form-control"
                                                                                             placeholder="enter address line 2"
-                                                                                            value="" /></div>
-                <div className="col-md-12"><label className="labels">State</label><input type="text"
+                                                                                            defaultValue="" /></div>
+                <div className="col-md-12"><label className="labels">Debug Info 3</label><input type="text"
                                                                                          className="form-control"
                                                                                          placeholder="enter address line 2"
-                                                                                         value="" /></div>
-                <div className="col-md-12"><label className="labels">Area</label><input type="text"
+                                                                                         defaultValue="" /></div>
+                <div className="col-md-12"><label className="labels">Additional</label><input type="text"
                                                                                         className="form-control"
-                                                                                        placeholder="enter address line 2"
-                                                                                        value="" /></div>
-                <div className="col-md-12"><label className="labels">Email ID</label><input type="text"
-                                                                                            className="form-control"
-                                                                                            placeholder="enter email id"
-                                                                                            value="" /></div>
-                <div className="col-md-12"><label className="labels">Education</label><input type="text"
-                                                                                             className="form-control"
-                                                                                             placeholder="education"
-                                                                                             value="" /></div>
-              </div>
-              <div className="row mt-3">
-                <div className="col-md-6"><label className="labels">Country</label><input type="text"
-                                                                                          className="form-control"
-                                                                                          placeholder="country"
-                                                                                          value="" /></div>
-                <div className="col-md-6"><label className="labels">State/Region</label><input type="text"
-                                                                                               className="form-control"
-                                                                                               value=""
-                                                                                               placeholder="state" />
-                </div>
+                                                                                        placeholder="enter additional"
+                                                                                        defaultValue={additional} /></div>
+
               </div>
               <div className="mt-5 text-center">
                 <button className="navigation-bar__link navigation-bar__link--signin" type="button">Save Profile

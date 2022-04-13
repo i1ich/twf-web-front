@@ -23,6 +23,8 @@ import { FormInput } from "../types";
 import { RegisterFormInputs } from "./register-form.types";
 // styles
 import "./register-form.styles.scss";
+// cookies
+import { useCookies } from 'react-cookie';
 
 const RegisterForm = ({ hideModal }: { hideModal: () => void }) => {
   // hooks
@@ -35,6 +37,7 @@ const RegisterForm = ({ hideModal }: { hideModal: () => void }) => {
   const [localeInput, setLocaleInput] = useState<"eng" | "rus">(
     intl.locale === "ru-ru" ? "rus" : "eng"
   );
+  const [cookies, setCookie] = useCookies(['UserData']);
   // local functions
   const onSubmitRegister = (data: RegisterFormInputs) => {
     // remove empty fields
@@ -42,7 +45,18 @@ const RegisterForm = ({ hideModal }: { hideModal: () => void }) => {
       if (data[key as keyof RegisterFormInputs] === "") {
         delete data[key as keyof RegisterFormInputs];
       }
+      else
+      {
+        let str = data[key as keyof RegisterFormInputs]!.toString();
+        if (key != "password") {
+          localStorage.setItem('Cookie_'+key, str);
+          console.log("Cookie_"+key, str);
+        }
+
+      }
     });
+    //localStorage.setItem('Cookie_name', data["fullName" as keyof RegisterFormInputs].toString());
+
     axios({
       method: "post",
       url: process.env.REACT_APP_SERVER_API + "/auth/signup",
@@ -76,6 +90,8 @@ const RegisterForm = ({ hideModal }: { hideModal: () => void }) => {
         }
         window.localStorage.removeItem("token");
       });
+      //delete data["password" as keyof RegisterFormInputs];
+
   };
 
   const responseGoogle = (response: any) => {
